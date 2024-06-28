@@ -7,8 +7,9 @@
 }
 
 .mt-50 {
-  margin-top: 50px;
+  margin-top: 50px !important ;
 }
+
 .bg-green-color {
   background-color: #39d000;
 }
