@@ -3,5 +3,6 @@
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["next.config.js", "src/**/*"]
 }
