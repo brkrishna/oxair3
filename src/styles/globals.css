@@ -239,7 +239,7 @@ ul.our-market-tabs {
 
 /*About Oxair*/
 .inner-banner {
-  background-image: url(../assets/images/inner-banner-img.png);
+  background-image: url("/images/inner-banner-img.png");
   padding: 7% 20px;
   background-size: 100%;
   margin: 25px 0px;
