@@ -1,24 +1,29 @@
 {
-  "name": "nodejs-sandbox",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "name": "oxair",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
+  "dependencies": {
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "next": "^14.2.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.8.5",
+    "react": "^18",
+    "react-bootstrap": "^2.10.3",
+    "react-dom": "^18",
+    "react-player": "^2.16.0",
+    "reactstrap": "^9.2.2",
+    "sharp": "^0.33.4"
   },
-  "keywords": [],
-  "author": "Ives van Hoorne",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
-  },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
   "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
-  "dependencies": {}
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
+  }
 }
