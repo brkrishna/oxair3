@@ -3,6 +3,7 @@
 # dependencies
 /.devcontainer
 /.codesandbox
+./vscode
 /node_modules
 /.pnp
 .pnp.js
