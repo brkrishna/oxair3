@@ -69,18 +69,20 @@ body {
   top: 50%;
   transform: translatey(-50%);
 }
-.carousel-indicators [data-bs-target] {
-  background-color: #20205e;
-  border-radius: 13px;
-  width: 65px;
-  padding: 3px;
-}
 .carousel-indicators {
   margin: 0;
-  left: 10px;
-  bottom: -15px !important;
-  right: auto;
+  left: 0px;
+  bottom: -20px !important;
+  right: 0px;
 }
+.carousel-indicators button[data-bs-target] {
+  background-color: #20205e !important;
+  border-radius: 13px;
+  width: 65px !important;
+  height: 8px !important;
+  padding: 3px;
+}
+
 /*---list items----*/
 .why-oxair-list {
   line-height: 30px;
