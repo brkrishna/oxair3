@@ -72,7 +72,7 @@ body {
 .carousel-indicators {
   margin: 0;
   left: 0px;
-  bottom: -20px !important;
+  bottom: -40px !important;
   right: 0px;
 }
 .carousel-indicators button[data-bs-target] {
