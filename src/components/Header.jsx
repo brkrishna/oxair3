@@ -28,6 +28,7 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/aboutOxair">About Us</Nav.Link>
             <NavDropdown title="Our Products" id="collapsible-nav-dropdown">
             <Nav.Link href="/highPerformanceModels">High Performance Models</Nav.Link>
               <NavDropdown.Item href="#action/3.2">
@@ -38,8 +39,15 @@ const Header = () => {
               <NavDropdown.Item href="/">
               Other Products
               </NavDropdown.Item>
-            </NavDropdown> 
-            <Nav.Link href="/aboutOxair">About Oxair India</Nav.Link>
+            </NavDropdown>
+            <NavDropdown title="Resources" id="collapsible-nav-dropdown">
+                <NavDropdown.Item href="#">Understanding Our Products</NavDropdown.Item>
+                <NavDropdown.Item href="#">
+                FAQs
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#">Company and Industry News</NavDropdown.Item>
+              </NavDropdown> 
+            
             <Nav.Link href="/contactUs">
             <ButtonComponent className="get-quote" label="Get Quote" />
             </Nav.Link>
