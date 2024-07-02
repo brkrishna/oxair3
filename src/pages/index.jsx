@@ -29,44 +29,20 @@ export default function Home() {
           </h1>
           <ButtonComponent label={"ISO-9001 & ISO 13485 Certified"} />
           <ul className="why-oxair-list">
-            <li className="list-item">
-              Our ISO-9001-certified oxygen generators are ideal for hospitals
-              and industrial use.{" "}
-            </li>
-            <li className="list-item">
-              ISO 13485 Medical device certified from a reputed audit agency.
-            </li>
-            <li className="list-item">
-              Our ISO 13485 medical device-certified oxygen generators are ideal
-              for patient breathing.
-            </li>
-            <li className="list-item">
-              We meet all the safety standards for medical oxygen generators and
-              the use of supplemental oxygen.
-            </li>
-            <li className="list-item">
-              Uninterrupted oxygen supply even during a power outage ensures
-              oxygen therapy and industrial equipment doesn’t fail.
-            </li>
-            <li className="list-item">
-              Operational costs for the PSA oxygen generators are low. They are
-              built using high-quality materials and need very little
-              maintenance.{" "}
-            </li>
-            <li className="list-item">
-              Common oxygen generators use solenoid valves with a short life,
-              but we use longlasting True Air Process Actuated Valves for
-              trouble-free services.
-            </li>
-            <li className="list-item">
-              Our systems use stainless steel piping with minimal wear and tear,
-              instead of check valves that fail often.{" "}
-            </li>
-            <li className="list-item">
-              Our color touchscreen display and UI enable automatic operations
-              with minimum training.
-            </li>
-          </ul>
+        <li className="list-item">Oxair in Australia with 30+ years experience, integrates cutting-edge air separation technologies into our products,
+           enhancing efficiency and durability while underscoring our commitment to innovation and environmental responsibility. </li>
+           <li className="list-item">Guaranteed Return Of Capital (ROC) in less than 3 years and low maintenance thereafter for the life of the plants. </li>
+           <li className="list-item">Our Oxygen and Nitrogen generators boast a remarkable 97% system uptime coupled with 24/7 monitoring and local high-quality quick service in case of disruptions. </li>
+          <li className="list-item">Our ISO-9001-certified oxygen generators are ideal for hospitals and industrial use. </li>
+          <li className="list-item">ISO 13485 Medical device certified from a reputed audit agency.</li>
+          <li className="list-item">Our ISO 13485 medical device-certified oxygen generators are ideal for patient breathing.</li>
+          <li className="list-item">We meet all the safety standards for medical oxygen generators and the use of supplemental oxygen.</li>
+          <li className="list-item">Uninterrupted oxygen supply during power outages ensures oxygen requirements and prevents failure of Industrial equipment. </li>
+          <li className='list-item'>Usage of high-quality materials and components keep the Operational costs low and need very little maintenance. </li>
+          <li className='list-item'>True Air Process Actuated valves are used for longer life and trouble free services in place of shorter life solenoid valves that are commonly used in other Oxygen Generators.</li>
+          <li className='list-item'>Our systems use stainless steel piping with minimal wear and tear, instead of check valves that fail often. </li>
+          <li className='list-item'>Our color touchscreen UI enables automatic operations and requires minimum training.</li>
+        </ul>
         </LeftImageRightContent>
         <div className="market-place-section">
           <TryRoiCalculater />

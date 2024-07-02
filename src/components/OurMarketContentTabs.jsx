@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import { Tabs, Tab } from 'react-bootstrap';
 import Image from 'next/image';
 import AquaImage from '../assets/images/water.png';
@@ -13,9 +14,24 @@ import OzoneImage from '../assets/images/ozone.png';
 import SewageImage from '../assets/images/sewage.png';
 import PaperImage from '../assets/images/paper.png';
 import ButtonComponent from '@/components/Buttons';
+import Testimonials from "@/components/Testimonials";
+import WorldwideInstallations from "@/components/WorldwideInstallations";
+import testiData from "../JsonData/testimonials.json"
+
 
 
 const OurMarketsContentTabs = () => {
+
+  const [testimon, setTestimon] = useState([]);
+  useEffect(() => {
+    setTestimon(testiData)   
+  }, []);
+  const installationData = [
+    { country: "India", number: 250 },
+    { country: "Philippines", number: 40 },
+    { country: "Indonesia", number: 25 },
+    { country: "Tonga", number: 5 },
+  ];
   const OurMarketTabs = [
     {
       eventKey: "medical",
@@ -159,6 +175,8 @@ const OurMarketsContentTabs = () => {
           </Tabs>
         </div>
       </div>
+      <WorldwideInstallations data={installationData} />
+        <Testimonials data={testimon} />
     </>
   );
 };

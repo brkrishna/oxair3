@@ -31,15 +31,15 @@ const HomePageBanner = () => {
         <Image src={BannerImage1} alt="" className="w-100 h-auto" />
         <Carousel.Caption>
           <div className="row">
-            <div className="col-6">
-              <div className="banner-headings">
+            <div className="col-8">
+              <div className='banner-headings'>
                 <h1 className="banner-heading">
                   Cost-effective, safe, convenient & very low maintenance
                 </h1>
                 <h5 className="banner-sub-heading">
-                  Oxygen Generators for your business
-                </h5>
-                <div>
+        Oxygen Generators for your business
+      </h5>
+                <div className='learnbutton'>
                   <ButtonComponent
                     key={1}
                     label="Learn More"
@@ -62,15 +62,15 @@ const HomePageBanner = () => {
         <Image src={BannerImage2} alt="" className="w-100 h-auto" />
         <Carousel.Caption>
           <div className="row">
-            <div className="col-6">
-              <div className="banner-headings">
+            <div className="col-8">
+              <div className='banner-headings'>
                 <h1 className="banner-heading">
                   Customized, Highest Purity, Cost Saving, Safe & Ease Of Maintenance
                 </h1>
                 <h5 className="banner-sub-heading">
                   Nitrogen Generators for a range of sectors
                 </h5>
-                <div>
+                <div className="learnbutton">
                   <ButtonComponent
                     key={2}
                     label="Learn More"

@@ -49,7 +49,7 @@ const TheOxairIndiaDefference = ({subHeading = "THE OXAIR INDIA DIFFERENCE"}) =>
              activeKey={activeKey}
              onSelect={(k) => setActiveKey(k)}
              id="icon-tabs"
-             className="our-technology-tabs"
+             className="our-technology-tabs" 
             >
                 
                 {TechnologyTabs.map((tab) => (

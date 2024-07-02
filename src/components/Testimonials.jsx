@@ -9,7 +9,6 @@ const Testimonials = ({ data }) => {
     <>
       <div className="testimonial-section">
       <h5 className='section-heading'>What our customers say</h5>
-      <h4 className='section-sub-heading'>Testimonials</h4>
         <Carousel>
           {data.map((item, index) => {
             return (

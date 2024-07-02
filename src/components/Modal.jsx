@@ -4,11 +4,11 @@ import ButtonComponent from './Buttons';
 
 const CustomModal = ({ show, handleClose, modalTitle, modalContent }) => {
   return (
-    <Modal show={show} onHide={handleClose}>
+    <Modal size="xl" show={show} onHide={handleClose} >
       <Modal.Header closeButton>
         <Modal.Title>{modalTitle}</Modal.Title>
       </Modal.Header>
-      <Modal.Body>{modalContent}</Modal.Body>
+      <Modal.Body >{modalContent}</Modal.Body>
       <Modal.Footer>
         <ButtonComponent label="Close" onClick={handleClose} />
       </Modal.Footer>
