@@ -4,7 +4,7 @@ import ButtonComponent from './Buttons';
 
 const CustomModal = ({ show, handleClose, modalTitle, modalContent }) => {
   return (
-    <Modal size="xl" show={show} onHide={handleClose} >
+    <Modal fullscreen={true} show={show} onHide={handleClose} >
       <Modal.Header closeButton>
         <Modal.Title>{modalTitle}</Modal.Title>
       </Modal.Header>
