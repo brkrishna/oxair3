@@ -31,21 +31,21 @@ const Header = () => {
             <Nav.Link href="/aboutOxair">About Us</Nav.Link>
             <NavDropdown title="Our Products" id="collapsible-nav-dropdown">
             <Nav.Link href="/highPerformanceModels">High Performance Models</Nav.Link>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="/superSaverModels">
               Super Saver Models
               </NavDropdown.Item>
-              <NavDropdown.Item href="/">Oxair Pressure Vessels</NavDropdown.Item>
+              <NavDropdown.Item href="/oxairPressureVessels">Oxair Pressure Vessels</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="/">
               Other Products
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Resources" id="collapsible-nav-dropdown">
-                <NavDropdown.Item href="#">Understanding Our Products</NavDropdown.Item>
-                <NavDropdown.Item href="#">
+                <NavDropdown.Item href="/understandingOurProducts">Understanding Our Products</NavDropdown.Item>
+                <NavDropdown.Item href="/faqs">
                 FAQs
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#">Company and Industry News</NavDropdown.Item>
+                <NavDropdown.Item href="/companyAndIndustryNews">Company and Industry News</NavDropdown.Item>
               </NavDropdown> 
             
             <Nav.Link href="/contactUs">
