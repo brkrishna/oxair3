@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ButtonComponent from "@/components/Buttons";
 import LeftImageRightContentProduct from "@/components/LeftImageRightContentProduct";
 import ContactUsToday from './ContactUsToday';
-import { Container } from "react-bootstrap";
 import Image from 'next/image';
 import ProductImage from "../assets/images/oxygen_150.png";
 import Goldmining from "@/assets/images/Gold_Mining.png";
@@ -120,10 +119,12 @@ const ProductTabs = () => {
                             </div>
 
                         </LeftImageRightContentProduct>
-                        <ContactUsToday />
+                        
                     </>
+                    
                 </div>
             )}
+            <ContactUsToday />
         </div>
     );
 };

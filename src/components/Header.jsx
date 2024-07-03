@@ -23,7 +23,7 @@ const Header = () => {
     <>
         <Navbar collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="/"> <Image src={Logo} alt="" width={221} height={56} /></Navbar.Brand>
+        <Navbar.Brand href="/"> <Image src={Logo} alt="" width={224} height={56} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">

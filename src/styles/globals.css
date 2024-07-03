@@ -299,6 +299,51 @@ ul.our-market-tabs {
     }
   }
 }
+
+/* Media query for small screens */
+@media (max-width: 590px) {
+  .defference-sec {
+    ul {
+      flex-direction: column;
+      
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+/* Media query for small screens of our-technology-tabs*/
+/* @media(max-width:780px){
+  .our-technology-tabs {
+    margin: 20px 0;
+    flex-direction: column;
+
+    justify-content: space-around;
+    border-bottom: none;
+  
+    li {
+      width: 30%;
+  
+      button.nav-link {
+        text-align: left;
+        color: #39d000;
+        border: none;
+        border-bottom: 5px solid #39d000;
+        line-height: 20px;
+         
+      }
+  
+       
+  
+      button.nav-link.active {
+        background-color: transparent !important;
+        border: none;
+        color: #fff;
+        border-bottom: 5px solid #ffffff;
+      }
+    }
+  }
+} */
 .technology-section {
   background: var(--unnamed-color-20205e) 0% 0% no-repeat padding-box;
   background: #20205e 0% 0% no-repeat padding-box;

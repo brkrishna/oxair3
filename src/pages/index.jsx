@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Head from "next/head";
 import HomePageBanner from "@/components/HomeBanner";
 import LeftImageRightContent from "@/components/LeftImageRightContent";
@@ -8,8 +8,21 @@ import OurMarketsContentTabs from "@/components/OurMarketContentTabs";
 import ClientLogs from "@/components/ClientLogs";
 import ContactUsToday from "@/components/ContactUsToday";
 import whyOxairLeftImg from "../assets/images/why-oxair-left-img.png";
+import Testimonials from "@/components/Testimonials";
+import testiData from "../JsonData/testimonials.json"
+import WorldwideInstallations from "@/components/WorldwideInstallations";
 
 export default function Home() {
+  const [testimon, setTestimon] = useState([]);
+  useEffect(() => {
+    setTestimon(testiData)   
+  }, []);
+  const installationData = [
+    { country: "India", number: 250 },
+    { country: "Philippines", number: 40 },
+    { country: "Indonesia", number: 25 },
+    { country: "Tonga", number: 5 },
+  ];
   return (
     <>
       <Head>
@@ -48,6 +61,8 @@ export default function Home() {
           <TryRoiCalculater />
         </div>
         <OurMarketsContentTabs />
+        <WorldwideInstallations data={installationData} />
+        <Testimonials data={testimon} />         
         <ClientLogs />
         <ContactUsToday />
       </main>
