@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import Image from 'next/image';
-import BannerImage1 from '../assets/images/banner_img1.png';
-import BannerImage2 from '../assets/images/banner_img2.png';
-import ButtonComponent from './Buttons';
-import CustomModal from '../components/Modal';
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Image from "next/image";
+import BannerImage1 from "../assets/images/banner_img1.png";
+import BannerImage2 from "../assets/images/banner_img2.png";
+import ButtonComponent from "./Buttons";
+import ModalComponent from "./ModalComponent";
 
 const modalData = {
   modals: [
@@ -13,39 +13,39 @@ const modalData = {
       title: 'Oxygen Generators: ',
       content: (
         <div>
-      <p>At Oxair we deliver on-site oxygen generators for a range of industries including Hospitals, Medical Facilities, Glass, Metal Cutting, Gold mining, Aqua, and other specialized areas.</p>
-        <h6>Pressure Swing Adsorption (PSA)</h6>
-        <p>Oxygen is separated from compressed air through a unique process called Pressure Swing Adsorption (PSA). The gas is then conditioned and filtered before being stored in a buffer tank so it can be used on demand. PSA is widely recognized as one of the most popular methods for producing oxygen gas. The technique and technology are suitable for small to medium-sized production and can be applied in a wide range of industries.</p>
-        <h6>Tonnage Plants</h6>
-        <p>Oxygen PSA offers high purity oxygen applications suitable for Medical, Gold Mining, and other industrial areas.</p>
-        <h6>Process Series Plants</h6>
-        <p>Oxygen PSA is based on Pressure Swing Adsorption (PSA) technology, designed for customers that require medium to high oxygen flows in industries such as medical facilities, mining operations, petrochemical, chemical, and oil and gas.</p>
-        <h6>Why Choose Oxair Oxygen Generators?</h6>
-        <ul>
-          <li>Significantly reduce your power consumption (compared with other manufacturers).</li>
-          <li>Fully reliable Control System communication links for remote control options and diagnostic analysis.</li>
-          <li>High cycle process valves are premier performers for reliability and low maintenance, especially robust in extreme environments.</li>
-          <li>Oxair’s oxygen generator can also be engineered to integrate with any existing system, or designed from scratch.</li>
-          <li>Our oxygen generators are capable of producing flow rates from 1 to 680 SM³/hr.</li>
-          <li>Advanced noise control technology for better safety and environmental impact.</li>
-          <li>High purity oxygen (94-99%) is essential for the health and safety of patients and staff alike in medical facilities.</li>
-          <li>We can even provide on-site maintenance to keep everything running perfectly.</li>
-        </ul>
-        <h6>Key Features</h6>
-        <ul>
-          <li>OXAIR® STANDARD DESIGN</li>
-          <li>Lower air consumption</li>
-          <li>High efficiency 4-stage filtration package</li>
-          <li>PLC controller</li>
-          <li>Interactive HMI full color touchscreen with screen failure back-up</li>
-          <li>Compact design</li>
-          <li>High performance true process valves</li>
-          <li>Oxygen pressure for hospital application/industrial ranges from 400 KPA (4 Bar) to 2000 KPA (20 bar) and for cylinder filling 15000 KPA (150 bar).</li>
-          <li>Skid mounting where practical</li>
-          <li>Machine performance data collection</li>
-        </ul>
-        <p>The robust build, reliability, and low maintenance make our oxygen generators suitable for extreme environments, such as gold mining. A specially designed muffler makes it one of the quietest PSA systems on the market. When a constant, onsite source of oxygen is available, not only are cyanide reactions affected but energy consumption can be reduced. Additionally, the extra oxygen removes nitrogen entrainments present in the air.</p>
-      </div>
+          <p>At Oxair we deliver on-site oxygen generators for a range of industries including Hospitals, Medical Facilities, Glass, Metal Cutting, Gold mining, Aqua, and other specialized areas.</p>
+          <h6>Pressure Swing Adsorption (PSA)</h6>
+          <p>Oxygen is separated from compressed air through a unique process called Pressure Swing Adsorption (PSA). The gas is then conditioned and filtered before being stored in a buffer tank so it can be used on demand. PSA is widely recognized as one of the most popular methods for producing oxygen gas. The technique and technology are suitable for small to medium-sized production and can be applied in a wide range of industries.</p>
+          <h6>Tonnage Plants</h6>
+          <p>Oxygen PSA offers high purity oxygen applications suitable for Medical, Gold Mining, and other industrial areas.</p>
+          <h6>Process Series Plants</h6>
+          <p>Oxygen PSA is based on Pressure Swing Adsorption (PSA) technology, designed for customers that require medium to high oxygen flows in industries such as medical facilities, mining operations, petrochemical, chemical, and oil and gas.</p>
+          <h6>Why Choose Oxair Oxygen Generators?</h6>
+          <ul>
+            <li>Significantly reduce your power consumption (compared with other manufacturers).</li>
+            <li>Fully reliable Control System communication links for remote control options and diagnostic analysis.</li>
+            <li>High cycle process valves are premier performers for reliability and low maintenance, especially robust in extreme environments.</li>
+            <li>Oxair’s oxygen generator can also be engineered to integrate with any existing system, or designed from scratch.</li>
+            <li>Our oxygen generators are capable of producing flow rates from 1 to 680 SM³/hr.</li>
+            <li>Advanced noise control technology for better safety and environmental impact.</li>
+            <li>High purity oxygen (94-99%) is essential for the health and safety of patients and staff alike in medical facilities.</li>
+            <li>We can even provide on-site maintenance to keep everything running perfectly.</li>
+          </ul>
+          <h6>Key Features</h6>
+          <ul>
+            <li>OXAIR® STANDARD DESIGN</li>
+            <li>Lower air consumption</li>
+            <li>High efficiency 4-stage filtration package</li>
+            <li>PLC controller</li>
+            <li>Interactive HMI full color touchscreen with screen failure back-up</li>
+            <li>Compact design</li>
+            <li>High performance true process valves</li>
+            <li>Oxygen pressure for hospital application/industrial ranges from 400 KPA (4 Bar) to 2000 KPA (20 bar) and for cylinder filling 15000 KPA (150 bar).</li>
+            <li>Skid mounting where practical</li>
+            <li>Machine performance data collection</li>
+          </ul>
+          <p>The robust build, reliability, and low maintenance make our oxygen generators suitable for extreme environments, such as gold mining. A specially designed muffler makes it one of the quietest PSA systems on the market. When a constant, onsite source of oxygen is available, not only are cyanide reactions affected but energy consumption can be reduced. Additionally, the extra oxygen removes nitrogen entrainments present in the air.</p>
+        </div>
       )
     },
     {
@@ -98,6 +98,7 @@ const modalData = {
       )
     }
   ]
+
 };
 
 const HomePageBanner = () => {
@@ -105,7 +106,7 @@ const HomePageBanner = () => {
   const [currentModal, setCurrentModal] = useState(modalData.modals[0]);
 
   const handleOpenModal = (id) => {
-    const modal = modalData.modals.find(modal => modal.id === id);
+    const modal = modalData.modals.find((modal) => modal.id === id);
     setCurrentModal(modal);
     setShowModal(true);
   };
@@ -119,7 +120,7 @@ const HomePageBanner = () => {
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
-              <div className='banner-headings'>
+              <div className="banner-headings">
                 <h1 className="banner-heading">
                   Cost-effective, safe, convenient & very low maintenance
                 </h1>
@@ -127,17 +128,19 @@ const HomePageBanner = () => {
                   Oxygen Generators for your business
                 </h5>
                 <div className='learnbutton flex '>
-                  <ButtonComponent
-                    key={1}
-                    label="Learn More"
-                    onClick={() => handleOpenModal(1)}
-                  />
-                  <CustomModal
-                    show={showModal}
-                    handleClose={handleCloseModal}
-                    modalTitle={currentModal.title}
-                    modalContent={currentModal.content}
-                  />
+                  <div className="learnbutton">
+                    <ButtonComponent
+                      key={1}
+                      label="Learn More"
+                      onClick={() => handleOpenModal(1)}
+                    />
+                    <ModalComponent
+                      show={showModal}
+                      handleClose={handleCloseModal}
+                      modalTitle={currentModal.title}
+                      modalContent={currentModal.content}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -150,9 +153,10 @@ const HomePageBanner = () => {
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
-              <div className='banner-headings'>
+              <div className="banner-headings">
                 <h1 className="banner-heading">
-                  Customized, Highest Purity, Cost Saving, Safe & Ease Of Maintenance
+                  Customized, Highest Purity, Cost Saving, Safe & Ease Of
+                  Maintenance
                 </h1>
                 <h5 className="banner-sub-heading">
                   Nitrogen Generators for a range of sectors
@@ -163,6 +167,12 @@ const HomePageBanner = () => {
                     label="Learn More"
                     onClick={() => handleOpenModal(2)}
                   />
+                  <ModalComponent
+                    show={showModal}
+                    handleClose={handleCloseModal}
+                    modalTitle={currentModal.title}
+                    modalContent={currentModal.content}
+                  />
                 </div>
               </div>
             </div>
@@ -171,7 +181,7 @@ const HomePageBanner = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-  );
-};
+  )
+}
 
 export default HomePageBanner;
