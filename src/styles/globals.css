@@ -32,14 +32,43 @@ body {
 .sub-headings {
   font: normal normal bold 36px/42px Open Sans;
 }
+.banner-headings{
+  margin-left: 40px;
+ padding: 16px;
+}
+ 
 .banner-heading {
   font: normal bold 2.5vw/2.8vw Open Sans;
   letter-spacing: 0.84px;
+  margin-left: 20px;
 }
 .banner-sub-heading {
   font: normal normal 600 2vw/2.5vw Open Sans;
   letter-spacing: 0.76px;
   color: #2bdafa;
+  margin-left: 20px;
+}
+.learnbutton{
+  font-size: smaller;
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .banner-heading {
+    font-size: 0.6rem;
+  }
+  .banner-sub-heading {
+    font-size: 0.5rem;
+  }
+  .banner-headings{
+    margin-top: -30px;
+    margin-left: 2px;
+ padding: 0px;
+  }
+   
+  .learnbutton {
+    font-size: 0.3rem;
+    padding: 3px, 3px !important;
+  }
 }
 
 .nav-link {
@@ -68,6 +97,7 @@ body {
   left: 0;
   top: 50%;
   transform: translatey(-50%);
+  text-align: left;
 }
 .carousel-indicators {
   margin: 0;
@@ -220,9 +250,11 @@ ul.our-market-tabs {
   }
 }
 .contact-text {
-  color: #4caf50;
+  color: #39D000;
   font-size: 18px;
+  font-weight: 600;
 }
+ 
 .border-r {
   border-right: 1px solid #2bdafa;
 }
@@ -258,6 +290,7 @@ ul.our-market-tabs {
   ul {
     display: flex;
     padding-left: 20px;
+    
     li {
       margin: 0 17px;
       font: normal normal bold 20px Open Sans;
@@ -268,6 +301,51 @@ ul.our-market-tabs {
     }
   }
 }
+
+/* Media query for small screens */
+@media (max-width: 590px) {
+  .defference-sec {
+    ul {
+      flex-direction: column;
+      
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+/* Media query for small screens of our-technology-tabs*/
+/* @media(max-width:780px){
+  .our-technology-tabs {
+    margin: 20px 0;
+    flex-direction: column;
+
+    justify-content: space-around;
+    border-bottom: none;
+  
+    li {
+      width: 30%;
+  
+      button.nav-link {
+        text-align: left;
+        color: #39d000;
+        border: none;
+        border-bottom: 5px solid #39d000;
+        line-height: 20px;
+         
+      }
+  
+       
+  
+      button.nav-link.active {
+        background-color: transparent !important;
+        border: none;
+        color: #fff;
+        border-bottom: 5px solid #ffffff;
+      }
+    }
+  }
+} */
 .technology-section {
   background: var(--unnamed-color-20205e) 0% 0% no-repeat padding-box;
   background: #20205e 0% 0% no-repeat padding-box;
@@ -295,6 +373,8 @@ ul.our-market-tabs {
         }
       }
     }
+
+     
 
     button.nav-link.active {
       background-color: transparent !important;
@@ -358,6 +438,7 @@ ul.our-market-tabs {
   }
 }
 .testimonial {
+  position: relative;
   p {
     font: italic normal normal 14px/24px Open Sans;
     color: #888888;
@@ -374,6 +455,12 @@ ul.our-market-tabs {
 
   span {
     background-size: 60%;
+  }
+}
+.btn-read-more{
+  button{
+    margin-left: auto;
+    display: block;
   }
 }
 
@@ -411,10 +498,11 @@ ul.our-market-tabs {
   width: 40px;
   height: 40px;
 }
+ 
 
 .font-gas {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .font-gas2 {
@@ -459,13 +547,18 @@ ul.our-market-tabs {
   padding: 4px;
   margin-top: 12px;
 }
+.download-product{
+  font-size: smaller;
+}
 
 .img-border {
   border-right: 0.5px solid;
 }
-@media (max-width: 767.98px) {
-  /* Adjust the max-width value as needed for your breakpoints */
+@media (max-width: 767.98px) { /* Adjust the max-width value as needed for your breakpoints */
   .img-border {
+      border-right: none;
+  }
+  .border-r{
     border-right: none;
   }
 }

@@ -6,21 +6,9 @@ import { Container } from "react-bootstrap";
 import AboutOxairImg from "../assets/images/about-oxair-img.png"
 import TryRoiCalculater from "@/components/TryRoiCalculater";
 import TheOxairIndiaDefference from "@/components/TheOxairIndiaDefference";
-import Testimonials from "@/components/Testimonials";
-import testiData from "../JsonData/testimonials.json"
-import WorldwideInstallations from "@/components/WorldwideInstallations";
 
 const AboutOxair = () => {
-  const [testimon, setTestimon] = useState([]);
-  useEffect(() => {
-    setTestimon(testiData)   
-  }, []);
-  const installationData = [
-    { country: "India", number: 250 },
-    { country: "Philippines", number: 40 },
-    { country: "Indonesia", number: 25 },
-    { country: "Tonga", number: 5 },
-  ];
+
   return (
     <>
       <InnerPageBanner
@@ -49,8 +37,6 @@ const AboutOxair = () => {
           <ButtonComponent label={"Watch Video"} />
         </LeftImageRightContent>
         <TheOxairIndiaDefference />
-        <WorldwideInstallations data={installationData} />
-        <Testimonials data={testimon} />
         <TryRoiCalculater />
         
       </Container>

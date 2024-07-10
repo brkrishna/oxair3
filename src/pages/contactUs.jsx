@@ -36,14 +36,14 @@ const ContactUs = () => {
               </h1>
               <div className="d-flex align-items-center gap-3 my-4">
                 <Image src={phoneIcon} alt="Layer 1" className="icon-size" />
-                <p className="mt-3 h5 text-success font-weight-bold">
+                <p className="mt-3 contact-text">
                   +91-44-29560328
                 </p>
               </div>
 
               <div className="d-flex align-items-center gap-3 mt-3">
                 <Image src={emailIcon} alt="Layer 2" className="icon-size" />
-                <p className="mt-3 h5 text-success font-weight-bold">
+                <p className="mt-3 contact-text">
                   inquiries@oxair.in
                 </p>
               </div>
