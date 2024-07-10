@@ -6,8 +6,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import AboutOxair from "@/pages/aboutOxair";
-import productPage from "@/pages/highPerformanceModels";
 import { useRouter } from "next/router";
 import ButtonComponent from "./Buttons";
 

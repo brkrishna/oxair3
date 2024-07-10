@@ -1,14 +1,26 @@
-import React from "react";
-import { Carousel, Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Carousel, Row, Col, Modal } from "react-bootstrap";
 import Image from "next/image";
 import AuthorImg from "../assets/images/testimonial-user-img.png";
 import ReactPlayer from "react-player";
+import ButtonComponent from "./Buttons";
+import ModalComponent from "./ModalComponent";
 
 const Testimonials = ({ data }) => {
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState("");
+
+  const onCLickReadMore = (text) => {
+    const fullText = text.join("\n\n")
+    setShowModal(true);
+    setModalContent(fullText);
+  };
+  const handleCloseModal = () => setShowModal(false);
+
   return (
     <>
       <div className="testimonial-section">
-      <h5 className='section-heading'>What our customers say</h5>
+        <h5 className="section-heading">What our customers say</h5>
         <Carousel>
           {data.map((item, index) => {
             return (
@@ -17,7 +29,18 @@ const Testimonials = ({ data }) => {
                   <Col xs={12} sm={6} md={6} lg={6} xl>
                     <div className="d-flex justify-content-center">
                       <div className="testimonial">
-                        <p className="testimonial-text">{item.text.readText}</p>
+                        <p className="testimonial-text">{item.text.readText.join(" ")}</p>
+
+                        <div className="btn-read-more">
+                          <ButtonComponent
+                            key={index}
+                            onClick={() => {
+                              onCLickReadMore(item.text.full);
+                            }}
+                            label="Read More"
+                          />
+                        </div>
+                        {/* <p>{item.text.full}</p> */}
                         <div className="author-sec">
                           <div className="img-sec">
                             <Image
@@ -52,6 +75,11 @@ const Testimonials = ({ data }) => {
             );
           })}
         </Carousel>
+        <ModalComponent
+          show={showModal}
+          handleClose={handleCloseModal}
+          modalContent={modalContent}
+        />
       </div>
     </>
   );

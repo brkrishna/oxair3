@@ -436,6 +436,7 @@ ul.our-market-tabs {
   }
 }
 .testimonial {
+  position: relative;
   p {
     font: italic normal normal 14px/24px Open Sans;
     color: #888888;
@@ -452,6 +453,12 @@ ul.our-market-tabs {
 
   span {
     background-size: 60%;
+  }
+}
+.btn-read-more{
+  button{
+    margin-left: auto;
+    display: block;
   }
 }
 
