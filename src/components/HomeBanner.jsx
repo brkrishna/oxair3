@@ -12,7 +12,7 @@ const modalData = {
       id: 1,
       title: 'Oxygen Generators: ',
       content: [
-        <div>
+        <div key="oxygen-1">
           <p>At Oxair we deliver on-site oxygen generators for a range of industries including Hospitals, Medical Facilities, Glass, Metal Cutting, Gold mining, Aqua, and other specialized areas.</p>
           <h6>Pressure Swing Adsorption (PSA)</h6>
           <p>Oxygen is separated from compressed air through a unique process called Pressure Swing Adsorption (PSA). The gas is then conditioned and filtered before being stored in a buffer tank so it can be used on demand. PSA is widely recognized as one of the most popular methods for producing oxygen gas. The technique and technology are suitable for small to medium-sized production and can be applied in a wide range of industries.</p>
@@ -52,7 +52,7 @@ const modalData = {
       id: 2,
       title: 'Nitrogen Generators: ',
       content: [
-        <div>
+        <div key="nitrogen-1">
           <p>We are a world leading manufacturer of gas process systems, for shipboard and land-based use to suit any requirement. PSA and Membranes technologies ensure reliable supply of pure nitrogen up to 99.9% with parts built to last.</p>
           <h6>Pressure Swing Adsorption (PSA)</h6>
           <p>Oxair specializes in nitrogen Pressure Swing Adsorption (PSA) generators. We offer very high purity nitrogen with savings of up to 50% over traditional supply methods.</p>
