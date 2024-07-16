@@ -34,7 +34,7 @@ const TheOxairIndiaDefference = ({subHeading = "THE OXAIR INDIA DIFFERENCE"}) =>
     return(
         <>
        <div className="the-oxair-india">
-       <h5 className='banner-sub-heading'>{subHeading}</h5>
+       <h5 className='banner-sub-heading1'>{subHeading}</h5>
        <div className="defference-sec">
         <ul>
             <li>Technology</li>

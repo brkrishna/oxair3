@@ -11,7 +11,7 @@ const modalData = {
     {
       id: 1,
       title: 'Oxygen Generators: ',
-      content: (
+      content: [
         <div>
           <p>At Oxair we deliver on-site oxygen generators for a range of industries including Hospitals, Medical Facilities, Glass, Metal Cutting, Gold mining, Aqua, and other specialized areas.</p>
           <h6>Pressure Swing Adsorption (PSA)</h6>
@@ -46,12 +46,12 @@ const modalData = {
           </ul>
           <p>The robust build, reliability, and low maintenance make our oxygen generators suitable for extreme environments, such as gold mining. A specially designed muffler makes it one of the quietest PSA systems on the market. When a constant, onsite source of oxygen is available, not only are cyanide reactions affected but energy consumption can be reduced. Additionally, the extra oxygen removes nitrogen entrainments present in the air.</p>
         </div>
-      )
+      ]
     },
     {
       id: 2,
       title: 'Nitrogen Generators: ',
-      content: (
+      content: [
         <div>
           <p>We are a world leading manufacturer of gas process systems, for shipboard and land-based use to suit any requirement. PSA and Membranes technologies ensure reliable supply of pure nitrogen up to 99.9% with parts built to last.</p>
           <h6>Pressure Swing Adsorption (PSA)</h6>
@@ -95,7 +95,7 @@ const modalData = {
           <h6>Why Choose Oxair for Nitrogen Generators?</h6>
           <p>For greater flexibility, we will work closely with you to create tailor-made systems to suit any application. Operator friendly, meaning minimal maintenance and labor interaction. On the smaller systems the process valves will last 6-8 years before maintenance. Whereas, on the larger systems, the actuators can withstand 4 million cycles before requiring maintenance. Our nitrogen generators are efficient and compact equipment making them ideal for establishments where space is limited. Microprocessor controlled, allowing for unattended operation, noise levels are reduced thanks to a muffler design. Other advantages of our nitrogen generators are an economizer that shuts the system down during low demand, while the high cycle process valves provide exceptional reliability of supply. Oxair’s designs are focused on meeting exacting customer requirements, reliability, ease of maintenance, safety, and plant self-protection.</p>
         </div>
-      )
+      ]
     }
   ]
 
@@ -166,12 +166,6 @@ const HomePageBanner = () => {
                     key={2}
                     label="Learn More"
                     onClick={() => handleOpenModal(2)}
-                  />
-                  <ModalComponent
-                    show={showModal}
-                    handleClose={handleCloseModal}
-                    modalTitle={currentModal.title}
-                    modalContent={currentModal.content}
                   />
                 </div>
               </div>

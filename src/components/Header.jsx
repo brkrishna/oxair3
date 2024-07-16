@@ -33,7 +33,6 @@ const Header = () => {
               Super Saver Models
               </NavDropdown.Item>
               <NavDropdown.Item href="/oxairPressureVessels">Oxair Pressure Vessels</NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item href="/">
               Other Products
               </NavDropdown.Item>
