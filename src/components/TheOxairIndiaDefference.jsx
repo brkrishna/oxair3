@@ -62,7 +62,7 @@ const TheOxairIndiaDefference = ({subHeading = "THE OXAIR INDIA DIFFERENCE"}) =>
                         </span>
                     }
                     >
-                    <div className="tab-content">
+                    <div className="tab-content1">
                   <p>{tab.content}</p>
                 </div>
                     </Tab>

@@ -7,64 +7,87 @@
 }
 
 .mt-50 {
-  margin-top: 50px !important ;
+  margin-top: 50px !important;
 }
 
 .bg-green-color {
   background-color: #39d000;
 }
+
 .green-color {
   color: #39d000;
 }
+
 .lawn-green {
   color: #1ed7f8;
 }
+
 .dark-blue {
   color: #20205e;
 }
+
 body {
   font-family: Arial, sans-serif;
   background: #dddddd;
 }
+
 .headings {
   font: normal normal bold 18px/24px Open Sans;
 }
+
 .sub-headings {
-  font: normal normal bold 36px/42px Open Sans;
+  font: bold 36px Open Sans;
 }
-.banner-headings{
+
+.banner-headings {
   margin-left: 40px;
- padding: 16px;
+  padding: 16px;
 }
- 
+
+.flowratefont {
+  font: normal normal bold 16px/24px Open Sans;
+  color: #888888;
+}
+
+.productspecification {
+  font: 14px open Sans;
+  font-weight: 600;
+  color: #888888;
+}
+
 .banner-heading {
   font: normal bold 2.5vw/2.8vw Open Sans;
   letter-spacing: 0.84px;
   margin-left: 20px;
 }
+
 .banner-sub-heading {
   font: normal normal 600 2vw/2.5vw Open Sans;
   letter-spacing: 0.76px;
   color: #2bdafa;
   margin-left: 20px;
 }
-.learnbutton{
+
+.learnbutton {
   font-size: smaller;
   margin-left: 20px;
 }
+
 @media screen and (max-width: 768px) {
   .banner-heading {
     font-size: 0.6rem;
   }
+
   .banner-sub-heading {
     font-size: 0.5rem;
   }
-  .banner-headings{
+
+  .banner-headings {
     margin-top: -30px;
     margin-left: 2px;
- padding: 0px;
+    padding: 0px;
   }
-   
+
   .learnbutton {
     font-size: 0.3rem;
     padding: 3px, 3px !important;
@@ -77,6 +100,7 @@ body {
   line-height: 27px;
   font: normal normal 600 14px/27px Open Sans;
 }
+
 .get-quote {
   background: #39d000;
   border: none;
@@ -85,52 +109,60 @@ body {
   margin: 0;
   color: #fff;
 }
+
 .dropdown-item {
   color: #888888;
   line-height: 27px;
   font: normal normal 600 14px/30px;
 }
+
 .navbar {
   padding: 0;
 }
+
 .carousel-caption {
   left: 0;
   top: 50%;
   transform: translatey(-50%);
   text-align: left;
 }
+
 .carousel-indicators [data-bs-target] {
   background-color: #20205e;
   border-radius: 13px;
   width: 65px;
   padding: 3px;
 }
+
 .carousel-indicators {
   margin: 0;
   left: 10px;
   bottom: -15px !important;
   right: auto;
 }
+
 /*---list items----*/
 .why-oxair-list {
   line-height: 30px;
 }
-.why-oxair-list > li::before {
+
+.why-oxair-list>li::before {
   content: " ";
   background-image: url("/images/Checkmark.png");
   background-size: 100%;
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
   left: -32px;
 }
-.why-oxair-list > li {
+
+.why-oxair-list>li {
   margin: 3px;
   position: relative;
   display: flex;
   align-items: center;
-  color: #888;
-  font-size: 14px;
+  color: #888888;
+  font-size: Normal 20px open Sans;
 }
 
 .try-roi-section {
@@ -138,49 +170,60 @@ body {
   background-size: 100%;
   position: relative;
 }
+
 .content-section {
   display: grid;
   justify-content: space-around;
   color: #fff;
   width: 50%;
   padding: 8% 20px;
+
   h4 {
     font-size: 2vw;
     margin-bottom: 0.2rem;
   }
+
   a {
     font-size: 1vw;
     text-decoration: none;
     color: #1ed7f8;
   }
 }
+
 ul.our-market-tabs {
   li {
     width: 80px;
+
     button.active {
       color: #2bdafa !important;
       border: none;
     }
+
     button.nav-link {
       color: #20205e;
       border: none;
     }
+
     button.nav-link:hover {
       color: #2bdafa !important;
     }
   }
 }
-.tab-content {
+
+.tab-content1 {
   background: #20205e;
   padding: 10px;
   border-radius: 20px;
   color: #fff;
+
   h4 {
     font: normal normal 600 20px/27px Open Sans;
   }
+
   p {
     font: normal normal normal 14px/20px Open Sans;
   }
+
   button.bg-green-color {
     background-color: white;
     color: #000 !important;
@@ -190,38 +233,46 @@ ul.our-market-tabs {
     font-weight: 600;
   }
 }
+
 /*ContactUs Today */
 .contact-us-banner {
   background-color: #1b1464;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
+
   h4 {
     color: white;
     font-weight: bold;
   }
+
   p {
     color: #00ccff;
     margin: 0;
   }
 }
+
 .contact-info {
   display: grid;
   align-items: center;
   justify-content: center;
   color: white;
+
   .icon {
     margin: 0 auto 20px;
   }
 }
+
 .footer {
   padding: 40px 0;
 }
+
 .footer-content {
   h6 {
     font: normal normal 600 17px Open Sans;
     margin-bottom: 20px;
   }
+
   address {
     font: normal normal normal 14px/20px Open Sans;
     color: #888888;
@@ -231,9 +282,11 @@ ul.our-market-tabs {
 .list-unstyled {
   padding-left: 0;
   list-style: none;
-  li + li {
+
+  li+li {
     border-left: 1px solid #888;
   }
+
   li {
     padding: 0px 8px;
     float: left;
@@ -247,23 +300,27 @@ ul.our-market-tabs {
     text-decoration: none;
   }
 }
+
 .contact-text {
   color: #39D000;
   font-size: 18px;
   font-weight: 600;
 }
- 
+
 .border-r {
   border-right: 1px solid #2bdafa;
 }
+
 .copy-rights {
   font-size: 12px;
   color: #888888;
   margin: 0;
 }
+
 .social-icons {
   display: inline-block;
   margin-top: 15px;
+
   a {
     margin: 0 5px;
     display: inline-block;
@@ -277,22 +334,26 @@ ul.our-market-tabs {
   background-size: 100%;
   margin: 25px 0px;
   background-repeat: no-repeat;
+
   h1.banner-heading {
     color: #fff;
   }
 }
+
 .the-oxair-india {
   margin: 50px 0;
 }
+
 .defference-sec {
   ul {
     display: flex;
     padding-left: 20px;
-    
+
     li {
       margin: 0 17px;
       font: normal normal bold 20px Open Sans;
       color: #20205e;
+
       &:first-child {
         margin-left: 0;
       }
@@ -305,13 +366,14 @@ ul.our-market-tabs {
   .defference-sec {
     ul {
       flex-direction: column;
-      
+
       li {
         margin: 10px 0;
       }
     }
   }
 }
+
 /* Media query for small screens of our-technology-tabs*/
 /* @media(max-width:780px){
   .our-technology-tabs {
@@ -349,6 +411,7 @@ ul.our-market-tabs {
   background: #20205e 0% 0% no-repeat padding-box;
   border-radius: 20px;
 }
+
 .our-technology-tabs {
   margin: 20px 0;
   display: flex;
@@ -365,6 +428,7 @@ ul.our-market-tabs {
       border-bottom: 5px solid #39d000;
       height: 120px;
       line-height: 20px;
+
       span {
         img {
           display: block;
@@ -372,7 +436,7 @@ ul.our-market-tabs {
       }
     }
 
-     
+
 
     button.nav-link.active {
       background-color: transparent !important;
@@ -382,6 +446,7 @@ ul.our-market-tabs {
     }
   }
 }
+
 /*Worlwide Installations*/
 .installation-count {
   h2 {
@@ -389,6 +454,7 @@ ul.our-market-tabs {
     letter-spacing: 0px;
     color: #39d000;
   }
+
   p {
     font: normal normal normal 20px/25px Open Sans;
     letter-spacing: 0px;
@@ -401,33 +467,40 @@ ul.our-market-tabs {
 .testimonial-section {
   display: inline-block;
   margin-bottom: 50px;
+
   .section-heading {
     font: normal normal 600 1.8vw/2.5vw Open Sans;
     color: #2bdafa;
     margin-bottom: 0;
   }
+
   .section-sub-heading {
     font: normal normal 600 1.8vw/2.5vw Open Sans;
     color: #20205e;
     margin-bottom: 20px;
   }
+
   .carousel {
     .carousel-indicators {
       display: none;
     }
   }
 }
+
 .author-sec {
   display: flex;
   align-items: center;
   margin-top: 20px;
+
   .autor-details {
     margin-left: 20px;
+
     h6 {
       margin: 0;
       color: #20205e;
       font: normal normal 600 16px Open Sans;
     }
+
     small {
       color: #888888;
       font: normal normal 14px/18px Open Sans;
@@ -435,25 +508,37 @@ ul.our-market-tabs {
     }
   }
 }
+
 .testimonial {
   p {
     font: italic normal normal 14px/24px Open Sans;
     color: #888888;
   }
 }
-.carousel-control-next,
-.carousel-control-prev {
-  width: 40px;
-  background: #20205e;
-  height: 40px;
-  transform: translateY(-50%);
-  top: 50%;
-  border-radius: 100%;
 
-  span {
-    background-size: 60%;
-  }
+.video-container {
+  pointer-events: none; /* Allows clicks to pass through to the player */
 }
+
+.video-control {
+  pointer-events: all; /* Allows clicks on the buttons */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border: none;
+  color: white;
+  z-index: 10;
+}
+
+.video-control.left {
+  position: absolute;
+  left: 10px;
+}
+
+.video-control.right {
+  position: absolute;
+  right: 10px;
+}
+
+
 
 /* .nav-tabs .nav-link.active{
   background-color: transparent;
@@ -464,6 +549,7 @@ ul.our-market-tabs {
   padding: 0 10%;
   background: #fff;
 }
+
 @media (max-width: 768px) {
   .our-technology-tabs {
     li {
@@ -471,25 +557,29 @@ ul.our-market-tabs {
     }
   }
 }
+
 @media (min-width: 1640px) {
   .container {
     max-width: 1380px;
     padding: 0 5%;
   }
+
   .content-section {
     width: 75%;
   }
 }
+
 .vertical-line {
   border-left: 2px solid rgba(0, 0, 0, 0.5);
   height: 100%;
   margin: 0 auto;
 }
+
 .icon-size {
   width: 40px;
   height: 40px;
 }
- 
+
 
 .font-gas {
   font-weight: 700;
@@ -507,14 +597,17 @@ ul.our-market-tabs {
   font: normal normal bold 18px/24px Open Sans;
   text-align: left;
 }
+
 .font-oxy {
   font: normal normal bold 18px Open Sans;
   color: #888888;
 }
+
 .oxy-smallfont {
   font: normal normal bold 14px Open Sans;
   color: #888888;
 }
+
 .sub-headings1 {
   font: normal normal bold 28px Open Sans;
 }
@@ -523,71 +616,166 @@ ul.our-market-tabs {
   font: 16px/24px Open Sans #888888;
   text-align: justify;
 }
+
 .icon-text-box {
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
+
 .icon-text-box img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
+
 .thumanails {
   display: flex;
   padding: 4px;
   margin-top: 12px;
 }
-.download-product{
-  font-size: smaller;
-}
 
-.img-border {
-  border-right: 0.5px solid;
-}
-@media (max-width: 767.98px) { /* Adjust the max-width value as needed for your breakpoints */
-  .img-border {
-      border-right: none;
-  }
-  .border-r{
+
+
+
+
+@media (max-width: 767.98px) {
+
+  /* Adjust the max-width value as needed for your breakpoints */
+
+
+  .border-r {
     border-right: none;
   }
 }
 
-.item {
-  font-weight: bold;
-  cursor: pointer;
-  padding: 10px;
-  margin: -8px;
-  text-align: center;
-  transition: background-color 0.3s;
-  font-size: 14px;
-  color: #888;
-}
-
-.bordercolor {
-  border-bottom: 8px solid #cccccc;
-}
-.activetop {
-  border-bottom: 8px solid #2bdafa;
-  cursor: pointer;
-  color: #2bdafa;
-  transition: background-color 0.3s;
-}
 .img-width {
   margin-top: 88px;
-  padding: 6px 14px;
+  width: 359px;
+  height: 70px;
   border-radius: 20px;
   background-color: #20205e;
   color: white;
-  text-align: left;
-  display: inline-block;
-  font: normal normal 14px/20px Open Sans;
-}
-.inner-icon {
-  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: normal normal 20px Open Sans;
 }
 
-.know-more {
-  font-size: small;
+.inner-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.productname {
+  font: bold 18px Open Sans;
+  color: #20205E;
+}
+
+.brocherfont {
+  text-align: left;
+  font: normal normal normal 20px/30px Open Sans;
+  color: #FFFFFF;
+}
+
+.bordercolor {
+  border-bottom: 10px solid #cccccc;
+  color: #888888;
+  padding-left: 36px;
+  position: relative;
+}
+
+/* .span.activetop {
+  position: absolute;
+  padding: 10px 0;
+} */
+
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+}
+
+.activetop {
+  border-bottom: 10px solid #2bdafa;
+  cursor: pointer;
+  color: #2bdafa;
+  transition: background-color 0.3s;
+  padding: 10px;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  font: normal normal bold 14px/24px Open Sans;
+  color: #888888;
+}
+
+@media (max-width:1286px) {
+  .nav-tabs .nav-link {
+    font: normal normal bold 18px/24px Open Sans;
+  }
+
+  .activetop {
+    padding: 8px;
+  }
+
+  .bordercolor {
+    border-bottom: transparent;
+  }
+}
+
+@media(max-width:450px) {
+  .activetop {
+    border-bottom: transparent;
+
+  }
+  .brocherfont {
+    text-align: left;
+    font: normal normal normal 14px/20px Open Sans;
+    color: #FFFFFF;
+  }
+.img-width{
+  width: auto;
+  height: 50px;
+}  
+
+}
+
+.benifitfont {
+  text-align: left;
+  font: normal normal 600 20px/30px Open Sans;
+  color: #20205E;
+}
+
+
+.border-rightproduct {
+  border-right: 1px solid #707070;
+}
+
+.knowmorebtn {
+  padding: 2px 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #39D000;
+  color: white;
+  font: normal normal 600 14px/19px Open Sans;
+}
+
+.goldmining {
+  font: normal normal normal 20px/30px Open Sans;
+  color: #333333;
+}
+
+.horizental-border{
+  border: 1px solid #707070;
+}
+
+.productpagecolor {
+  font: normal normal 600 20px/30px Open Sans;
+  color: #20205E;
+
+}
+
+.productcontent {
+  text-align: left;
+  font: normal normal normal 20px/30px Open Sans;
+  color: #888888;
 }

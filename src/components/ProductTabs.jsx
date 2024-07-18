@@ -1,132 +1,124 @@
-import React, { useState } from 'react';
-import ButtonComponent from "@/components/Buttons";
-import LeftImageRightContentProduct from "@/components/LeftImageRightContentProduct";
+// pages/oxygen-generator.js
+import React, { useState, useEffect } from 'react';
+import { Row, Col, Tabs, Tab } from 'react-bootstrap';
+import data from '../JsonData/Products.json';
+import LeftImageRightContentProduct from './LeftImageRightContentProduct';
 import ContactUsToday from './ContactUsToday';
-import Image from 'next/image';
-import ProductImage from "../assets/images/oxygen_150.png";
-import Goldmining from "@/assets/images/Gold_Mining.png";
-import HealthCare from "@/assets/images/HealthCare.png";
-import Forming from "@/assets/images/Forming.png";
+import classNames from 'classnames';
 
 
-const ProductTabs = () => {
-    const [selectedItem, setSelectedItem] = useState(150);
+const OxygenGenerator = () => {
+  const [key, setKey] = useState('product1');
 
-    const items = [
-        { id: 60, name: 'OXAIR HIGH PERFORMANCE 60' },
-        { id: 80, name: 'OXAIR HIGH PERFORMANCE 80' },
-        { id: 150, name: 'OXAIR HIGH PERFORMANCE 150' },
-        { id: 200, name: 'OXAIR HIGH PERFORMANCE 200' },
-    ];
+  useEffect(() => {
+    console.log('Loaded data:', data);
+  }, []);
 
-    const handleItemClick = (id) => {
-        setSelectedItem(id);
-    };
-
-    return (
-        <div className="container">
-            <div className="row">
-                {items.map(item => (
-                    <div key={item.id} className="col-12 col-sm-6 col-md-3 bordercolor ">
-                        <div onClick={() => handleItemClick(item.id)} className={`item ${selectedItem === item.id ? 'activetop' : ''}`} >
-                            {item.name}
-                        </div>
-                    </div>
-                ))}
-            </div>
-            {selectedItem && (
-                <div >
-
-
-                    <>
-                        <LeftImageRightContentProduct imageSrc={ProductImage}>
-
-                            <div className="">
-                                <p className="headings dark-blue">Oxygen Generator</p>
-                                <h1 className="sub-headings1 dark-blue">
-                                    OA HP {selectedItem}
-                                </h1>
-                            </div>
-                            <div>
-                                <div className="row">
-                                    <div className="col-sm-4 col-md-4 col-lg-4">
-                                        <h5 className='font-oxy'>Flowrate</h5>
-                                        <p className='oxy-smallfont'>150 LPM (9 M3/Hr)</p>
-                                    </div>
-                                    <div className="col-sm-4 col-md-4 col-lg-4 font-oxy">
-                                        <h5 className='font-oxy'>Power Consumption</h5>
-                                        <p className='oxy-smallfont'> 14 KW | @10 INR Per Unit</p>
-                                    </div>
-                                    <div className="col-sm-4 col-md-4 col-lg-4 font-oxy">
-                                        <h5 className='font-oxy'>Production Cost per M3</h5>
-                                        <ButtonComponent label={"Know More"} />
-                                    </div>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="row">
-                                <div class="col-sm-4 col-md-4 col-lg-4">
-                                    <div class="icon-text-box img-border ">
-                                        <Image src={Goldmining} alt="" className='img-fluid' />
-                                        <p className='mt-4'>Gold Mining</p>
-                                    </div>
-                                    <div class="col-md-4 icon-text"></div>
-                                </div>
-                                <div class="col-sm-4 col-md-4 col-lg-4">
-                                    <div class="icon-text-box img-border">
-                                        <Image src={HealthCare} alt="" className='img-fluid' />
-                                        <p className='mt-4'>Medical</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-md-4 col-lg-4">
-                                    <div class="icon-text-box">
-                                        <Image src={Forming} alt="" className='img-fluid' />
-                                        <p className='mt-4'>Farming</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr />
-                            <h1 className="product-heading1 dark-blue">
-                                Cost-effective, safe and convenient oxygen generator for your business.
-                            </h1>
-                            <div className="product-heading">
-                                <p>
-                                    The robust build, reliability and low maintenance make our oxygen generators
-                                    suitable for extreme environments, such as gold mining. While a specially
-                                    designed muffler makes it one of the quietest PSA systems on the market.</p>
-                                <p> But the advantages don’t end there. When a constant, onsite source of oxygen
-                                    is available not only are cyanide reactions affected but energy consumption
-                                    can be reduced. And the additional oxygen removes nitrogen entrainments
-                                    present in the air.</p>
-                                <p>Oxair’s oxygen generator can also be engineered to
-                                    integrate with any existing system, or designed from scratch.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h5 className="product-heading1 dark-blue">Key Benefits</h5>
-                                <ul className="why-oxair-list">
-                                    <li className="list-item">Lower air consumption</li>
-                                    <li className="list-item">High efficiency 4-stage filtration package</li>
-                                    <li className="list-item">PLC controller</li>
-                                    <li className="list-item"> Interactive HMI full colour touchscreen</li>
-                                    <li className="list-item">Compact design</li>
-                                    <li className='list-item'>High performance true process valves </li>
-                                    <li className='list-item'>Oxygen pressure at 15,000 kPag (2175 psig)</li>
-                                    <li className='list-item'>Skid mounting where practical</li>
-                                    <li className='list-item'>Machine performance data collection</li>
-                                </ul>
-                            </div>
-
-                        </LeftImageRightContentProduct>
-                        
-                    </>
-                    
-                </div>
-            )}
-            <ContactUsToday />
-        </div>
-    );
+  return (
+    <div className="container mt-5">
+      <Tabs
+        id="product-tabs"
+        activeKey={key}
+        onSelect={(k) => setKey(k)}
+        className="mb-3 bordercolor"
+      >
+        <Tab
+          eventKey="product1"
+          title={<span className={classNames({ activetop: key === 'product1' })} >OXAIR HIGH PERFORMANCE 60</span>}
+        >
+          {data.product1 ? <RenderProduct product={data.product1} /> : <div>Error loading product 1 data</div>}
+        </Tab>
+        <Tab
+          eventKey="product2"
+          title={<span className={classNames({ activetop: key === 'product2' })} >OXAIR HIGH PERFORMANCE 80</span>}
+        >
+          {data.product2 ? <RenderProduct product={data.product2} /> : <div>Error loading product 2 data</div>}
+        </Tab>
+        <Tab
+          eventKey="product3"
+          title={<span className={classNames({ activetop: key === 'product3' })} >OXAIR HIGH PERFORMANCE 150</span>}
+        >
+          {data.product3 ? <RenderProduct product={data.product3} /> : <div>Error loading product 3 data</div>}
+        </Tab>
+        <Tab
+          eventKey="product4"
+          title={<span className={classNames({ activetop: key === 'product4' })} >OXAIR HIGH PERFORMANCE 200</span>}
+        >
+          {data.product4 ? <RenderProduct product={data.product4} /> : <div>Error loading product 4 data</div>}
+        </Tab>
+        {/* Add more tabs for other products as needed */}
+      </Tabs>
+    </div>
+  );
 };
 
-export default ProductTabs;
+const RenderProduct = ({ product }) => {
+  useEffect(() => {
+    console.log('Rendering product:', product);
+  }, [product]);
+
+  if (!product) {
+    console.error('Product data is undefined');
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <Row className='gap-5'>
+      <Col md={4} className=''>
+        <LeftImageRightContentProduct />
+      </Col>
+      <Col md={7} className=''>
+        <h4 className="mt-5 productname">{product.name}</h4>
+        <h5 className='sub-headings dark-blue'>{product.model}</h5>
+        <div className="row">
+          <div className="col-md-4 col-sm-4">
+            <h6 className='flowratefont'>Flowrate</h6>
+            <p className='productspecification'>{product.specifications.flowrate}</p>
+          </div>
+          <div className="col-md-4 col-sm-4">
+            <h6 className='flowratefont'>Power Consumption</h6>
+            <p className='productspecification'>{product.specifications.power_consumption}</p>
+          </div>
+          <div className="col-md-4 col-sm-4">
+            <h6 className='flowratefont'>Production Cost per M3</h6>
+            <button className='knowmorebtn'>{product.specifications.production_cost_per_M3}</button>
+          </div>
+        </div>
+
+
+        <div className='row'>
+          <hr className='horizental-border' />
+          {product.applications.map((application, index) => (
+
+            <div className='col-12 col-sm-4 col-md-4 border-rightproduct' key={index}>
+              <img
+                src={application.icons}
+                alt={application.name}
+                className='application-icon m-3'
+                width={41}
+                height={41}
+              />
+              <span className='goldmining'>{application.name}</span>
+            </div>
+          ))}
+        </div>
+        <hr />
+
+
+        <h6 className='productpagecolor'>{product.description}</h6>
+        <p className='productcontent'>{product.advantages}</p>
+        <p className='productcontent my-3'>{product.concept}</p>
+        <p className='productcontent'>{product.content}</p>
+        <h4 className='benifitfont mt-5'>Key Benefits:</h4>
+        <ul className='why-oxair-list'>
+          {product.key_benefits.map((benefit, index) => (
+            <li key={index}>{benefit}</li>
+          ))}
+        </ul>
+      </Col>
+      <ContactUsToday />
+    </Row>
+  );
+};
+
+export default OxygenGenerator;

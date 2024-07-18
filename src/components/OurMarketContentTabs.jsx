@@ -152,7 +152,7 @@ const OurMarketsContentTabs = () => {
                 }
                 key={tab.eventKey}
               >
-                <div className="tab-content">
+                <div className="tab-content1">
                   <h4>{tab.title}</h4>
                   <p>{tab.content}</p>
                   {tab.button}
