@@ -23,8 +23,8 @@ const ContactUsToday = () => {
               className="icon"
               src={PhoneIcon}
               alt="Contact"
-              width={50}
-              height={50}
+              width={75}
+              height={75}
             />
             <span className="contact-text">+91-44-29560328</span>
           </div>
@@ -33,10 +33,10 @@ const ContactUsToday = () => {
               className="icon"
               src={EmailIcon}
               alt="Email"
-              width={50}
-              height={50}
+              width={75}
+              height={75}
             />
-            <span className="contact-text">inquiries@oxair.in</span>
+            <span className="contact-text1">inquiries@oxair.in</span>
           </div>
         </Col>
       </Row>

@@ -1,25 +1,40 @@
 import React from "react";
+import { useState } from "react";
 import { Carousel, Row, Col, Button } from "react-bootstrap";
 import Image from "next/image";
 import AuthorImg from "../assets/images/testimonial-user-img.png";
 import ReactPlayer from "react-player";
 
 const Testimonials = ({ data }) => {
-  const [videoIndex, setVideoIndex] = React.useState(0);
+  const [videoIndex, setVideoIndex] = useState(0);
+  const [playing, setPlaying] = useState(false);
 
   const handleVideoSelect = (selectedIndex) => {
     setVideoIndex(selectedIndex);
+    setPlaying(false); // Stop playing when a new video is selected
+  };
+
+  const handleNext = () => {
+    setVideoIndex((prevIndex) => (prevIndex + 1) % data.length);
+    setPlaying(false); // Stop playing when navigating
+  };
+
+  const handlePrev = () => {
+    setVideoIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+    setPlaying(false); // Stop playing when navigating
+  };
+
+  const handlePlayPause = () => {
+    setPlaying(!playing);
   };
 
   return (
     <>
       <div className="testimonial-section">
         <h5 className="section-heading">What our customers say</h5>
-        <Row>
+        <Row className="position-relative">
           <Col xs={12} sm={6} md={6} lg={6} xl={6} className="d-flex flex-column img-fluid">
-            <Carousel interval={3000}
-             controls={false}
-             indicators={false}>
+            <Carousel interval={3000} controls={false} indicators={false}>
               {data.map((item, index) => (
                 <Carousel.Item key={index}>
                   <div className="d-flex justify-content-center">
@@ -41,6 +56,7 @@ const Testimonials = ({ data }) => {
               ))}
             </Carousel>
           </Col>
+          {/* <div className="vertical-line"></div> */}
           <Col xs={12} sm={6} md={6} lg={6} xl={6} className="d-flex flex-column position-relative">
             <Carousel
               activeIndex={videoIndex}
@@ -51,31 +67,36 @@ const Testimonials = ({ data }) => {
               className="w-100"
             >
               {data.map((item, index) => (
-                <Carousel.Item key={index}>
-                  <ReactPlayer
-                    className="react-player img-fluid"
-                    url={item.videoUrl}
-                    width="100%"
-                    height="auto"
-                    controls={true}
-                  />
+                <Carousel.Item key={index} className="video-carousel-item">
+                  <div className="video-wrapper" onClick={handlePlayPause}>
+                    <ReactPlayer
+                      className="react-player"
+                      url={item.videoUrl}
+                      width="60%"
+                      height="60%"
+                      controls={false} // Disable the default ReactPlayer controls
+                      playing={index === videoIndex && playing} // Only play the current video if playing is true
+                    />
+                    {!playing && <div className="play-button">▶</div>}
+                  </div>
                 </Carousel.Item>
               ))}
             </Carousel>
-            <div className="video-container position-absolute top-50 start-50 translate-middle w-100 d-flex justify-content-between align-items-center">
-              <Button className="video-control left" onClick={() => handleVideoSelect((videoIndex - 1 + data.length) % data.length)}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-left" viewBox="0 0 16 16">
+            <div className="custom-controls">
+              <button className="control-btn prev" onClick={handlePrev}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-chevron-left" viewBox="0 0 24 24">
                   <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
                 </svg>
-              </Button>
-              <Button className="video-control right" onClick={() => handleVideoSelect((videoIndex + 1) % data.length)}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chevron-right" viewBox="0 0 16 16">
+              </button>
+              <button className="control-btn next" onClick={handleNext}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-chevron-right" viewBox="0 0 24 24">
                   <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
                 </svg>
-              </Button>
+              </button>
             </div>
           </Col>
         </Row>
+        <hr />
       </div>
     </>
   );

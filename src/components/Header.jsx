@@ -6,8 +6,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import AboutOxair from "@/pages/aboutOxair";
-import productPage from "@/pages/highPerformanceModels";
 import { useRouter } from "next/router";
 import ButtonComponent from "./Buttons";
 
@@ -35,7 +33,6 @@ const Header = () => {
               Super Saver Models
               </NavDropdown.Item>
               <NavDropdown.Item href="/oxairPressureVessels">Oxair Pressure Vessels</NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item href="/">
               Other Products
               </NavDropdown.Item>

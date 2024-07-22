@@ -1,155 +1,224 @@
- [
-
+[
   {
     "id": 1,
     "name": "Dir. Prof (Dr) Ishwar Singh",
     "company": "Indira Gandhi Hospital, New Delhi",
     "designation": "MD",
-     "text":{
-        "readText":[
-            "The sustained efforts of your Team reflect a lot on the way you conduct business as a whole. I observed that we had real-time support of the original manufacturer and this gives us immense confidence. Gives our hospital a more robust, reliable and economical means of providing life-saving systems to our patients.",
-            "We have recommended Oxair as a reliable partner to other Hospitals and within our medical fraternity."
-        ]
-     },
-    "readMoreLink": "",
-   "videoUrl": "/video/DrIshwarSinghIGHDelhi.mp4"
-  },
-    
-    {
-        "id": 2,
-        "name": "Vijaya Health",
-        "company": "Vijaya Health Centre",
-        "designation": "Chief Administrative Officer",
-         "text":{
-          "readText":[
-            "We sincerely appreciate your professional approach, efficient use of resources and the overall level of detail and accountability you demonstrated in this project. Commissioning of this Oxygen Plant is a significant milestone as it gives Vijaya Health Centre a more robust, reliable and economical means of providing life-saving system to our patients."
-          ]
-         } ,     
-        "readMoreLink": "",
-        "videoUrl": "DrIshwarSinghIGHDelhi.mp4"
-      },
-      {
-        "id": 3,
-        "name": "Dr. G.S. Sridhar",
-        "company": "Kumar Hospital, Tiptur, Karnataka",
-        "designation": "Medical Director",
-         "text":{
-            "readText":[
-            "The PSA oxygen generation plant has not only proven to be cost-effective solution but has also eliminated our dependency on external oxygen suppliers. This self-sufficiency has been invaluable, allowing us to focus our resources on patient care and other critical areas.",
-            "Your dedication, technical expertise, and support have been instrumental in its successful functioning and have earned the trust of the Hospital."
-          ]   
+    "text": {
+      "readText": [
+        "The sustained efforts of your Team reflect a lot on the way you conduct business as a whole. I observed that we had real-time support of the original manufacturer and this gives us immense confidence. Gives our hospital a more robust, reliable and economical means of providing life-saving systems to our patients.",
+        "We have recommended Oxair as a reliable partner to other Hospitals and within our medical fraternity."
+      ],
+      "full": [
+        "I am writing to congratulate and to convey my appreciation to Oxair India for successfully installing and commissioning Model OA-1000 PSA Oxygen Plant of Oxair, Australia for our hospital.",
+        "We sincerely appreciate your professional approach, efficient use of resources and the overall level of detail and accountability you demonstrated in this project. The sustained efforts of your Team reflect a lot on the way you conduct business as a whole. I observed that we had real time support of the original manufacturer and this gives us immense confidence.",
+        "From our point of view, commissioning of this Oxygen Plant is a significant milestone as it gives Indira Gandhi Hospital, Dwaraka, Delhi a more robust, reliable and economical means of providing life-saving systems to our patients.",
+        "The vision of Indira Gandhi Hospital is to provide medical services to our patients with care and compassion and we look forward to continuing our relationship with AGASTYA to realize our future growth plans.",
+        "We have recommended Oxair as a reliable partner to other Hospitals and within our medical fraternity."
+      ]
     },
-        "readMoreLink": "",
-        "videoUrl": ""
-      },
-      {
-        "id": 4,
-        "name": "Alok Sharma",
-        "company": "Kshetrapal Hospital, Ajmer, Rajasthan",
-        "designation": "Admin Manager",
-         "text":{
-          "readText":[
-         "Congratulations to Oxair India for successfully installing and commissioning our hospital's OA-550(53 cylinders per day capacity) Oxygen Plant in June 2019. The plant's excellent performance has significantly improved our ability to provide life-saving systems to patients. We highly recommend Oxair India as a reliable partner in the medical fraternity"
-          ]
-        },
-         "readMoreLink": "",
-        "videoUrl": ""
-      },
-      {
-        "id": 5,
-        "name": "",
-        "company": "Mahatma Gandhi District Hospital",
-        "address":"Banswara, Rajasthan",
-        "designation": "Principal Medical Officer",
-         "text":{
-          "readText":[
-         "Working continuously for the past three years without any major problems. The maintenance/periodic servicing work carried out by field engineers is commendable and the support given from Oxair Gas Sytems is noteworthy."
-          ]
-        },
-         "readMoreLink": "",
-        "videoUrl": ""
-      },
-      {
-        "id": 6,
-        "name": "Dr Sukhinder Singh",
-        "company": "Commandant, FHQ BSF Hospital-II Tigri, New Delhi",
-        "designation": "",
-         "text":{
-            "readText":[
-                "We commend them for the uninterrupted operation of the plant and the periodic servicing and other support provided since the date of installation till date.",
-                "We are happy to recommend Oxair PSA Oxygen Generation Plants."
-            ]
-         },
-        "readMoreLink": "",
-        "videoUrl": ""
-      },
-      {
-        "id": 7,
-        "name": "Dir. Prof (Dr) Ishwar Singh",
-        "company": "Indira Gandhi Hospital, New Delhi",
-        "designation": "MD",
-         "text":{
-            "readText":[
-                "The sustained efforts of your Team reflect a lot on the way you conduct business as a whole. I observed that we had real-time support of the original manufacturer and this gives us immense confidence. Gives our hospital a more robust, reliable and economical means of providing life-saving systems to our patients.",
-                "We have recommended Oxair as a reliable partner to other Hospitals and within our medical fraternity."
-            ]
-         },
-        "readMoreLink": "",
-       "videoUrl": "/video/DrIshwarSinghIGHDelhi.mp4"
-      },
-      {
-        "id": 8,
-        "name": "",
-        "company": "Nyoma, Leh-Ladakh",
-        "designation": "",
-         "text":{
-          "readText":[
+    "readMoreLink": "",
+    "videoUrl": "/video/DrIshwarSinghIGHDelhi.mp4"
+  },
+
+  {
+    "id": 2,
+    "name": "Vijaya Health",
+    "company": "Vijaya Health Centre",
+    "designation": "Chief Administrative Officer",
+    "text": {
+      "readText": [
+        "We sincerely appreciate your professional approach, efficient use of resources and the overall level of detail and accountability you demonstrated in this project. Commissioning of this Oxygen Plant is a significant milestone as it gives Vijaya Health Centre a more robust, reliable and economical means of providing life-saving system to our patients."
+      ],
+      "full": [
+        "I am writing to congratulate and to convey my appreciation to M/s Oxair Gas System India Private Limited for successful installation and commission of two plants OA-1000 Oxygen plant of Oxair for our hospital.",
+        "We sincerely appreciate your professional approach, efficient use of resources and the overall level of detail and accountability you demonstrated in this project. The sustained efforts of your Team reflect a lot on the way you conduct business as a whole. l observed that had real time support of the original manufacturer and this gives us immense confidence.",
+        "From our point of view, commissioning of this Oxygen Plant is a significant milestone as it gives Vijaya Health Centre a more robust, reliable and economical means of providing life-saving system to our patients.",
+        "The Vision of Vijaya Health Centre is to provide medical services to our patients with care and compassion; and we look forward to continuing our relationship with Oxair gas system india private limited to realize our future growth plans.",
+        "We have, and will continue to, recommend oxair gas system india private limited as a reliable partner, to other Hospitals and within our medical fraternity.",
+        "Chief Administrative Officer",
+        "Vijaya Health Centre"
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": "DrIshwarSinghIGHDelhi.mp4"
+  },
+  {
+    "id": 3,
+    "name": "Dr. G.S. Sridhar",
+    "company": "Kumar Hospital, Tiptur, Karnataka",
+    "designation": "Medical Director",
+    "text": {
+      "readText": [
+        "The PSA oxygen generation plant has not only proven to be cost-effective solution but has also eliminated our dependency on external oxygen suppliers. This self-sufficiency has been invaluable, allowing us to focus our resources on patient care and other critical areas.",
+        "Your dedication, technical expertise, and support have been instrumental in its successful functioning and have earned the trust of the Hospital."
+      ],
+      "full": [
+        "I am writing this to express my appreciation for the excellent service and performance of the Oxair Gas Systems PSA Oxygen generation platn at Kumar Hospital - Tiptur.",
+        "As the Medical Director of the Hospital, I cannot emphasize enough of the critical importance of having a reliable and efficient oxygen supply. The installation of Oxair PSA oxygen generation plant has been an excellent decision for our operations and it has significantly improved the level of care we are able to provide to our patients.",
+        "The reliability, efficiency and consistent performance of Oxair Gas Systems PSA oxygen generation plant have been nothing short of outstanding. It has played a pivotal role in saving lives and providing critical care to our patients. The positive impact it has had on our hospital and our community cannot be overstated.",
+        "The PSA oxygen generation plant has not only proven to be cost-effective solution but has also eliminated our dependency on external oxygen suppliers. This self-sufficiency has been invaluable, allowing us to focus our resources on patient care and other critical areas.",
+        "I would like to extend my appreciation to the entire team involved in the installation, operation, training and maintenance of the plant. Your dedication, technical expertise, and support have been instrumental in its successful functioning and have earned the trust of the Hospital.",
+        "Thank you for your commitment to excellence and for being an invaluable asset to our hospital.",
+        "Dr. G.S. Sridhar, Medical Director, Kumar Hospital, Tiptur, Karnataka"
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": ""
+  },
+  {
+    "id": 4,
+    "name": "Alok Sharma",
+    "company": "Kshetrapal Hospital, Ajmer, Rajasthan",
+    "designation": "Admin Manager",
+    "text": {
+      "readText": [
+        "Congratulations to Oxair India for successfully installing and commissioning our hospital's OA-550(53 cylinders per day capacity) Oxygen Plant in June 2019. The plant's excellent performance has significantly improved our ability to provide life-saving systems to patients. We highly recommend Oxair India as a reliable partner in the medical fraternity"
+      ],
+      "full": [
+        "Congratulations to Oxair India for successfully installing and commissioning our hospital's OA-550(53 cylinders per day capacity) Oxygen Plant in June 2019. The plant's excellent performance has significantly improved our ability to provide life-saving systems to patients. We highly recommend Oxair India as a reliable partner in the medical fraternity",
+        "Alok Sharma, Admin Manager, Kshetrapal Hospital, Ajmer, Rajasthan"
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": ""
+  },
+  {
+    "id": 5,
+    "name": "",
+    "company": "Mahatma Gandhi District Hospital",
+    "address": "Banswara, Rajasthan",
+    "designation": "Principal Medical Officer",
+    "text": {
+      "readText": [
+        "Working continuously for the past three years without any major problems. The maintenance/periodic servicing work carried out by field engineers is commendable and the support given from Oxair Gas Sytems is noteworthy."
+      ],
+      "full": [
+        "This is to certify that Oxygen Generation Plant Model OA 360 installed by Oxair Gas Systems India in this hospital is serviceable and working continously for the past three years without any major problems.",
+        "The maintenance/periodic servicing work carried out by field engineers is commendable and the support given from Oxair Gas Sytems is noteworthy.",
+        "The performance of the Oxygen Generation Plant is very good and we look forward to work together in the future.",
+        "Plant Installation date - 25th September 2020",
+        "Place - Rajsamand",
+        "Date: 12th January 2024"
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": ""
+  },
+  {
+    "id": 6,
+    "name": "Dr Sukhinder Singh",
+    "company": "FHQ BSF Hospital-II Tigri, New Delhi",
+    "designation": "Commandant",
+    "text": {
+      "readText": [
+        "We commend them for the uninterrupted operation of the plant and the periodic servicing and other support provided since the date of installation till date.",
+        "We are happy to recommend Oxair PSA Oxygen Generation Plants."
+      ],
+      "full": [
+        "This is to convey our appreciation to Oxair Gas Systems India Pvt Ltd. for the successful installation and commissioning of Oxair PSA Medical Oxygen Generation Plant Model OA450 in FHQ BSF Hospital-II Tigri Camp, New Delhi on the date 27/03/2022.",
+        "We further commend them for the uninterrupted operation of the plant and the periodic servicing and other support provided since the date of installation till date.",
+        "We are happy to recommend Oxair PSA Oxygen Generation Plant and M/S Oxair Gas Systems India Pvt Ltdfor supply installation, Commissioning and periodic maintenance of the plant."
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": ""
+  },
+  {
+    "id": 7,
+    "name": "Dir. Prof (Dr) Ishwar Singh",
+    "company": "Indira Gandhi Hospital, New Delhi",
+    "designation": "MD",
+    "text": {
+      "readText": [
+        "The sustained efforts of your Team reflect a lot on the way you conduct business as a whole. I observed that we had real-time support of the original manufacturer and this gives us immense confidence. Gives our hospital a more robust, reliable and economical means of providing life-saving systems to our patients.",
+        "We have recommended Oxair as a reliable partner to other Hospitals and within our medical fraternity."
+      ],
+      "full": [
+        "I am writing to congratulate and to convey my appreciation to Oxair India for successfully installing and commissioning Model OA-1000 PSA Oxygen Plant of Oxair, Australia for our hospital.",
+        "We sincerely appreciate your professional approach, efficient use of resources and the overall level of detail and accountability you demonstrated in this project. The sustained efforts of your Team reflect a lot on the way you conduct business as a whole. I observed that we had real time support of the original manufacturer and this gives us immense confidence.",
+        "From our point of view, commissioning of this Oxygen Plant is a significant milestone as it gives Indira Gandhi Hospital, Dwaraka, Delhi a more robust, reliable and economical means of providing life-saving systems to our patients.",
+        "The vision of Indira Gandhi Hospital is to provide medical services to our patients with care and compassion and we look forward to continuing our relationship with AGASTYA to realize our future growth plans.",
+        "We have recommended Oxair as a reliable partner to other Hospitals and within our medical fraternity."
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": "/video/DrIshwarSinghIGHDelhi.mp4"
+  },
+  {
+    "id": 8,
+    "name": "Nyoma",
+    "company": "Leh-Ladakh",
+    "designation": "Block Medical Officer",
+    "text": {
+      "readText": [
         "Under adverse weather conditions and with limited resources installation of Oxygen Plant as well as Oxygen Gas Pipeline, work was done very professionally.",
         "I on behalf of staff of Primary Health Center and people of Nyoma village would like to thank M/S Oxair Gas Systems I P Ltd. and wish them all the success for their future installations."
-          ]
-        },
-         "readMoreLink": "",
-        "videoUrl": " "
-      },
-      {
-        "id": 9,
-        "name": "Dr Ravi Chandra Mouli",
-        "company": "Raju Neuro & Multi Speciality Hospitals, Rajahmundry, A.P.",
-        "designation": "CEO",
-         "text":{
-          "readText":[
+      ],
+      "full": [
+        "This is to inform that M/S Oxair Gas Systems I P Ltd. has installed and commissioned PSA Oxygen Generator model OA250 at Primary Health Center, Nyoma in Leh-Ladakh. Under adverse weather conditions and with limited resources installation of Oxygen Plant as well as Oxygen Gas Pipeline, work was done very professionally. ",
+        "I on behalf of staff of Primary Health Center and people of Nyoma village would like to thank M/S Oxair Gas Systems I P Ltd. and wish them all the success for their future installations. ",
+        "Special thanks to Naveen and Shubam for their tireless efforts."
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": " "
+  },
+  {
+    "id": 9,
+    "name": "Dr Ravi Chandra Mouli",
+    "company": "Raju Neuro & Multi Speciality Hospitals, Rajahmundry, A.P.",
+    "designation": "CEO",
+    "text": {
+      "readText": [
         "We have installed a PSA Oxygen Generating Plant OA550 of Oxair Gas Systems India Pvt Ltd. weighing approximately 2.75 tons in Sept 2021 on our 5th floor terrace.",
         "Since commissioning of the plant we never faced any issues with regards to plant performance, vibration and service from M/S Oxair Gas Systems Pvt Ltd."
-          ]
-        },
-         "readMoreLink": "",
-        "videoUrl": " "
-      },
-      {
-        "id": 10,
-        "name": "Dr.S.M. Byadgi, General Surgeon,",
-        "company": "Sukshema Hospital, Karnataka",
-        "designation": "",
-         "text":{
-          "readText":[
-            "It gives us immense pleasure to inform you that the Oxygen Generation Plant, installed by your company was commissioned in January 2018. It is the first PSA Oxygen Generation Plant in Davangere, and the oxygen being produced is in line with the requirements."
-
-          ]
-        },
-         "readMoreLink": "",
-        "videoUrl": "/video/Dr_SM_Byadigi_Sukshema.mp4"
-      },
-      {
-        "id": 11,
-        "name": "K Gopal",
-        "company": "Linde India Limited",
-        "designation": "General Manager – Procurement",
-        "text":{
-          "readText":[
-   "We are grateful for your immense service and maintenance of our Oxygen Generation Plant at B.R. Singh Hospital, Sealdah, West Bengal. Your expertise in this area was invaluable, and your willingness and proactive in proving customer satisfaction with us was greatly appreciated."
-          ]
-        },     
-        "readMoreLink": "",
-        "videoUrl": ""
-      }
-  ]
+      ],
+      "full": [
+        "We have installed a PSA Oxygen Generating Plant OA550 of Oxair Gas Systems India Pvt Ltd. weighing approximately 2.75 tons in Sept 2021 on our 5th floor terrace.",
+        "Since commissioning of the plant we never faced any issues with regards to plant performance, vibration and service from M/S Oxair Gas Systems Pvt Ltd.",
+        "Dr Ravi Chandra Mouli, Kommireddi, CEO, Raju Neuro & Multi Speciality Hospitals, Rajahmundry, A.P."
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": " "
+  },
+  {
+    "id": 10,
+    "name": "Dr.S.M. Byadgi, General Surgeon,",
+    "company": "Sukshema Hospital, Karnataka",
+    "designation": "",
+    "text": {
+      "readText": [
+        "It gives us immense pleasure to inform you that the Oxygen Generation Plant, installed by your company was commissioned in January 2018. It is the first PSA Oxygen Generation Plant in Davangere, and the oxygen being produced is in line with the requirements."
+      ],
+      "full": [
+        "It gives us immense pleasure to inform you that the Oxygen Generation Plant, installed by your company was commissioned in January 2018. It is the first PSA Oxygen Generation Plant in Davangere, and the oxygen being produced is in line with the requirements."
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": "/video/Dr_SM_Byadigi_Sukshema.mp4"
+  },
+  {
+    "id": 11,
+    "name": "K Gopal",
+    "company": "Linde India Limited",
+    "designation": "General Manager – Procurement",
+    "text": {
+      "readText": [
+        "We are grateful for your immense service and maintenance of our Oxygen Generation Plant at B.R. Singh Hospital, Sealdah, West Bengal. Your expertise in this area was invaluable, and your willingness and proactive in proving customer satisfaction with us was greatly appreciated."
+      ],
+      "full": [
+        "“Iam writing to express my sincere gratitude for your outstanding collaboration on our installation of Onsite Oxygen Generation Plant at B.R. Singh Hospital at Sealdah, West Bengal.",
+        "Your efforts have significantly contributed to our project's success, and we are immensely appreciative of the exemplary professionalism and expertise you provided.",
+        "From the outset, you demonstrated a deep understanding of our goals and objectives. You were proactive in offering solutions and suggestions, and you were always willing to go the extra mile to ensure that we were satisfied with the results. Your team was also a pleasure to work with. They were responsive, efficient, and always willing to help.",
+        "We are particularly grateful for your immense service and maintenance of our Oxygen Generation Plant at B.R. Singh Hospital. Your expertise in this area was invaluable, and your willingness and proactive in proving customer satisfaction with us was greatly appreciated.",
+        "Thank you again for your outstanding service.”",
+        "K Gopal General Manager – Procurement",
+        "Linde India Limited"
+      ]
+    },
+    "readMoreLink": "",
+    "videoUrl": ""
+  }
+]

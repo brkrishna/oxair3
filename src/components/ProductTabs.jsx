@@ -20,7 +20,7 @@ const OxygenGenerator = () => {
         id="product-tabs"
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="mb-3 bordercolor"
+        className="bordercolor"
       >
         <Tab
           eventKey="product1"
@@ -68,7 +68,7 @@ const RenderProduct = ({ product }) => {
         <LeftImageRightContentProduct />
       </Col>
       <Col md={7} className=''>
-        <h4 className="mt-5 productname">{product.name}</h4>
+        <p className="mt-5 productname">{product.name}</p>
         <h5 className='sub-headings dark-blue'>{product.model}</h5>
         <div className="row">
           <div className="col-md-4 col-sm-4">
@@ -85,9 +85,8 @@ const RenderProduct = ({ product }) => {
           </div>
         </div>
 
-
+        <hr className='horizental-border' />
         <div className='row'>
-          <hr className='horizental-border' />
           {product.applications.map((application, index) => (
 
             <div className='col-12 col-sm-4 col-md-4 border-rightproduct' key={index}>
@@ -102,7 +101,7 @@ const RenderProduct = ({ product }) => {
             </div>
           ))}
         </div>
-        <hr />
+        <hr className='horizental-border' />
 
 
         <h6 className='productpagecolor'>{product.description}</h6>

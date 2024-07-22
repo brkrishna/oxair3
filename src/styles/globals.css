@@ -45,30 +45,30 @@ body {
 }
 
 .flowratefont {
-  font: normal normal bold 16px/24px Open Sans;
+  font: normal normal bold 15px/24px Open Sans;
   color: #888888;
+  margin-bottom: 0;
 }
 
 .productspecification {
-  font: 14px open Sans;
+  font: 13px open Sans;
   font-weight: 600;
   color: #888888;
 }
 
 .banner-heading {
-  font: normal bold 2.5vw/2.8vw Open Sans;
+  font-weight: bold;
   letter-spacing: 0.84px;
-  margin-left: 20px;
+  margin-left: 46px;
 }
 
 .banner-sub-heading {
-  font: normal normal 600 2vw/2.5vw Open Sans;
+  font-weight: 600;
   letter-spacing: 0.76px;
   color: #2bdafa;
   margin-left: 20px;
 }
-
-.learnbutton {
+.learnbutton{
   font-size: smaller;
   margin-left: 20px;
 }
@@ -95,10 +95,9 @@ body {
 }
 
 .nav-link {
-  /* font-size: 20px; */
   color: #20205e;
   line-height: 27px;
-  font: normal normal 600 14px/27px Open Sans;
+  font: normal normal 600 16px/27px Open Sans;
 }
 
 .get-quote {
@@ -113,7 +112,7 @@ body {
 .dropdown-item {
   color: #888888;
   line-height: 27px;
-  font: normal normal 600 14px/30px;
+  font: normal normal 600 16px/30px;
 }
 
 .navbar {
@@ -162,7 +161,8 @@ body {
   display: flex;
   align-items: center;
   color: #888888;
-  font-size: Normal 20px open Sans;
+  font: normal normal normal 16px/26px Open Sans;
+
 }
 
 .try-roi-section {
@@ -238,17 +238,19 @@ ul.our-market-tabs {
 .contact-us-banner {
   background-color: #1b1464;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 20px 0;
 
   h4 {
     color: white;
     font-weight: bold;
+    font-size: 36px;
   }
 
   p {
     color: #00ccff;
     margin: 0;
+    font-size: 24px;
   }
 }
 
@@ -269,16 +271,30 @@ ul.our-market-tabs {
 
 .footer-content {
   h6 {
-    font: normal normal 600 17px Open Sans;
+    font: normal normal 600 20px Open Sans;
     margin-bottom: 20px;
   }
 
   address {
-    font: normal normal normal 14px/20px Open Sans;
+    font: normal normal normal 16px/20px Open Sans;
     color: #888888;
   }
 }
 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.terms-privacy {
+  color: #33BDD3; 
+  text-decoration: none;
+}
+.list-unstyled> li:first-child{
+  padding-left:0 !important;
+}
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -303,8 +319,24 @@ ul.our-market-tabs {
 
 .contact-text {
   color: #39D000;
-  font-size: 18px;
-  font-weight: 600;
+  font: normal normal bold 36px/49px Open Sans;
+  letter-spacing: 3.6px;
+}
+.contact-text1 {
+  color: #39D000;
+  font: normal normal 600 24px/33px Open Sans;
+}
+.contact-text2{
+  color: #39D000;
+  font: normal normal bold 30px/41px Open Sans;
+}
+
+.work{
+  font: normal normal 600 24px/30px Open Sans
+}
+
+text-dark{
+  font: normal normal 600 18px/30px Open Sans;
 }
 
 .border-r {
@@ -312,7 +344,7 @@ ul.our-market-tabs {
 }
 
 .copy-rights {
-  font-size: 12px;
+  font-size: 16px;
   color: #888888;
   margin: 0;
 }
@@ -320,7 +352,6 @@ ul.our-market-tabs {
 .social-icons {
   display: inline-block;
   margin-top: 15px;
-
   a {
     margin: 0 5px;
     display: inline-block;
@@ -351,7 +382,7 @@ ul.our-market-tabs {
 
     li {
       margin: 0 17px;
-      font: normal normal bold 20px Open Sans;
+      font: normal normal bold 36px/49px Open Sans;
       color: #20205e;
 
       &:first-child {
@@ -465,6 +496,8 @@ ul.our-market-tabs {
 
 /*Testimonial Section*/
 .testimonial-section {
+  position: relative;
+  padding: 20px;
   display: inline-block;
   margin-bottom: 50px;
 
@@ -510,33 +543,95 @@ ul.our-market-tabs {
 }
 
 .testimonial {
+  position: relative;
   p {
     font: italic normal normal 14px/24px Open Sans;
     color: #888888;
   }
 }
+.carousel-control-next,
+.carousel-control-prev {
+  width: 40px;
+  background: #20205e;
+  height: 40px;
+  transform: translateY(-50%);
+  top: 50%;
+  border-radius: 100%;
 
-.video-container {
-  pointer-events: none; /* Allows clicks to pass through to the player */
+  span {
+    background-size: 60%;
+  }
 }
 
-.video-control {
-  pointer-events: all; /* Allows clicks on the buttons */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  border: none;
+/* .vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: black;
+  
+} */
+
+
+.video-carousel-item {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-player {
+  margin: auto;
+  display: block;
+  border: 6px blue;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
   color: white;
-  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background color */
+  border-radius: 50%; /* Make the background round */
+  width: 40px; /* Fixed width for the button */
+  height: 40px; /* Fixed height for the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  pointer-events: none; /* Allows click-through to the video wrapper */
 }
 
-.video-control.left {
+
+
+.custom-controls {
   position: absolute;
-  left: 10px;
+  top: 50%; /* Center vertically */
+  width: 96%;
+  display: flex;
+  justify-content: space-between; /* Spread buttons horizontally */
+  padding: 0 88px; /* Adjust padding if needed */
+  pointer-events: none; /* Allows click-through to the player */
 }
 
-.video-control.right {
-  position: absolute;
-  right: 10px;
+.control-btn {
+  border: none;
+  cursor: pointer;
+  width: 18px;
+  height: 32px;
+  color: #000000;
+  background-color: transparent;
+  pointer-events: all; /* Re-enables click for the buttons */
 }
+
 
 
 
@@ -545,19 +640,21 @@ ul.our-market-tabs {
 } */
 /*container*/
 .container {
-  max-width: 100%;
-  padding: 0 10%;
+  max-width: 90%;
+  margin: 0 5%;
   background: #fff;
 }
-
 @media (max-width: 768px) {
+ .container{
+  width: 90%;
+  margin: 0 5%;
+ }
   .our-technology-tabs {
     li {
       width: 50%;
     }
   }
 }
-
 @media (min-width: 1640px) {
   .container {
     max-width: 1380px;
@@ -565,7 +662,7 @@ ul.our-market-tabs {
   }
 
   .content-section {
-    width: 75%;
+    width: 100%;
   }
 }
 
@@ -576,18 +673,18 @@ ul.our-market-tabs {
 }
 
 .icon-size {
-  width: 40px;
-  height: 40px;
+  width: 57px;
+  height: 57px;
 }
 
 
 .font-gas {
-  font-weight: 700;
-  font-size: 32px;
+  font-weight: 600;
+  font-size: 36px;
 }
 
 .font-gas2 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
 }
 
@@ -654,12 +751,11 @@ ul.our-market-tabs {
   width: 359px;
   height: 70px;
   border-radius: 20px;
-  background-color: #20205e;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font: normal normal 20px Open Sans;
+  font: normal normal 16px Open Sans;
+  background: #20205E 0% 0% no-repeat padding-box;
 }
 
 .inner-icon {
@@ -670,18 +766,20 @@ ul.our-market-tabs {
 .productname {
   font: bold 18px Open Sans;
   color: #20205E;
+  margin-bottom: 0;
 }
 
 .brocherfont {
   text-align: left;
-  font: normal normal normal 20px/30px Open Sans;
+  font: normal normal normal 17px/30px Open Sans;
+  margin-left: 16px;
   color: #FFFFFF;
 }
 
 .bordercolor {
   border-bottom: 10px solid #cccccc;
   color: #888888;
-  padding-left: 36px;
+  /* padding-left: 36px; */
   position: relative;
 }
 
@@ -729,13 +827,18 @@ ul.our-market-tabs {
   }
   .brocherfont {
     text-align: left;
-    font: normal normal normal 14px/20px Open Sans;
+    font: normal normal normal 11px/16px Open Sans;
     color: #FFFFFF;
   }
 .img-width{
   width: auto;
   height: 50px;
 }  
+
+.inner-icon {
+  height: 20px;
+  width: 20px;
+}
 
 }
 
@@ -751,21 +854,26 @@ ul.our-market-tabs {
 }
 
 .knowmorebtn {
-  padding: 2px 12px;
+  padding: 3px 12px;
   border: none;
   border-radius: 20px;
   background-color: #39D000;
   color: white;
-  font: normal normal 600 14px/19px Open Sans;
+  font: normal normal 600 12px/17px Open Sans;
 }
 
 .goldmining {
-  font: normal normal normal 20px/30px Open Sans;
+  font: normal normal normal 18px/30px Open Sans;
   color: #333333;
 }
 
 .horizental-border{
   border: 1px solid #707070;
+}
+.productcontent{
+text-align: left;
+font: normal normal normal 18px/30px Open Sans;
+color: #888888;
 }
 
 .productpagecolor {
@@ -774,8 +882,6 @@ ul.our-market-tabs {
 
 }
 
-.productcontent {
-  text-align: left;
-  font: normal normal normal 20px/30px Open Sans;
-  color: #888888;
+.know-more {
+  font-size: small;
 }
