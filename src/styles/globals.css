@@ -7,108 +7,90 @@
 }
 
 .mt-50 {
-  margin-top: 50px !important ;
+  margin-top: 50px !important;
 }
 
 .bg-green-color {
   background-color: #39d000;
 }
+
 .green-color {
   color: #39d000;
 }
+
 .lawn-green {
   color: #1ed7f8;
 }
+
 .dark-blue {
   color: #20205e;
 }
+
 body {
   font-family: Arial, sans-serif;
   background: #dddddd;
 }
+
 .headings {
   font: normal normal bold 18px/24px Open Sans;
 }
+
 .sub-headings {
-  font: normal normal bold 36px/42px Open Sans;
-}
-.banner-headings{
-  margin-left: 40px;
- padding: 16px;
-}
- 
-.banner-heading {
-  font-weight: bold;
-  letter-spacing: 0.84px;
-  margin-left: 46px;
+  margin-bottom: 10px;
+  font: normal normal bold 32px/36px Open Sans;
 }
 
+.banner-headings {
+  margin-left: 40px;
+  padding: 16px;
+}
+
+.banner-heading {
+  letter-spacing: 0.84px;
+  margin-left: 46px;
+  font: normal normal bold 38px/42px Open Sans;
+}
+
+.banner-heading1 {
+  letter-spacing: 0.84px;
+  font: normal normal bold 38px/42px Open Sans;
+}
+
+
 .banner-sub-heading {
-  font-weight: 600;
   letter-spacing: 0.76px;
   color: #2bdafa;
   margin-left: 46px;
+  font: normal normal 600 32px/40px Open Sans;
 }
-
-/* Responsive font sizes using Bootstrap */
-@media (max-width: 767.98px) { /* Small devices (landscape phones, less than 768px) */
-  .banner-heading {
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .banner-sub-heading {
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) { /* Medium devices (tablets, 768px and up) */
-  .banner-heading {
-    font-size: 32px;
-    line-height: 36px;
-  }
-  .banner-sub-heading {
-    font-size: 28px;
-    line-height: 32px;
-  }
-}
-
-@media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
-  .banner-heading {
-    font-size: 42px;
-    line-height: 46px;
-  }
-  .banner-sub-heading {
-    font-size: 38px;
-    line-height: 42px;
-  }
-}
-
 
 .banner-sub-heading1 {
-  font: normal normal bold 36px/49px Open Sans;
+  font: normal normal 600 32px/40px Open Sans;
   color: #2bdafa;
   margin-left: 0%;
 }
 
-
-.learnbutton{
-  font-size: smaller;
-  margin-left: 20px;
+.learnbutton {
+  font-size: 16px;
+  width: 210px;
+  height: 50px;
 }
+
 @media screen and (max-width: 768px) {
   .banner-heading {
     font-size: 0.6rem;
   }
+
   .banner-sub-heading {
     font-size: 0.5rem;
   }
-  .banner-headings{
+
+  .banner-headings {
     margin-top: -30px;
     margin-left: 2px;
- padding: 0px;
+    padding: 0px;
   }
-   
+
   .learnbutton {
     font-size: 0.3rem;
     padding: 3px, 3px !important;
@@ -120,6 +102,11 @@ body {
   line-height: 27px;
   font: normal normal 600 16px/27px Open Sans;
 }
+
+.products {
+  font: normal normal bold 11px/20px Open Sans;
+}
+
 .get-quote {
   background: #39d000;
   border: none;
@@ -128,37 +115,49 @@ body {
   margin: 0;
   color: #fff;
 }
+
 .dropdown-item {
   color: #888888;
-  line-height: 27px;
+  line-height: 17px;
   font: normal normal 600 16px/30px;
 }
+
 .navbar {
   padding: 0;
 }
+
 .carousel-caption {
   left: 0;
   top: 50%;
   transform: translatey(-50%);
   text-align: left;
 }
+
 .carousel-indicators [data-bs-target] {
   background-color: #20205e;
   border-radius: 13px;
-  width: 65px;
+  width: 80px;
+  height: 5px;
   padding: 3px;
 }
+
 .carousel-indicators {
   margin: 0;
   left: 10px;
   bottom: -15px !important;
   right: auto;
 }
+
 /*---list items----*/
 .why-oxair-list {
   line-height: 30px;
 }
-.why-oxair-list > li::before {
+
+.points {
+  margin-left: 20px;
+}
+
+.why-oxair-list>li::before {
   content: " ";
   background-image: url("/images/Checkmark.png");
   background-size: 100%;
@@ -166,107 +165,135 @@ body {
   width: 17px;
   height: 17px;
   left: -32px;
+  background-repeat: no-repeat;
+  top: 5px;
 }
-.why-oxair-list > li {
+
+.why-oxair-list>li {
   margin: 3px;
   position: relative;
   display: flex;
   align-items: center;
   color: #888;
-  font-size: 14px;
+  font: normal normal normal 16px/26px Open Sans;
 }
 
 .try-roi-section {
-  background: url("/images/try-roi-calculater.png") no-repeat;
+  background: url("../assets/images/Component.svg") no-repeat;
   background-size: 100%;
   position: relative;
 }
+
 .content-section {
   display: grid;
   justify-content: space-around;
   color: #fff;
   width: 50%;
   padding: 8% 20px;
+
   h4 {
     font-size: 2vw;
     margin-bottom: 0.2rem;
   }
+
   a {
     font-size: 1vw;
+    letter-spacing: 1.4px;
     text-decoration: none;
     color: #1ed7f8;
   }
 }
+
 ul.our-market-tabs {
+  width: 400px;
+
   li {
-    width: 80px;
+    width: 100px;
+    margin: 0 auto 15px;
+
     button.active {
       color: #2bdafa !important;
       border: none;
     }
+
     button.nav-link {
       color: #20205e;
       border: none;
+      font-size: 14px;
     }
+
     button.nav-link:hover {
       color: #2bdafa !important;
     }
   }
 }
+
 .tab-content {
   background: #20205e;
   padding: 10px;
   border-radius: 20px;
   color: #fff;
+
   h4 {
-    font: normal normal 600 20px/27px Open Sans;
+    font: normal normal 600 16px/23px Open Sans;
   }
+
   p {
-    font: normal normal normal 14px/20px Open Sans;
+    font: normal normal normal 16px/23px Open Sans;
+    margin-top: -15px;
   }
+
   button.bg-green-color {
     background-color: white;
     color: #000 !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     border-radius: 5px !important;
     text-transform: uppercase;
     font-weight: 600;
   }
 }
+
 /*ContactUs Today */
 .contact-us-banner {
   background-color: #1b1464;
   padding: 20px;
   border-radius: 20px;
   margin: 20px 0;
+
   h4 {
     color: white;
     font-weight: bold;
     font-size: 36px;
   }
+
   p {
     color: #00ccff;
     margin: 0;
     font-size: 24px;
   }
 }
+
 .contact-info {
   display: grid;
   align-items: center;
   justify-content: center;
   color: white;
+
   .icon {
     margin: 0 auto 20px;
   }
 }
+
 .footer {
   padding: 40px 0;
 }
+
 .footer-content {
   h6 {
-    font: normal normal 600 20px Open Sans;
+    font: normal normal 600 18px Open Sans;
     margin-bottom: 20px;
   }
+
   address {
     font: normal normal normal 16px/20px Open Sans;
     color: #888888;
@@ -281,18 +308,22 @@ ul.our-market-tabs {
 }
 
 .terms-privacy {
-  color: #33BDD3; 
+  color: #33BDD3;
   text-decoration: none;
 }
-.list-unstyled> li:first-child{
-  padding-left:0 !important;
+
+.list-unstyled>li:first-child {
+  padding-left: 0 !important;
 }
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
-  li + li {
+
+  li+li {
     border-left: 1px solid #888;
   }
+
   li {
     padding: 0px 8px;
     float: left;
@@ -306,36 +337,41 @@ ul.our-market-tabs {
     text-decoration: none;
   }
 }
+
 .contact-text {
   color: #39D000;
-  font: normal normal bold 36px/49px Open Sans;
+  font: normal normal bold 30px/43px Open Sans;
   letter-spacing: 3.6px;
 }
+
 .contact-text1 {
   color: #39D000;
-  font: normal normal 600 24px/33px Open Sans;
+  font: normal normal 600 20px/29px Open Sans;
 }
-.contact-text2{
+
+.contact-text2 {
   color: #39D000;
   font: normal normal bold 30px/41px Open Sans;
 }
 
-.work{
+.work {
   font: normal normal 600 24px/30px Open Sans
 }
 
-text-dark{
+text-dark {
   font: normal normal 600 18px/30px Open Sans;
 }
- 
+
 .border-r {
   border-right: 1px solid #2bdafa;
 }
+
 .copy-rights {
   font-size: 16px;
   color: #888888;
   margin: 0;
 }
+
 .social-icons {
   display: flex;
   gap: 10px;
@@ -348,22 +384,35 @@ text-dark{
   background-size: 100%;
   margin: 25px 0px;
   background-repeat: no-repeat;
+
   h1.banner-heading {
     color: #fff;
   }
 }
+
 .the-oxair-india {
   margin: 50px 0;
 }
+
+li.no-bullets {
+  list-style-type: none;
+  margin: 0;
+}
+
+
 .defference-sec {
   ul {
     display: flex;
-    padding-left: 20px;
-    
+    padding-left: 0px;
+    margin-bottom: 40px;
+
     li {
       margin: 0 17px;
+      padding-right: 20px;
+
       font: normal normal bold 36px/49px Open Sans;
       color: #20205e;
+
       &:first-child {
         margin-left: 0;
       }
@@ -376,13 +425,14 @@ text-dark{
   .defference-sec {
     ul {
       flex-direction: column;
-      
+
       li {
         margin: 10px 0;
       }
     }
   }
 }
+
 /* Media query for small screens of our-technology-tabs*/
 /* @media(max-width:780px){
   .our-technology-tabs {
@@ -420,6 +470,7 @@ text-dark{
   background: #20205e 0% 0% no-repeat padding-box;
   border-radius: 20px;
 }
+
 .our-technology-tabs {
   margin: 20px 0;
   display: flex;
@@ -430,22 +481,27 @@ text-dark{
     width: 30%;
 
     button.nav-link {
+      padding-left: initial;
       text-align: left;
       color: #39d000;
       border: none;
       border-bottom: 5px solid #39d000;
-      height: 120px;
+      height: 146px;
       line-height: 20px;
+      font: normal normal 600 16px Open Sans;
+
       span {
         img {
           display: block;
+          padding: auto;
         }
       }
     }
 
-     
+
 
     button.nav-link.active {
+      padding-left: initial;
       background-color: transparent !important;
       border: none;
       color: #fff;
@@ -453,6 +509,7 @@ text-dark{
     }
   }
 }
+
 /*Worlwide Installations*/
 .installation-count {
   h2 {
@@ -460,45 +517,68 @@ text-dark{
     letter-spacing: 0px;
     color: #39d000;
   }
+
   p {
-    font: normal normal normal 20px/25px Open Sans;
+    font: normal normal normal 22px/25px Open Sans;
     letter-spacing: 0px;
     color: #888888;
     text-transform: uppercase;
   }
 }
 
+.installations-section {
+  padding: 10px;
+  background-image: url(../assets/images/world-map.png);
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 45px 0;
+
+  .section-heading {
+    font: normal normal bold 36px/49px Open Sans;
+    color: #2bdafa;
+  }
+
+  .section-sub-heading {
+    font: normal normal bold 36px/49px Open Sans;
+    color: #20205e;
+    margin-bottom: 24px;
+  }
+}
+
 /*Testimonial Section*/
 .testimonial-section {
+  padding: 20px;
   display: inline-block;
   margin-bottom: 50px;
+
   .section-heading {
-    font: normal normal 600 1.8vw/2.5vw Open Sans;
+    font: normal normal bold 36px/49px Open Sans;
     color: #2bdafa;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
-  .section-sub-heading {
-    font: normal normal 600 1.8vw/2.5vw Open Sans;
-    color: #20205e;
-    margin-bottom: 20px;
-  }
+
   .carousel {
     .carousel-indicators {
       display: none;
     }
   }
 }
+
 .author-sec {
   display: flex;
   align-items: center;
   margin-top: 20px;
+
   .autor-details {
     margin-left: 20px;
+
     h6 {
       margin: 0;
       color: #20205e;
       font: normal normal 600 16px Open Sans;
     }
+
     small {
       color: #888888;
       font: normal normal 14px/18px Open Sans;
@@ -506,13 +586,16 @@ text-dark{
     }
   }
 }
+
 .testimonial {
   position: relative;
+
   p {
     font: italic normal normal 14px/24px Open Sans;
     color: #888888;
   }
 }
+
 .carousel-control-next,
 .carousel-control-prev {
   width: 40px;
@@ -526,8 +609,9 @@ text-dark{
     background-size: 60%;
   }
 }
-.btn-read-more{
-  button{
+
+.btn-read-more {
+  button {
     margin-left: auto;
     display: block;
   }
@@ -542,39 +626,46 @@ text-dark{
   margin: 0 5%;
   background: #fff;
 }
-.inner-container{
+
+.inner-container {
   padding: 0 5%;
 }
+
 @media (max-width: 768px) {
- .container{
-  width: 90%;
-  margin: 0 5%;
- }
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+
   .our-technology-tabs {
     li {
       width: 50%;
     }
   }
 }
+
 @media (width: 1640px) {
   .container {
     max-width: 1380px;
     padding: 0 5%;
   }
+
   .content-section {
     width: 100%;
   }
 }
+
 .vertical-line {
   border-left: 2px solid rgba(0, 0, 0, 0.5);
   height: 100%;
   margin: 0 auto;
 }
+
 .icon-size {
   width: 57px;
   height: 57px;
 }
- 
+
 
 .font-gas {
   font-weight: 600;
@@ -592,14 +683,17 @@ text-dark{
   font: normal normal bold 18px/24px Open Sans;
   text-align: left;
 }
+
 .font-oxy {
   font: normal normal bold 18px Open Sans;
   color: #888888;
 }
+
 .oxy-smallfont {
   font: normal normal bold 14px Open Sans;
   color: #888888;
 }
+
 .sub-headings1 {
   font: normal normal bold 28px Open Sans;
 }
@@ -608,33 +702,41 @@ text-dark{
   font: 16px/24px Open Sans #888888;
   text-align: justify;
 }
+
 .icon-text-box {
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
+
 .icon-text-box img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
 }
+
 .thumanails {
   display: flex;
   padding: 4px;
   margin-top: 12px;
 }
-.download-product{
+
+.download-product {
   font-size: smaller;
 }
 
 .img-border {
   border-right: 0.5px solid;
 }
-@media (max-width: 767.98px) { /* Adjust the max-width value as needed for your breakpoints */
+
+@media (max-width: 767.98px) {
+
+  /* Adjust the max-width value as needed for your breakpoints */
   .img-border {
-      border-right: none;
+    border-right: none;
   }
-  .border-r{
+
+  .border-r {
     border-right: none;
   }
 }
@@ -653,12 +755,14 @@ text-dark{
 .bordercolor {
   border-bottom: 8px solid #cccccc;
 }
+
 .activetop {
   border-bottom: 8px solid #2bdafa;
   cursor: pointer;
   color: #2bdafa;
   transition: background-color 0.3s;
 }
+
 .img-width {
   margin-top: 88px;
   padding: 6px 14px;
@@ -669,6 +773,7 @@ text-dark{
   display: inline-block;
   font: normal normal 14px/20px Open Sans;
 }
+
 .inner-icon {
   width: 32px;
 }
@@ -690,36 +795,48 @@ text-dark{
   border-radius: 20px;
 }
 
-.btn-submit:hover{
+.btn-submit:hover {
   background-color: #20205E;
 }
 
-.text-field{
+.text-field {
   width: 500px;
   height: 50px;
   margin-top: 33.5px;
 }
-.text-field1{
-   width: 500px;
+
+.text-field1 {
+  width: 500px;
   height: 135px;
   margin-top: 33.5px;
 }
-.address1{
+
+.address1 {
   font-size: 20px;
 }
-.differnce{
+
+.differnce {
   margin-left: 0px;
 }
 
 .custom-title-spacing {
-  margin-bottom: 10px; /* Adjust the value as needed */
+  margin-bottom: 10px;
+  /* Adjust the value as needed */
 }
 
-.text-about{
+.text-about {
   color: #888888;
-  font: normal normal normal 20px/30px Open Sans;
+  font: normal normal normal 16px/26px Open Sans;
 }
-.text-about1{
+
+.text-about1 {
   color: #333333;
-  font: normal normal normal 20px/30px Open Sans;
+  font: normal normal normal 16px/26px Open Sans;
+}
+
+.icon {
+  margin-right: 8px;
+  margin-left: -5px;
+  width: 25px;
+  height: 25px;
 }

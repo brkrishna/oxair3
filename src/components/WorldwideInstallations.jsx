@@ -29,7 +29,7 @@ const CountUp = ({ end, duration }) => {
 const WorldwideInstallations = ({ data }) => {
   return (
     <>
-    <div className='testimonial-section'>
+    <div className='installations-section'>
     <h5 className='section-heading'>Our 300+ Installations</h5>
     <h4 className='section-sub-heading'>Worldwide</h4>
       
@@ -40,9 +40,9 @@ const WorldwideInstallations = ({ data }) => {
             <p>{item.country}</p>
           </Col>
         ))}
-         <Col xs={12} md={4}>
+         {/* <Col xs={12} md={4}>
           <Image src={worldMap} alt="World Map" layout="responsive" />
-        </Col>
+        </Col> */}
       </Row>
       {/* <Row className="justify-content-center">
         <Col xs={12} md={10}>
