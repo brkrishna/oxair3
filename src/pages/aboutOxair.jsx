@@ -6,6 +6,7 @@ import { Container } from "react-bootstrap";
 import AboutOxairImg from "../assets/images/about-oxair-img.png"
 import TryRoiCalculater from "@/components/TryRoiCalculater";
 import TheOxairIndiaDefference from "@/components/TheOxairIndiaDefference";
+import PlayIcon from "../assets/icons/play-icon.png"
 
 const AboutOxair = () => {
 
@@ -34,7 +35,7 @@ const AboutOxair = () => {
             <p className="text-about">By choosing Oxair India, you choose self-sufficiency in meeting your
             needs for medical oxygen.
           </p>
-          <ButtonComponent label={"Watch Video"} />
+          <ButtonComponent label={"Watch Video"} icon={PlayIcon} />
         </LeftImageRightContent>
         <TheOxairIndiaDefference />
         <TryRoiCalculater />

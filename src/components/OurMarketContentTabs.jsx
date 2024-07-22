@@ -22,8 +22,8 @@ const OurMarketsContentTabs = () => {
   const OurMarketTabs = [
     {
       eventKey: "medical",
-      icon: <Image src={MedicalImage} alt="Medical" width={50} height={50} />,
-      title: "Medical",
+      icon: <Image src={MedicalImage} alt="Medical" width={60} height={60} />,
+      title: "MEDICAL",
       name: "Medical",
       content:
         "Oxair India is leading the way in providing innovative and reliable medical oxygen solutions. Oxair can tailor make as per requirements of the hospital. Scalability of the Oxygen plant is a challenge. Introduction of Oxair Flexi model, which caters for low as well high demand is a state of art design. Proportionate consumption of electricity is addressed which is the real challenge for PSA operations.",
@@ -31,16 +31,16 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "glass",
-      icon: <Image src={GlassImage} alt="Glass" width={50} height={50} />,
-      title: "Glass",
+      icon: <Image src={GlassImage} alt="Glass" width={60} height={60} />,
+      title: "GLASS",
       content:
         "Oxair offers Oxygen plant for glass industry with an assured ROI of 2 years. Considering the harsh environment, Oxair designed Oxygen plant that works 24/7 for the glass industry.",
       button: <ButtonComponent label={'View Product'} />
     },
     {
       eventKey: "cutting",
-      icon: <Image src={CuttingImage} alt="Medical" width={50} height={50} />,
-      title: "Cutting",
+      icon: <Image src={CuttingImage} alt="Medical" width={60} height={60} />,
+      title: "CUTTING",
       content:
         "Oxair India offers advanced oxygen generators for the metal-cutting industry, ensuring efficiency and precision in high-qualit operations.",
       button: <ButtonComponent label={'View Product'} />
@@ -48,64 +48,64 @@ const OurMarketsContentTabs = () => {
 
     {
       eventKey: "Oil",
-      icon: <Image src={OilandGasImage} alt="Oil" width={50} height={50} />,
-      title: "Oil",
+      icon: <Image src={OilandGasImage} alt="Oil" width={60} height={60} />,
+      title: "OIL",
       content:
         "Oxair supplies nitrogen generating systems for oil and gas companies seeking a cost-effective,continuous source of nitrogen for flare control, compressor operation and black start processes or for purging pipe lines or gas plants.",
       button: <ButtonComponent label={'View Product'} />
     },
     {
       eventKey: "mining",
-      icon: <Image src={MiningImage} alt="Mining" width={50} height={50} />,
-      title: "Mining",
+      icon: <Image src={MiningImage} alt="Mining" width={60} height={60} />,
+      title: "MINING",
       content:
         "Oxair manufactures oxygen generator equipment ideal for gold mining and related industries as it is a cost-effective,alternative solution to bulk liquid oxygen storage vessels for the process of grinding rock into slurry which then leaves the gold behind for extraction.",
       button: <ButtonComponent label={'View Product'} />
     },
     {
       eventKey: "petro",
-      icon: <Image src={PetroChemicalImage} alt="Petro" width={50} height={50} />,
-      title: "Petro",
+      icon: <Image src={PetroChemicalImage} alt="Petro" width={60} height={60} />,
+      title: "PETRO",
       content:
         "Oxair supplies oxygen and nitrogen generating systems and related equipment to the chemical and biotech industries for companies that require a reliable and continuous source of gas for their operations.",
       button: <ButtonComponent label={'View Product'} />
     },
     {
       eventKey: "pharma",
-      icon: <Image src={PharmaCgemicalImage} alt="Pharma" width={50} height={50} />,
-      title: "Pharma",
+      icon: <Image src={PharmaCgemicalImage} alt="Pharma" width={60} height={60} />,
+      title: "PHARMA",
       content:
         "Oxair supplies oxygen and nitrogen generating systems and related equipment to the chemical and biotech industries for companies that require a reliable and continuous source of gas for their operations.",
       button: <ButtonComponent label={'View Product'} />
     },
     {
       eventKey: "aqua",
-      icon: <Image src={AquaImage} alt="Aqua" width={50} height={50} />,
-      title: "Aqua",
+      icon: <Image src={AquaImage} alt="Aqua" width={60} height={60} />,
+      title: "AQUA",
       content:
         "Oxair India offers specialized oxygen generators for the aquaculture industry's unique needs.",
       button: <ButtonComponent label={'View Product'} />
     },
     {
       eventKey: "ozone",
-      icon: <Image src={OzoneImage} alt="Aqua" width={50} height={50} />,
-      title: "Ozone",
+      icon: <Image src={OzoneImage} alt="Aqua" width={60} height={60} />,
+      title: "OZONE",
       content:
         "Oxair India introduces advanced ozone generators as part of our environmental technology solutions.",
       button: <ButtonComponent label={'View Product'} />
     },
     {
       eventKey: "paper",
-      icon: <Image src={PaperImage} alt="Paper" width={50} height={50} />,
-      title: "Paper",
+      icon: <Image src={PaperImage} alt="Paper" width={60} height={60} />,
+      title: "PAPER",
       content:
         "Oxair India revolutionizes the paper and pulp industry with reliable, on-site oxygen production solutions.",
       button: <ButtonComponent label={'View Product'} />
     },
     {
       eventKey: "sewage",
-      icon: <Image src={SewageImage} alt="Glass" width={50} height={50} />,
-      title: "Sewage",
+      icon: <Image src={SewageImage} alt="Glass" width={60} height={60} />,
+      title: "SEWAGE",
       content:
         "Oxair India provides professional oxygen generator manufacturing solutions for sewage and wastewater treatment plants in India.",
       button: <ButtonComponent label={'View Product'} />
@@ -120,9 +120,9 @@ const OurMarketsContentTabs = () => {
         <div className="col-md-8">
           <h5 className="headings lawn-green">OUR MARKETS</h5>
           <h1 className="sub-headings dark-blue">
-            We are a global manufacturer of Advanced Gas Separation Systems for Shipboard and Land-based use.
+            We are a global manufacturer of advanced gas separation systems for shipboard and land-based use.
           </h1>
-          <p>
+          <p className="text-about">
             We specialise in the supply of on-site gas generation equipment
             within India as well as international markets. Oxair designs and
             manufactures packaged oxygen Pressure Swing Adsorption (PSA) Systems
@@ -130,7 +130,7 @@ const OurMarketsContentTabs = () => {
             including Medical Hospitals as well as large industrial Tonnage
             plants.
           </p>
-          <p>Oxair also design and build small to large Nitrogen systems
+          <p className="text-about">Oxair also design and build small to large Nitrogen systems
             using Air Products Membranes as well using PSA technology for
             numerous industrial applications.</p>
         </div>

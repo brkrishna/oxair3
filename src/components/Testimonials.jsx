@@ -1,13 +1,24 @@
 import React from "react";
 import { useState } from "react";
 import { Carousel, Row, Col, Button } from "react-bootstrap";
+import ButtonComponent from "./Buttons";
 import Image from "next/image";
 import AuthorImg from "../assets/images/testimonial-user-img.png";
+import ModalComponent from "./ModalComponent";
 import ReactPlayer from "react-player";
 
 const Testimonials = ({ data }) => {
   const [videoIndex, setVideoIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
+
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState("");
+  const onCLickReadMore = (text) => {
+    const fullText = text.join("\n\n")
+    setShowModal(true);
+    setModalContent(fullText);
+  };
+  const handleCloseModal = () => setShowModal(false);
 
   const handleVideoSelect = (selectedIndex) => {
     setVideoIndex(selectedIndex);
@@ -40,6 +51,15 @@ const Testimonials = ({ data }) => {
                   <div className="d-flex justify-content-center">
                     <div className="testimonial">
                       <p className="testimonial-text">{item.text.readText}</p>
+                      <div className="btn-read-more">
+                          <ButtonComponent
+                            key={index}
+                            onClick={() => {
+                              onCLickReadMore(item.text.full);
+                            }}
+                            label="Read More"
+                          />
+                        </div>
                       <div className="author-sec">
                         <div className="img-sec">
                           <Image src={AuthorImg} width={80} height={92} alt="Author" />
@@ -55,9 +75,15 @@ const Testimonials = ({ data }) => {
                 </Carousel.Item>
               ))}
             </Carousel>
+            <ModalComponent
+          show={showModal}
+          handleClose={handleCloseModal}
+          modalContent={modalContent}
+        />
           </Col>
-          {/* <div className="vertical-line"></div> */}
           <Col xs={12} sm={6} md={6} lg={6} xl={6} className="d-flex flex-column position-relative">
+          <div className="vertical-line"></div>
+
             <Carousel
               activeIndex={videoIndex}
               onSelect={handleVideoSelect}
@@ -72,6 +98,7 @@ const Testimonials = ({ data }) => {
                     <ReactPlayer
                       className="react-player"
                       url={item.videoUrl}
+                      style={{ border: '4px solid #CCCCCC', borderRadius: '4%' }}
                       width="60%"
                       height="60%"
                       controls={false} // Disable the default ReactPlayer controls

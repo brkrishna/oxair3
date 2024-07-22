@@ -36,7 +36,8 @@ body {
 }
 
 .sub-headings {
-  font: bold 36px Open Sans;
+  margin-bottom: 10px;
+  font: normal normal bold 32px/36px Open Sans;
 }
 
 .banner-headings {
@@ -44,33 +45,35 @@ body {
   padding: 16px;
 }
 
-.flowratefont {
-  font: normal normal bold 15px/24px Open Sans;
-  color: #888888;
-  margin-bottom: 0;
-}
-
-.productspecification {
-  font: 13px open Sans;
-  font-weight: 600;
-  color: #888888;
-}
-
 .banner-heading {
-  font-weight: bold;
   letter-spacing: 0.84px;
   margin-left: 46px;
+  font: normal normal bold 38px/42px Open Sans;
 }
 
+.banner-heading1 {
+  letter-spacing: 0.84px;
+  font: normal normal bold 38px/42px Open Sans;
+}
+
+
 .banner-sub-heading {
-  font-weight: 600;
   letter-spacing: 0.76px;
   color: #2bdafa;
-  margin-left: 20px;
+  margin-left: 46px;
+  font: normal normal 600 32px/40px Open Sans;
 }
-.learnbutton{
-  font-size: smaller;
-  margin-left: 20px;
+
+.banner-sub-heading1 {
+  font: normal normal 600 32px/40px Open Sans;
+  color: #2bdafa;
+  margin-left: 0%;
+}
+
+.learnbutton {
+  font-size: 16px;
+  width: 210px;
+  height: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -100,6 +103,10 @@ body {
   font: normal normal 600 16px/27px Open Sans;
 }
 
+.products {
+  font: normal normal bold 11px/20px Open Sans;
+}
+
 .get-quote {
   background: #39d000;
   border: none;
@@ -111,7 +118,7 @@ body {
 
 .dropdown-item {
   color: #888888;
-  line-height: 27px;
+  line-height: 17px;
   font: normal normal 600 16px/30px;
 }
 
@@ -129,7 +136,8 @@ body {
 .carousel-indicators [data-bs-target] {
   background-color: #20205e;
   border-radius: 13px;
-  width: 65px;
+  width: 80px;
+  height: 5px;
   padding: 3px;
 }
 
@@ -145,6 +153,10 @@ body {
   line-height: 30px;
 }
 
+.points {
+  margin-left: 20px;
+}
+
 .why-oxair-list>li::before {
   content: " ";
   background-image: url("/images/Checkmark.png");
@@ -153,6 +165,8 @@ body {
   width: 21px;
   height: 21px;
   left: -32px;
+  background-repeat: no-repeat;
+  top: 5px;
 }
 
 .why-oxair-list>li {
@@ -160,13 +174,12 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  color: #888888;
+  color: #888;
   font: normal normal normal 16px/26px Open Sans;
-
 }
 
 .try-roi-section {
-  background: url("/images/try-roi-calculater.png") no-repeat;
+  background: url("../assets/images/Component.svg") no-repeat;
   background-size: 100%;
   position: relative;
 }
@@ -185,14 +198,18 @@ body {
 
   a {
     font-size: 1vw;
+    letter-spacing: 1.4px;
     text-decoration: none;
     color: #1ed7f8;
   }
 }
 
 ul.our-market-tabs {
+  width: 400px;
+
   li {
-    width: 80px;
+    width: 100px;
+    margin: 0 auto 15px;
 
     button.active {
       color: #2bdafa !important;
@@ -202,6 +219,7 @@ ul.our-market-tabs {
     button.nav-link {
       color: #20205e;
       border: none;
+      font-size: 14px;
     }
 
     button.nav-link:hover {
@@ -217,17 +235,18 @@ ul.our-market-tabs {
   color: #fff;
 
   h4 {
-    font: normal normal 600 20px/27px Open Sans;
+    font: normal normal 600 16px/23px Open Sans;
   }
 
   p {
-    font: normal normal normal 14px/20px Open Sans;
+    font: normal normal normal 16px/23px Open Sans;
+    margin-top: -15px;
   }
 
   button.bg-green-color {
     background-color: white;
     color: #000 !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
     border-radius: 5px !important;
     text-transform: uppercase;
     font-weight: 600;
@@ -271,7 +290,7 @@ ul.our-market-tabs {
 
 .footer-content {
   h6 {
-    font: normal normal 600 20px Open Sans;
+    font: normal normal 600 18px Open Sans;
     margin-bottom: 20px;
   }
 
@@ -289,12 +308,14 @@ ul.our-market-tabs {
 }
 
 .terms-privacy {
-  color: #33BDD3; 
+  color: #33BDD3;
   text-decoration: none;
 }
-.list-unstyled> li:first-child{
-  padding-left:0 !important;
+
+.list-unstyled>li:first-child {
+  padding-left: 0 !important;
 }
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -319,23 +340,25 @@ ul.our-market-tabs {
 
 .contact-text {
   color: #39D000;
-  font: normal normal bold 36px/49px Open Sans;
+  font: normal normal bold 30px/43px Open Sans;
   letter-spacing: 3.6px;
 }
+
 .contact-text1 {
   color: #39D000;
-  font: normal normal 600 24px/33px Open Sans;
+  font: normal normal 600 20px/29px Open Sans;
 }
-.contact-text2{
+
+.contact-text2 {
   color: #39D000;
   font: normal normal bold 30px/41px Open Sans;
 }
 
-.work{
+.work {
   font: normal normal 600 24px/30px Open Sans
 }
 
-text-dark{
+text-dark {
   font: normal normal 600 18px/30px Open Sans;
 }
 
@@ -375,13 +398,22 @@ text-dark{
   margin: 50px 0;
 }
 
+li.no-bullets {
+  list-style-type: none;
+  margin: 0;
+}
+
+
 .defference-sec {
   ul {
     display: flex;
-    padding-left: 20px;
+    padding-left: 0px;
+    margin-bottom: 40px;
 
     li {
       margin: 0 17px;
+      padding-right: 20px;
+
       font: normal normal bold 36px/49px Open Sans;
       color: #20205e;
 
@@ -453,16 +485,19 @@ text-dark{
     width: 30%;
 
     button.nav-link {
+      padding-left: initial;
       text-align: left;
       color: #39d000;
       border: none;
       border-bottom: 5px solid #39d000;
-      height: 120px;
+      height: 146px;
       line-height: 20px;
+      font: normal normal 600 16px Open Sans;
 
       span {
         img {
           display: block;
+          padding: auto;
         }
       }
     }
@@ -470,6 +505,7 @@ text-dark{
 
 
     button.nav-link.active {
+      padding-left: initial;
       background-color: transparent !important;
       border: none;
       color: #fff;
@@ -487,22 +523,41 @@ text-dark{
   }
 
   p {
-    font: normal normal normal 20px/25px Open Sans;
+    font: normal normal normal 22px/25px Open Sans;
     letter-spacing: 0px;
     color: #888888;
     text-transform: uppercase;
   }
 }
 
+.installations-section {
+  padding: 10px;
+  background-image: url(../assets/images/world-map.png);
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 45px 0;
+
+  .section-heading {
+    font: normal normal bold 36px/49px Open Sans;
+    color: #2bdafa;
+  }
+
+  .section-sub-heading {
+    font: normal normal bold 36px/49px Open Sans;
+    color: #20205e;
+    margin-bottom: 24px;
+  }
+}
+
 /*Testimonial Section*/
 .testimonial-section {
   position: relative;
-  padding: 20px;
   display: inline-block;
   margin-bottom: 50px;
 
   .section-heading {
-    font: normal normal 600 1.8vw/2.5vw Open Sans;
+    font: normal normal bold 36px/49px Open Sans;
     color: #2bdafa;
     margin-bottom: 0;
   }
@@ -544,11 +599,13 @@ text-dark{
 
 .testimonial {
   position: relative;
+
   p {
     font: italic normal normal 14px/24px Open Sans;
     color: #888888;
   }
 }
+
 .carousel-control-next,
 .carousel-control-prev {
   width: 40px;
@@ -563,15 +620,22 @@ text-dark{
   }
 }
 
-/* .vertical-line {
+.btn-read-more {
+  button {
+    margin-left: auto;
+    display: block;
+  }
+}
+
+.vertical-line {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
-  width: 1px;
-  background-color: black;
-  
-} */
+  border-left: 1px solid #999999;
+  height: 100%;
+}
+
+
 
 
 .video-carousel-item {
@@ -614,11 +678,11 @@ text-dark{
 
 .custom-controls {
   position: absolute;
-  top: 50%; /* Center vertically */
-  width: 96%;
+  top: 36%; /* Center vertically */
+  width: 95%;
   display: flex;
   justify-content: space-between; /* Spread buttons horizontally */
-  padding: 0 88px; /* Adjust padding if needed */
+  padding: 0 68px; /* Adjust padding if needed */
   pointer-events: none; /* Allows click-through to the player */
 }
 
@@ -644,18 +708,25 @@ text-dark{
   margin: 0 5%;
   background: #fff;
 }
+
+.inner-container {
+  padding: 0 5%;
+}
+
 @media (max-width: 768px) {
- .container{
-  width: 90%;
-  margin: 0 5%;
- }
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+
   .our-technology-tabs {
     li {
       width: 50%;
     }
   }
 }
-@media (min-width: 1640px) {
+
+@media (width: 1640px) {
   .container {
     max-width: 1380px;
     padding: 0 5%;
@@ -739,7 +810,6 @@ text-dark{
 @media (max-width: 767.98px) {
 
   /* Adjust the max-width value as needed for your breakpoints */
-
 
   .border-r {
     border-right: none;
@@ -853,13 +923,29 @@ text-dark{
   border-right: 1px solid #707070;
 }
 
+.border-rightproduct:last-child {
+  border-right: none;
+}
+
+.flowratefont{
+  text-align: left;
+font: normal normal bold 15px/20px Open Sans;
+color: #888888;
+}
+
+.productspecification{
+  text-align: left;
+font: normal normal 600 13px/17px Open Sans;
+color: #888888;
+}
+
 .knowmorebtn {
   padding: 3px 12px;
   border: none;
   border-radius: 20px;
   background-color: #39D000;
   color: white;
-  font: normal normal 600 12px/17px Open Sans;
+  font: normal normal 600 13px/17px Open Sans;
 }
 
 .goldmining {
@@ -882,6 +968,66 @@ color: #888888;
 
 }
 
-.know-more {
+/* .know-more {
   font-size: small;
+} */
+
+.scrollable-modal-body {
+  max-height: 400px;
+  overflow-y: auto;
 }
+
+.btn-submit {
+  background: #20205E;
+  width: 480px;
+  height: 70px;
+  margin-top: 33.5px;
+  border-radius: 20px;
+}
+
+.btn-submit:hover {
+  background-color: #20205E;
+}
+
+.text-field {
+  width: 500px;
+  height: 50px;
+  margin-top: 33.5px;
+}
+
+.text-field1 {
+  width: 500px;
+  height: 135px;
+  margin-top: 33.5px;
+}
+
+.address1 {
+  font-size: 20px;
+}
+
+.differnce {
+  margin-left: 0px;
+}
+
+.custom-title-spacing {
+  margin-bottom: 10px;
+  /* Adjust the value as needed */
+}
+
+.text-about {
+  color: #888888;
+  font: normal normal normal 16px/26px Open Sans;
+}
+
+.text-about1 {
+  color: #333333;
+  font: normal normal normal 16px/26px Open Sans;
+}
+
+.icon1 {
+  margin-right: 8px;
+  margin-left: -5px;
+  width: 25px;
+  height: 25px;
+}
+

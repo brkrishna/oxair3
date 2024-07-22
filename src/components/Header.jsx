@@ -25,27 +25,21 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/aboutOxair">About Us</Nav.Link>
-            <NavDropdown title="Our Products" id="collapsible-nav-dropdown">
-            <Nav.Link href="/highPerformanceModels">High Performance Models</Nav.Link>
-              <NavDropdown.Item href="/superSaverModels">
-              Super Saver Models
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/oxairPressureVessels">Oxair Pressure Vessels</NavDropdown.Item>
-              <NavDropdown.Item href="/">
-              Other Products
-              </NavDropdown.Item>
+            <Nav.Link className="mx-2" href="/">Home</Nav.Link>
+            <Nav.Link className="mx-2" href="/aboutOxair">About Us</Nav.Link>
+            <NavDropdown className="mx-2" title="Our Products" id="collapsible-nav-dropdown">
+            <Nav.Link className="products"href="/highPerformanceModels">High Performance Models</Nav.Link>
+              <NavDropdown.Item className="products" href="/superSaverModels">Super Saver Models</NavDropdown.Item>
+              <NavDropdown.Item className="products" href="/oxairPressureVessels">Oxair Pressure Vessels</NavDropdown.Item>
+              <NavDropdown.Item className="products" href="/">Other Products</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Resources" id="collapsible-nav-dropdown">
-                <NavDropdown.Item href="/understandingOurProducts">Understanding Our Products</NavDropdown.Item>
-                <NavDropdown.Item href="/faqs">
-                FAQs
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/companyAndIndustryNews">Company and Industry News</NavDropdown.Item>
+            <NavDropdown className="mx-2" title="Resources" id="collapsible-nav-dropdown">
+                <NavDropdown.Item className="products" href="/understandingOurProducts">Understanding Our Products</NavDropdown.Item>
+                <NavDropdown.Item className="products" href="/faqs">FAQs</NavDropdown.Item>
+                <NavDropdown.Item className="products" href="/companyAndIndustryNews">Company and Industry News</NavDropdown.Item>
               </NavDropdown> 
             
-            <Nav.Link href="/contactUs">
+            <Nav.Link className="mx-2" href="/contactUs">
             <ButtonComponent className="get-quote" label="Get Quote" />
             </Nav.Link>
           </Nav>
