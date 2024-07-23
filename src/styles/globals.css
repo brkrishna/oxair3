@@ -235,6 +235,7 @@ ul.our-market-tabs {
   color: #fff;
 
   h4 {
+    margin-bottom: revert;
     font: normal normal 600 16px/23px Open Sans;
   }
 
@@ -628,10 +629,9 @@ li.no-bullets {
 }
 
 .vertical-line {
-  position: absolute;
   top: 0;
   bottom: 0;
-  border-left: 1px solid #999999;
+  border-left: 1px solid #707070;
   height: 100%;
 }
 
