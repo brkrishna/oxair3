@@ -109,7 +109,7 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
                     <ReactPlayer
                       className="react-player"
                       url={item.doctorVideos.videoUrl}
-                      style={{ border: '4px solid #CCCCCC', borderRadius: '23px' }}
+                      // style={{ border: '4px solid #CCCCCC', borderRadius: '23px' }}
                       width="60%"
                       height="60%"
                       controls={false} // Disable the default ReactPlayer controls
