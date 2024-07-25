@@ -99,6 +99,7 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
+        <div className="footerstyle mt-5"></div>
       </Container>
     </footer>
   );

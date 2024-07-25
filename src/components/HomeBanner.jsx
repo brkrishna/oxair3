@@ -114,9 +114,9 @@ const HomePageBanner = () => {
   const handleCloseModal = () => setShowModal(false);
 
   return (
-    <Carousel controls={false}>
+    <Carousel controls={false} className="mb-5">
       <Carousel.Item>
-        <Image src={BannerImage1} alt="" className="w-100 h-auto" />
+        <Image src={BannerImage1} alt="" className="w-100 h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
@@ -127,12 +127,13 @@ const HomePageBanner = () => {
                 <h5 className="banner-sub-heading1">
                   Oxygen Generators<br /> for your business
                 </h5>
-                <div className='learnbutton flex '>
-                  <div className="learnbutton">
+                <div className=' '>
+                  <div className="">
                     <ButtonComponent
                       key={1}
                       label="Learn More"
                       onClick={() => handleOpenModal(1)}
+                      className="get-quote mt-3"
                     />
                     <ModalComponent
                       show={showModal}
@@ -149,7 +150,7 @@ const HomePageBanner = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image src={BannerImage2} alt="" className="w-100 h-auto" />
+        <Image src={BannerImage2} alt="" className="w-100 h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
@@ -161,11 +162,12 @@ const HomePageBanner = () => {
                 <h5 className="banner-sub-heading1">
                   Nitrogen Generators<br /> for a range of sectors
                 </h5>
-                <div className="learnbutton d-inline">
+                <div className="">
                   <ButtonComponent
                     key={2}
                     label="Learn More"
                     onClick={() => handleOpenModal(2)}
+                    className="get-quote mt-3"
                   />
                 </div>
               </div>

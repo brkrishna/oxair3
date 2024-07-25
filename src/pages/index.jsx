@@ -41,7 +41,7 @@ export default function Home() {
           <h1 className="sub-headings dark-blue">
             Oxair-Built Separation Systems are<br /> Reliable and built to last
           </h1>
-          <ButtonComponent label={"ISO-9001 & ISO 13485 Certified"} />
+          <ButtonComponent className="get-quote my-2" label={"ISO-9001 & ISO 13485 Certified"} />
           <ul className="why-oxair-list">
         <li className="list-item">Oxair in Australia with 30+ years experience, integrates cutting-edge air separation technologies into our products,
            enhancing efficiency and durability while underscoring our commitment to innovation and environmental responsibility. </li>
@@ -63,7 +63,7 @@ export default function Home() {
           <TryRoiCalculater />
         </div>
         <OurMarketsContentTabs />
-        <WorldwideInstallations data={installationData} />
+        <WorldwideInstallations data={installationData} className='worldfont'/>
         <Testimonials data={testimon} />         
         <ClientLogs />
         <ContactUsToday />

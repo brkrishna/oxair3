@@ -117,7 +117,7 @@ const OurMarketsContentTabs = () => {
   return (
     <>
       <div className="row">
-        <div className="col-md-8">
+        <div className="col-md-7">
           <h5 className="headings lawn-green">OUR MARKETS</h5>
           <h1 className="sub-headings dark-blue">
             We are a global manufacturer of advanced gas separation systems for shipboard and land-based use.
@@ -134,7 +134,7 @@ const OurMarketsContentTabs = () => {
             using Air Products Membranes as well using PSA technology for
             numerous industrial applications.</p>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-5">
           <Tabs
             activeKey={activeKey}
             onSelect={(k) => setActiveKey(k)}

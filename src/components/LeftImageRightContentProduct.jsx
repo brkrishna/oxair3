@@ -4,8 +4,9 @@ import Image from "next/image";
 import initialMainImageSrc from '@/assets/images/oxygen_150.png'; // Renamed to avoid conflict
 import oxygen_small1 from '@/assets/images/oxygen_small1.png';
 import oxygen_small2 from '@/assets/images/oxygen_small2.png';
-import oxygen_small3 from '@/assets/images/oxygen_small3.png';
-import emptyImage from '@/assets/images/emptyImage.png';
+import oxygen_small3 from '@/assets/images/oxygen_small3.png'; 
+import emptyImage from '/public/icons/placeholder.png';
+
 import Link from "next/link";
 
 const LeftImageRightContentProduct = ({ imageSrc }) => {
@@ -64,7 +65,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
               <Image
                 src={emptyImage}
                 alt="Empty"
-                className="img-fluid"
+                className="img-fluid bgColor"
                 onClick={() => handleImageClick(emptyImage)}
                 width={150}
                 height={150}

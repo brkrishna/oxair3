@@ -6,8 +6,9 @@ import Image from "next/image";
 import AuthorImg from "../assets/images/testimonial-user-img.png";
 import ModalComponent from "./ModalComponent";
 import ReactPlayer from "react-player";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const Testimonials = ({ data }) => {
+const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
   const [videoIndex, setVideoIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
 
@@ -53,18 +54,28 @@ const Testimonials = ({ data }) => {
                     <div className="testimonial">
                       <p className="testimonial-text">{item.text.readText}</p>
                       <div className="btn-read-more">
-                          <ButtonComponent
-                            key={index}
-                            onClick={() => {
-                              onCLickReadMore(item.text.full);
-                            }}
-                            label="Read More"
-                          />
-                        </div>
+                        <ButtonComponent
+                          key={index}
+                          onClick={() => {
+                            onCLickReadMore(item.text.full);
+                          }}
+                          label="Read More"
+                        />
+                      </div>
                       <div className="author-sec">
                         <div className="img-sec">
                           <Image src={AuthorImg} width={80} height={92} alt="Author" />
-                        </div>
+                           
+                            <div id="button-container" className="d-flex justify-content-center mt-2">
+                              {[...Array(numberOfButtons)].map((_, i) => (
+                                <button
+                                  key={i}
+                                  className={`custom-btn ${i === activeButtonIndex ? 'active' : ''}`}
+                                />
+                              ))}
+                            </div>                            
+                          </div>
+                         
                         <div className="autor-details">
                           <h6>{item.name}</h6>
                           <small>{item.designation}</small>
@@ -77,14 +88,13 @@ const Testimonials = ({ data }) => {
               ))}
             </Carousel>
             <ModalComponent
-          show={showModal}
-          handleClose={handleCloseModal}
-          modalContent={modalContent}
-        />
+              show={showModal}
+              handleClose={handleCloseModal}
+              modalContent={modalContent}
+            />
           </Col>
           <Col xs={12} sm={6} md={6} lg={6} xl={6} className="d-flex flex-column position-relative">
-          <div className="vertical-line"></div>
-
+            <div className="vertical-line"></div>
             <Carousel
               activeIndex={videoIndex}
               onSelect={handleVideoSelect}
@@ -99,32 +109,27 @@ const Testimonials = ({ data }) => {
                     <ReactPlayer
                       className="react-player"
                       url={item.doctorVideos.videoUrl}
-                      style={{ border: '4px solid #CCCCCC', borderRadius: '4%' }}
+                      style={{ border: '4px solid #CCCCCC', borderRadius: '23px' }}
                       width="60%"
                       height="60%"
                       controls={false} // Disable the default ReactPlayer controls
                       playing={index === videoIndex && playing} // Only play the current video if playing is true
                     />
                     {!playing && <div className="play-button">▶</div>}
-                     
                   </div>
                   <div className="designationcenter">
-                     <h6>{item.doctorVideos.doctorName}</h6>
-                     <small>{item.doctorVideos.location}</small>
-                     </div>
+                    <h6>{item.doctorVideos.doctorName}</h6>
+                    <small>{item.doctorVideos.location}</small>
+                  </div>
                 </Carousel.Item>
               ))}
             </Carousel>
-            <div className="custom-controls">
+            <div className="controls-container">
               <button className="control-btn prev" onClick={handlePrev}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-chevron-left" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
-                </svg>
+                <i className="fas fa-angle-left"></i>
               </button>
               <button className="control-btn next" onClick={handleNext}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-chevron-right" viewBox="0 0 24 24">
-                  <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                </svg>
+                <i className="fas fa-angle-right"></i>
               </button>
             </div>
           </Col>
