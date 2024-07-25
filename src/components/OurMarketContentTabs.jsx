@@ -110,6 +110,13 @@ const OurMarketsContentTabs = () => {
         "Oxair India provides professional oxygen generator manufacturing solutions for sewage and wastewater treatment plants in India.",
       button: <ButtonComponent label={'View Product'} />
     },
+    {
+      eventKey: "",
+      icon: <Image alt=""/>,
+      title: "",
+      content:
+        "",
+    },
   ];
 
   const [activeKey, setActiveKey] = useState(OurMarketTabs[0].eventKey);

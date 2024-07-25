@@ -27,13 +27,13 @@ const Header = () => {
           <Nav className="ms-auto">
             <Nav.Link className="mx-2" href="/">Home</Nav.Link>
             <Nav.Link className="mx-2" href="/aboutOxair">About Us</Nav.Link>
-            <NavDropdown className="mx-2" title="Our Products" id="collapsible-nav-dropdown">
+            <NavDropdown className="mx-2 custom-dropdown" title="Our Products" id="collapsible-nav-dropdown">
             <Nav.Link className="products"href="/highPerformanceModels">High Performance Models</Nav.Link>
               <NavDropdown.Item className="products" href="/superSaverModels">Super Saver Models</NavDropdown.Item>
               <NavDropdown.Item className="products" href="/oxairPressureVessels">Oxair Pressure Vessels</NavDropdown.Item>
               <NavDropdown.Item className="products" href="/">Other Products</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown className="mx-2" title="Resources" id="collapsible-nav-dropdown">
+            <NavDropdown className="mx-2 custom-dropdown" title="Resources" id="collapsible-nav-dropdown">
                 <NavDropdown.Item className="products" href="/understandingOurProducts">Understanding Our Products</NavDropdown.Item>
                 <NavDropdown.Item className="products" href="/faqs">FAQs</NavDropdown.Item>
                 <NavDropdown.Item className="products" href="/companyAndIndustryNews">Company and Industry News</NavDropdown.Item>
