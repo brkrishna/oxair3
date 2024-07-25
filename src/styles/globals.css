@@ -663,8 +663,6 @@ li.no-bullets {
 }
 
 
-
-
 .video-carousel-item {
   position: relative;
   justify-content: center;
@@ -672,6 +670,7 @@ li.no-bullets {
 }
 
 .react-player {
+  position: relative;
   margin: auto;
   display: block;
   border: 6px blue;
@@ -681,6 +680,25 @@ li.no-bullets {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.designationcenter {
+   margin-top: 8px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+
+  h6 {
+    margin: 0;
+    color: #20205e;
+    font: normal normal 600 16px Open Sans;
+  }
+
+  small {
+    color: #888888;
+    font: normal normal 14px/18px Open Sans;
+    display: block;
+  }
 }
 
 .play-button {
@@ -705,8 +723,8 @@ li.no-bullets {
 
 .custom-controls {
   position: absolute;
-  top: 36%; /* Center vertically */
-  width: 95%;
+  top: 27%; /* Center vertically */
+  width: 96%;
   display: flex;
   justify-content: space-between; /* Spread buttons horizontally */
   padding: 0 68px; /* Adjust padding if needed */
@@ -716,8 +734,6 @@ li.no-bullets {
 .control-btn {
   border: none;
   cursor: pointer;
-  width: 18px;
-  height: 32px;
   color: #000000;
   background-color: transparent;
   pointer-events: all; /* Re-enables click for the buttons */
@@ -876,7 +892,6 @@ li.no-bullets {
 .bordercolor {
   border-bottom: 10px solid #cccccc;
   color: #888888;
-  /* padding-left: 36px; */
   position: relative;
 }
 

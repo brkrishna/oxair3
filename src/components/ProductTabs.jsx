@@ -1,6 +1,6 @@
 // pages/oxygen-generator.js
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Tabs, Tab } from 'react-bootstrap';
+import { Row, Col, Tabs, Tab, Image } from 'react-bootstrap';
 import data from '../JsonData/Products.json';
 import LeftImageRightContentProduct from './LeftImageRightContentProduct';
 import ContactUsToday from './ContactUsToday';
@@ -90,7 +90,7 @@ const RenderProduct = ({ product }) => {
           {product.applications.map((application, index) => (
 
             <div className='col-12 col-sm-4 col-md-4 border-rightproduct' key={index}>
-              <img
+              <Image
                 src={application.icons}
                 alt={application.name}
                 className='application-icon m-3'

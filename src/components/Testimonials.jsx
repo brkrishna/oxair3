@@ -42,6 +42,7 @@ const Testimonials = ({ data }) => {
   return (
     <>
       <div className="testimonial-section">
+        <hr />
         <h5 className="section-heading">What our customers say</h5>
         <Row className="position-relative">
           <Col xs={12} sm={6} md={6} lg={6} xl={6} className="d-flex flex-column img-fluid">
@@ -97,7 +98,7 @@ const Testimonials = ({ data }) => {
                   <div className="video-wrapper" onClick={handlePlayPause}>
                     <ReactPlayer
                       className="react-player"
-                      url={item.videoUrl}
+                      url={item.doctorVideos.videoUrl}
                       style={{ border: '4px solid #CCCCCC', borderRadius: '4%' }}
                       width="60%"
                       height="60%"
@@ -105,7 +106,12 @@ const Testimonials = ({ data }) => {
                       playing={index === videoIndex && playing} // Only play the current video if playing is true
                     />
                     {!playing && <div className="play-button">▶</div>}
+                     
                   </div>
+                  <div className="designationcenter">
+                     <h6>{item.doctorVideos.doctorName}</h6>
+                     <small>{item.doctorVideos.location}</small>
+                     </div>
                 </Carousel.Item>
               ))}
             </Carousel>
