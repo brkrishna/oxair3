@@ -142,26 +142,28 @@ body {
 }
 
 .carousel-caption {
-  left: 0;
+  left: 0 !important;
   top: 50%;
   transform: translatey(-50%);
-  text-align: left;
+  text-align: left !important;
 }
-
-.carousel-indicators [data-bs-target] {
-  background-color: #20205e;
-  border-radius: 20px;
-  width: 100px;
-  height: 10px;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
-}
-
 .carousel-indicators {
   margin: 0;
-  left: 10px;
-  bottom: -15px !important;
-  right: auto;
+  left: 10px !important;
+  bottom: 0px !important;
+  right: 0px;
+  justify-content: left !important;
+  margin: 0 !important;
+
+  
+}
+.carousel-indicators button[data-bs-target] {
+  background-color: #20205e !important;
+  border-radius: 13px;
+  width: 65px !important;
+  height: 8px !important;
+  padding: 3px;
+  border: 0;
 }
 
 /*---list items----*/
