@@ -18,7 +18,13 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": "/video/DrIshwarSinghIGHDelhi.mp4"
+     "doctorVideos":{
+      "videoUrl": 
+      "/video/DrIshwarSinghIGHDelhi.mp4",     
+      "doctorName":"Dr Ishwar Singh",    
+     "location":
+      "Indira Gandhi Hospital - Delhi"     
+     }
   },
 
   {
@@ -41,7 +47,13 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": "DrIshwarSinghIGHDelhi.mp4"
+      "doctorVideos":{
+      "videoUrl": 
+      "",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
   },
   {
     "id": 3,
@@ -64,7 +76,13 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": ""
+     "doctorVideos":{
+      "videoUrl": 
+      "",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
   },
   {
     "id": 4,
@@ -81,7 +99,13 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": ""
+     "doctorVideos":{
+      "videoUrl": 
+      "",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
   },
   {
     "id": 5,
@@ -103,7 +127,13 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": ""
+     "doctorVideos":{
+      "videoUrl": 
+      "",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
   },
   {
     "id": 6,
@@ -122,7 +152,13 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": ""
+     "doctorVideos":{
+      "videoUrl": 
+      "",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
   },
   {
     "id": 7,
@@ -143,7 +179,13 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": "/video/DrIshwarSinghIGHDelhi.mp4"
+     "doctorVideos":{
+      "videoUrl": 
+      "",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
   },
   {
     "id": 8,
@@ -162,7 +204,13 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": " "
+     "doctorVideos":{
+      "videoUrl": 
+      "",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
   },
   {
     "id": 9,
@@ -181,7 +229,13 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": " "
+     "doctorVideos":{
+      "videoUrl": 
+      "",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
   },
   {
     "id": 10,
@@ -197,7 +251,14 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": "/video/Dr_SM_Byadigi_Sukshema.mp4"
+	 "doctorVideos":{
+      "videoUrl": 
+      "/video/Dr_SM_Byadigi_Sukshema.mp4",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
+    
   },
   {
     "id": 11,
@@ -219,6 +280,12 @@
       ]
     },
     "readMoreLink": "",
-    "videoUrl": ""
+    "doctorVideos":{
+      "videoUrl": 
+      "",     
+      "doctorName":"",   
+     "location":
+      ""     
+     }
   }
 ]

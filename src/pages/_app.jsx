@@ -5,10 +5,13 @@ import Footer from '@/components/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className='bg-white'>
+    <div className='main-wrapper'>
+    <div className='container'>
+
       <Header />
       <Component {...pageProps} />
       <Footer />
+    </div>
     </div>
   );
 }

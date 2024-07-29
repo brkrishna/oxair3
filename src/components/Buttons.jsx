@@ -1,7 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 const ButtonComponent = ({
     label,
+    icon,
     onClick,
     type = 'button',
     style,
@@ -19,6 +21,7 @@ const ButtonComponent = ({
           disabled={disabled}
           {...props}
         >
+            {icon && <Image src={icon} alt="icon" className="icon1" />}
             {label}
         </button>
         </>

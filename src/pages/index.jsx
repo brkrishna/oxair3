@@ -31,16 +31,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container">
+      <main className="inner-container">
         <div className="row">
           <HomePageBanner />
         </div>
         <LeftImageRightContent imageSrc={whyOxairLeftImg}>
+          <div className='points'>
           <h5 className="headings lawn-green">WHY OXAIR</h5>
           <h1 className="sub-headings dark-blue">
-            Oxair-Built Separation Systems are Reliable and built to last
+            Oxair-Built Separation Systems are<br /> Reliable and built to last
           </h1>
-          <ButtonComponent label={"ISO-9001 & ISO 13485 Certified"} />
+          <ButtonComponent className="get-quote my-2" label={"ISO-9001 & ISO 13485 Certified"} />
           <ul className="why-oxair-list">
         <li className="list-item">Oxair in Australia with 30+ years experience, integrates cutting-edge air separation technologies into our products,
            enhancing efficiency and durability while underscoring our commitment to innovation and environmental responsibility. </li>
@@ -56,12 +57,13 @@ export default function Home() {
           <li className='list-item'>Our systems use stainless steel piping with minimal wear and tear, instead of check valves that fail often. </li>
           <li className='list-item'>Our color touchscreen UI enables automatic operations and requires minimum training.</li>
         </ul>
+        </div>
         </LeftImageRightContent>
         <div className="market-place-section">
           <TryRoiCalculater />
         </div>
         <OurMarketsContentTabs />
-        <WorldwideInstallations data={installationData} />
+        <WorldwideInstallations data={installationData} className='worldfont'/>
         <Testimonials data={testimon} />         
         <ClientLogs />
         <ContactUsToday />

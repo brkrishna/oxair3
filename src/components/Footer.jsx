@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-      <Link href="/">
-        <Image src={FooterLog} alt="Axair" width={135} className="footer-log" />
+        <Link href="/">
+          <Image src={FooterLog} alt="Axair" width={135} className="footer-log" />
         </Link>
         <Row className="py-4">
           <Col md={4}>
@@ -75,24 +75,31 @@ const Footer = () => {
                   <a href="#">Sewage Treatment OG</a>
                 </li>
               </ul>
-              <div className="social-icons">
-                <a href="#">
-                  <Image src={YoutubeIcon} width={35} alt="Youtube" />
-                </a>
-                <a href="#">
-                  <Image src={FacebookIcon} width={30} alt="Facebook" />
-                </a>
-                <a href="#">
-                  <Image src={XLogo} width={30} alt="Facebook" />
-                </a>
-              </div>
             </div>
           </Col>
         </Row>
-        <p className="copy-rights">
-          © Copyright 2024 Oxair India. All Rights Reserved |{" "}
-          <a href="#">Terms & Privacy</a>
-        </p>
+        <Row className="footer-bottom">
+          <Col md={8}>
+            <p className="copy-rights">
+              © Copyright 2024 Oxair India. All Rights Reserved |{" "}
+              <a className="terms-privacy">Terms & Privacy</a>
+            </p>
+          </Col>
+          <Col md={4} className="text-right">
+            <div className="social-icons">
+              <a href="#">
+                <Image src={FacebookIcon} width={30} alt="Facebook" />
+              </a>
+              <a href="#">
+                <Image src={XLogo} width={30} alt="X" />
+              </a>
+              <a href="#">
+                <Image src={YoutubeIcon} width={30} alt="Youtube" />
+              </a>
+            </div>
+          </Col>
+        </Row>
+        <div className="footerstyle mt-5"></div>
       </Container>
     </footer>
   );
