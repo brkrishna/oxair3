@@ -9,7 +9,7 @@ import ClientLogs from "@/components/ClientLogs";
 import ContactUsToday from "@/components/ContactUsToday";
 import whyOxairLeftImg from "../assets/images/why-oxair-left-img.png";
 import Testimonials from "@/components/Testimonials";
-import testiData from "../JsonData/testimonials.json"
+import testiData from "@/jsonData/testimonials.json"
 import WorldwideInstallations from "@/components/WorldwideInstallations";
 
 export default function Home() {

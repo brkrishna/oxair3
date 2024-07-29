@@ -1,7 +1,7 @@
 // pages/oxygen-generator.js
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Tabs, Tab, Image } from 'react-bootstrap';
-import data from '../JsonData/Products.json';
+import data from '@/jsonData/products.json';
 import LeftImageRightContentProduct from './LeftImageRightContentProduct';
 import ContactUsToday from './ContactUsToday';
 import classNames from 'classnames';
