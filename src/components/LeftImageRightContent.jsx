@@ -9,9 +9,11 @@ const LeftImageRightContent = ({ imageSrc, children }) => {
           <Image
             src={imageSrc}
             alt=""
-            objectFit="fill"
-            layout="responsive"
+            height="auto"
            className="w-100"
+           style={{ objectFit: 'cover' }}
+           
+           
          />
         </Col>
         <Col md={8}>{children}</Col>

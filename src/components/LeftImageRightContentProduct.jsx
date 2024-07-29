@@ -22,9 +22,9 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
         <Image
           src={mainImage}
           alt="Main Product"
-          objectFit="cover"
-          layout="responsive"
-          className="w-100"
+          className="w-100"          
+          style={{ objectFit: 'cover' }}
+          
         />
         <div className="col-12">
           <div className="row">
@@ -36,7 +36,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
                 onClick={() => handleImageClick(oxygen_small1)}
                 width={150}
                 height={150}
-                objectFit="cover"
+                style={{ objectFit: 'cover' }}
               />
             </div>
             <div className="col-3 mt-4 mb-3">
@@ -47,7 +47,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
                 onClick={() => handleImageClick(oxygen_small2)}
                 width={150}
                 height={150}
-                objectFit="cover"
+                style={{ objectFit: 'cover' }} 
               />
             </div>
             <div className="col-3 mt-4 mb-3">
@@ -58,7 +58,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
                 onClick={() => handleImageClick(oxygen_small3)}
                 width={150}
                 height={150}
-                objectFit="cover"
+                style={{ objectFit: 'cover' }}
               />
             </div>
             <div className="col-3 mb-3 mt-4">
@@ -69,7 +69,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
                 onClick={() => handleImageClick(emptyImage)}
                 width={150}
                 height={150}
-                objectFit="cover"
+                style={{ objectFit: 'cover' }}
               />
             </div>
           </div>

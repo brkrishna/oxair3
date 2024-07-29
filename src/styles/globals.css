@@ -580,7 +580,8 @@ li.no-bullets {
 
 .installations-section {
   padding: 10px;
-  background-image: url(../assets/images/world-map.png);
+  /* background-image: url(../assets/images/world-map.png); */
+  background-image: url("/images/world-map.png");
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Image from 'next/image'; 
-import worldMap from '../../public/images/world-map.png'; 
+//import Image from 'next/image'; 
+//import worldMap from '../../public/images/world-map.png'; 
 
 const CountUp = ({ end, duration }) => {
   const [count, setCount] = useState(0);
