@@ -4,7 +4,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"],
-      "@jsonData/*": ["src/jsonData/*"]
+      "@jsonData/*": ["src/JsonData/*"]
     }
   },
   "include": ["src/**/*"]
