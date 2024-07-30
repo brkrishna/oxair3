@@ -6,6 +6,11 @@
   font-family: "Open Sans", sans-serif;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background: #dddddd !important;
+}
+
 .mt-50 {
   margin-top: 50px !important;
 }
@@ -26,10 +31,7 @@
   color: #20205e;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #dddddd;
-}
+
 
 .headings {
   font: normal normal bold 18px/24px Open Sans;
@@ -225,6 +227,7 @@ body {
 
 ul.our-market-tabs {
   width: 400px;
+  margin-left: auto;
 
   li {
     width: 100px;
