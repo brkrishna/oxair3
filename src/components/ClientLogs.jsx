@@ -27,7 +27,7 @@ const ClientLogs = () => {
     alt={log.alt}
     width={log.width}
     height={clientLogos.height}
-    style={{ margin: '16px' }}
+    style={{ margin: '10px' }}
     />
 ))
 
