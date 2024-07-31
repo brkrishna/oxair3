@@ -48,9 +48,8 @@ body {
 }
 
 .banner-heading {
-  margin-top: 15px;
   letter-spacing: 0.84px;
-  margin-left: 46px;
+  padding-left: 46px;
   font: normal normal bold 38px/42px Open Sans;
 }
 
@@ -73,7 +72,7 @@ body {
   margin: auto ;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .banner-heading {
     font-size: 0.6rem;
   }
@@ -89,7 +88,75 @@ body {
   }
 
   
+} */
+ /* @media (max-width: 1248px){
+  .banner-heading1 {
+    top: -22px;
+    font: normal normal bold 20px/30px Open Sans;
+  }
+  .banner-sub-heading1 {
+  font: normal normal bold 20px/32  px Open Sans;
+  color: #2bdafa;
+  margin: auto ;
 }
+ } */
+
+@media (max-width: 992px) {
+  .homebannerlogo {
+    width: 180px;
+    height: 45px;
+  }
+  .banner-heading1 {
+    margin-left: -10px;
+    margin-top: -44px;
+    font: normal normal bold 20px/32px Open Sans;
+  }
+  .banner-sub-heading1 {
+  font: normal normal bold 16px/30px Open Sans;
+  color: #2bdafa;
+  margin: auto ;
+}
+}
+
+/* Adjust logo size for small screens */
+@media (max-width: 576px) {
+  .homebannerlogo{
+    width: 140px;
+    height: 34px;
+  }
+  .banner-heading1 {
+    top: -64px;
+    font: normal normal bold 12px/16px Open Sans;
+  }
+  .banner-sub-heading1 {
+    font: normal normal bold 10px/12px Open Sans;
+    color: #2bdafa;
+    margin: auto ;
+  }
+  .content-section {
+    display: grid;
+    justify-content: space-around;
+    color: #fff;
+    width: 84%;
+    padding: 78% 36px;
+}
+}
+.navbar-expand-lg .navbar-nav {
+  flex-direction: row;
+  align-items: flex-end;
+  border: 1px solid #888888;
+  width: fit-content;
+}
+
+
+
+/* Remove border on large screens and above */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    border: none;
+  }
+}
+
 
 .nav-link {
   color: #20205e;
@@ -967,9 +1034,9 @@ height: 16px;
 }
 
 .bordercolor {
-  border-bottom: 10px solid #cccccc;
+  border-bottom: 10px solid #cccccc !important;
   justify-content: center;
-  color: #888888;
+  color: #888888 !important;
 }
 
 /* .span.activetop {
@@ -977,9 +1044,10 @@ height: 16px;
   padding: 10px 0;
 } */
 
-.nav-tabs .nav-link.active {
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
   background-color: transparent;
   font: normal normal bold 14px/30px Open Sans;
+  border:none ;
 }
 
 .activetop {
@@ -998,7 +1066,7 @@ height: 16px;
 
 @media (max-width:1286px) {
   .nav-tabs .nav-link {
-    font: normal normal bold 18px/24px Open Sans;
+    font: normal normal bold 14px/24px Open Sans;
   }
 
   .activetop {
