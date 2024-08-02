@@ -31,7 +31,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="inner-container">
+      <main className="container">
         <div className="row">
           <HomePageBanner />
         </div>

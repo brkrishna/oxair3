@@ -57,12 +57,15 @@ const TheOxairIndiaDefference = ({subHeading = "THE OXAIR INDIA DIFFERENCE"}) =>
                     eventKey={tab.eventKey} 
                     key={tab.eventKey}
                     title={
-                        <span>
+                        <span className="bottom-line">
                             {tab.icon} {tab.title}  
                         </span>
+                        
                     }
                     >
-                    <div className="tab-content1">
+                         
+                    <div className="tab-content1 px-5">
+                        
                   <p>{tab.content}</p>
                 </div>
                     </Tab>

@@ -169,6 +169,13 @@ body {
   padding: 3px 8px;
   font: normal normal bold 11px/20px Open Sans;
 }
+.products:hover{
+  color: #2BDAFA !important;
+}
+.products:active{
+  color: #2BDAFA !important;
+  background-color: transparent !important;
+}
 
 .get-quote {
   background: #39d000;
@@ -293,13 +300,11 @@ body {
 }
 
 ul.our-market-tabs {
-  width: 400px;
   margin-left: auto;
 
   li {
     width: 100px;
     margin: 0 auto 15px;
-
     button.active {
       color: #2bdafa !important;
       border: none;
@@ -316,10 +321,38 @@ ul.our-market-tabs {
     }
   }
 }
+.our-technology-tabs .nav-link.active .bottom-line::after {
+  display: block;
+  background: white; /* Change color to white when active */
+  font: normal normal 600 16px/23px Open Sans;
+}
+
+.our-technology-tabs.nav.nav-tabs{
+  border: none;
+}
+.bottom-line::after {
+  content: '';
+  background:#39D000;
+  height: 5px;
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: none;
+}
+
+.our-technology-tabs .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 10px; /* To give space for the bottom line */
+}
 
 .tab-content1 {
   background: #20205e;
-  padding: 10px;
+  padding: 14px;
   border-radius: 20px;
   color: #fff;
 
@@ -332,8 +365,8 @@ ul.our-market-tabs {
 
   p {
     font: normal normal normal 16px/22px Open Sans;
-    margin-top: -15px;
-    margin-left: 22px;
+    /* padding: 18px 12px; */
+     
   }
 
   button.bg-green-color {
@@ -592,12 +625,15 @@ li.no-bullets {
   background: #20205e 0% 0% no-repeat padding-box;
   border-radius: 20px;
 }
+/* our-technology-tabs nav nav-tabs{
+  border: none;
+} */
 
 .our-technology-tabs {
-  margin: 20px 0;
+  margin: 30px;
   display: flex;
   justify-content: space-around;
-  border-bottom: none;
+  border: none;
 
   li {
     width: 30%;
@@ -625,12 +661,14 @@ li.no-bullets {
     button.nav-link.active {
       padding-left: initial;
       background-color: transparent !important;
-      border: none;
+      border-bottom: none ;
       color: #fff;
-      border-bottom: 5px solid #ffffff;
+      /* border-bottom: 5px solid #ffffff; */
     }
   }
 }
+
+
 
 /*Worlwide Installations*/
 .installation-count {
@@ -765,8 +803,15 @@ height: 16px;
   }
 }
 
-.vertical-line {
+.vertical-line1 {
   position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid #70707094;
+  height: 100%;
+}
+
+.vertical-line {
   top: 0;
   bottom: 0;
   border-left: 1px solid #70707094;
@@ -891,29 +936,21 @@ height: 16px;
 } */
 /*container*/
 .container {
-  max-width: 90%;
+  max-width: 90% !important;
   margin: 0 5%;
   background: #fff;
 }
 
-.inner-container {
-  padding: 0 5%;
-}
-
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
-    margin: 0 5%;
-  }
-
   .our-technology-tabs {
     li {
       width: 50%;
+      border: none;
     }
   }
 }
 
-@media (width: 1640px) {
+@media (min-width: 1640px) {
   .container {
     max-width: 1380px;
     padding: 0 5%;
@@ -938,7 +975,7 @@ height: 16px;
 
 .font-gas {
   font-weight: 700;
-  font-size: 34px;
+  font-size: 30px;
 }
 
 .font-gas2 {
@@ -1038,16 +1075,18 @@ height: 16px;
   justify-content: center;
   color: #888888 !important;
 }
+/* .bordercolor:hover{
+  color: transparent;
+} */
 
 /* .span.activetop {
   position: absolute;
   padding: 10px 0;
 } */
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+.nav-tabs .nav-link.active {
   background-color: transparent;
   font: normal normal bold 14px/30px Open Sans;
-  border:none ;
 }
 
 .activetop {
@@ -1055,14 +1094,17 @@ height: 16px;
   cursor: pointer;
   color: #2bdafa;
   transition: background-color 0.3s;
-  padding: 13px;
+  padding: 14px;
 }
 
 .nav-tabs .nav-link {
   font: normal normal normal 14px/30px Open Sans;
-  border: none;
+  border: none !important;
   color: #888888;
 }
+/* .nav-tabs{
+  border-bottom: none !important;
+} */
 
 @media (max-width:1286px) {
   .nav-tabs .nav-link {
@@ -1162,11 +1204,11 @@ color: #888888;
 }
 
 .btn-submit {
-  background: #20205E;
-  width: 480px;
-  height: 70px;
-  margin-top: 33.5px;
-  border-radius: 20px;
+  background: #20205E !important;
+  width: 480px !important;
+  height: 70px !important;
+  margin-top: 33px !important;
+  border-radius: 20px !important;
 }
 
 .btn-submit:hover {
@@ -1174,15 +1216,15 @@ color: #888888;
 }
 
 .text-field {
-  width: 500px;
-  height: 50px;
-  margin-top: 33.5px;
+  width: 500px !important;
+  height: 50px !important;
+  margin-top: 33.5px !important;
 }
 
 .text-field1 {
-  width: 500px;
-  height: 135px;
-  margin-top: 33.5px;
+  width: 500px !important;
+  height: 135px !important;
+  margin-top: 33.5px !important;
 }
 
 .address1 {
