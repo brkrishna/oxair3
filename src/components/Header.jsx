@@ -20,7 +20,7 @@ const Header = () => {
             <Nav.Link className="mx-2" href="/">Home</Nav.Link>
             <Nav.Link className="mx-2" href="/aboutOxair">About Us</Nav.Link>
             <NavDropdown className="mx-2 custom-dropdown" title="Our Products" id="collapsible-nav-dropdown">
-            <Nav.Link className="products"href="../highPerformanceModels">High Performance Models</Nav.Link>
+            <NavDropdown.Item className="products"href="../highPerformanceModels">High Performance Models</NavDropdown.Item>
               <NavDropdown.Item className="products" href="../superSaverModels">Super Saver Models</NavDropdown.Item>
               <NavDropdown.Item className="products" href="/oxairPressureVessels">Oxair Pressure Vessels</NavDropdown.Item>
               <NavDropdown.Item className="products" href="/">Other Products</NavDropdown.Item>

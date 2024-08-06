@@ -48,7 +48,7 @@ const ContactUs = () => {
                 </p>
               </div>
 
-              <p className="mt-4 h5 dark-blue work">
+              <p className="mt-4 dark-blue work">
                 Working Hours
               </p>
               <p className="text-dark">Monday to Friday | 8:00 AM to 6:00 PM</p>

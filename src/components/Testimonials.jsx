@@ -94,7 +94,7 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
             />
           </Col>
           <Col xs={12} sm={6} md={6} lg={6} xl={6} className="d-flex flex-column position-relative">
-            <div className="vertical-line"></div>
+            <div className="vertical-line1"></div>
             <Carousel
               activeIndex={videoIndex}
               onSelect={handleVideoSelect}
