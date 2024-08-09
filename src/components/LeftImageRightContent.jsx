@@ -11,7 +11,7 @@ const LeftImageRightContent = ({ imageSrc, children }) => {
             alt=""
             objectFit="fill"
             layout="responsive"
-           className="w-100"
+           className="w-100 responsivetop"
          />
         </Col>
         <Col md={8}>{children}</Col>

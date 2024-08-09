@@ -10,9 +10,9 @@ import classNames from 'classnames';
 const OxygenGenerator = () => {
   const [key, setKey] = useState('product1');
 
-  useEffect(() => {
-    console.log('Loaded data:', data);
-  }, []);
+  // useEffect(() => {
+  //   console.log('Loaded data:', data);
+  // }, []);
 
   return (
     <div className="container mt-5">
@@ -68,7 +68,7 @@ const RenderProduct = ({ product }) => {
         <LeftImageRightContentProduct />
       </Col>
       <Col md={7} className=''>
-        <p className="mt-5 productname">{product.name}</p>
+        <p className="productname">{product.name}</p>
         <h5 className='sub-headings dark-blue'>{product.model}</h5>
         <div className="row">
           <div className="col-md-4 col-sm-4">
@@ -108,7 +108,7 @@ const RenderProduct = ({ product }) => {
         <p className='productcontent'>{product.advantages}</p>
         <p className='productcontent my-3'>{product.concept}</p>
         <p className='productcontent'>{product.content}</p>
-        <h4 className='benifitfont mt-5'>Key Benefits:</h4>
+        <h4 className='benifitfont dark-blue mt-5'>Key Benefits:</h4>
         <ul className='why-oxair-list'>
           {product.key_benefits.map((benefit, index) => (
             <li key={index}>{benefit}</li>

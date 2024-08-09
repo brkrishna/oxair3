@@ -13,7 +13,7 @@ const ClientLogs = () => {
         { src:HeritageHospital, alt:"Heritage Hospital", with:114, height:111},
         {src:HaranandaniHospital, alt:"Haranandani Hospital", width: 112, height: 102},        
         {src:SagarHospital, alt:"Sagar Hospital", width: 194, height:80},
-        {src: VijayaHospital, alt:"Vijaya Group of Hospitals", width: 269, height:58},
+        {src: VijayaHospital, alt:"Vijaya Group of Hospitals", width: 240, height:53},
     ]
 
   return (

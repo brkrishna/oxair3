@@ -39,7 +39,7 @@ export default function Home() {
           <div className='points'>
           <h5 className="headings lawn-green">WHY OXAIR</h5>
           <h1 className="sub-headings dark-blue">
-            Oxair-Built Separation Systems are<br /> Reliable and built to last
+            Oxair-Built Separation Systems are Reliable and built to last
           </h1>
           <ButtonComponent className="get-quote my-2" label={"ISO-9001 & ISO 13485 Certified"} />
           <ul className="why-oxair-list">
