@@ -1426,11 +1426,11 @@ color: #888888;
 }
 
 .btn-submit {
-  background: #20205E ;
-  width: 480px ;
-  height: 70px ;
-  margin-top: 33px ;
-  border-radius: 20px ;
+    background: #20205e !important;
+    width: 480px;
+    height: 70px !important;
+    margin-top: 33px;
+    border-radius: 20px !important;
 }
 
 .btn-submit:hover {
