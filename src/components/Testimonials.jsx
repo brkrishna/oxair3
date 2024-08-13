@@ -46,7 +46,7 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
         <hr />
         <h5 className="section-heading">What our customers say</h5>
         <Row className="position-relative">
-          <Col xs={12} sm={6} md={6} lg={6} xl={6} className="d-flex flex-column img-fluid">
+          <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column img-fluid">
             <Carousel interval={3000} controls={false} indicators={false}>
               {data.map((item, index) => (
                 <Carousel.Item key={index}>
@@ -93,7 +93,7 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
               modalContent={modalContent}
             />
           </Col>
-          <Col xs={12} sm={6} md={6} lg={6} xl={6} className="d-flex flex-column position-relative">
+          <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column position-relative second-carousal">
             <div className="vertical-line1"></div>
             <Carousel
               activeIndex={videoIndex}
@@ -104,12 +104,12 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
               className="w-100"
             >
               {data.map((item, index) => (
-                <Carousel.Item key={index} className="video-carousel-item">
+                <Carousel.Item key={index} className="">
                   <div className="video-wrapper" onClick={handlePlayPause}>
                     <ReactPlayer
-                      className="react-player"
+                      className="react-player rounded-video"
                       url={item.doctorVideos.videoUrl}
-                      // style={{ border: '4px solid #CCCCCC', borderRadius: '23px' }}
+                     
                       width="60%"
                       height="60%"
                       controls={false} // Disable the default ReactPlayer controls

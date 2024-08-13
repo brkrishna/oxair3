@@ -11,7 +11,13 @@ const resourcePage = () => {
           subHeading="FAQs"
         />
         <div className="container">
-        <Image width={300} src={UnderConstructionImage} alt="" className="mx-auto d-block" />
+        <Image
+  src={UnderConstructionImage}
+  alt=""
+  objectFit="cover" // Adjust object-fit as needed
+  layout="responsive"
+  className="mx-auto d-block img-fluid"
+/>
         </div>
         
       </>

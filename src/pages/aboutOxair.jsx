@@ -20,7 +20,7 @@ const AboutOxair = () => {
         <LeftImageRightContent imageSrc={AboutOxairImg}>
           <h5 className="headings lawn-green">ABOUT OXAIR</h5>
           <h1 className="sub-headings dark-blue">
-            The Leading <br /> Oxygen Generating Systems in India
+            The Leading Oxygen Generating Systems in India
           </h1>
           <p className="text-about">
             With a guiding principle of <span className="text-about1">“Embrace every challenge, deliver your

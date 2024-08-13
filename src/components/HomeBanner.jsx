@@ -121,11 +121,11 @@ const HomePageBanner = () => {
           <div className="row">
             <div className="col-8">
               <div className="banner-headings">
-                <h1 className="banner-heading1">
+                <h1 className="">
                   Cost-effective, safe, convenient & very low maintenance
                 </h1>
-                <h5 className="banner-sub-heading1">
-                  Oxygen Generators<br /> for your business
+                <h5 className="">
+                  Oxygen Generators for your business
                 </h5>
                 <div className=' '>
                   <div className="">
@@ -155,12 +155,12 @@ const HomePageBanner = () => {
           <div className="row">
             <div className="col-8">
               <div className="banner-headings">
-                <h1 className="banner-heading1">
+                <h1 className="">
                   Customized, Highest Purity, Cost Saving, Safe & Ease Of
                   Maintenance
                 </h1>
-                <h5 className="banner-sub-heading1">
-                  Nitrogen Generators<br /> for a range of sectors
+                <h5 className="">
+                  Nitrogen Generators for a range of sectors
                 </h5>
                 <div className="">
                   <ButtonComponent
