@@ -510,6 +510,13 @@ li.no-bullets {
   margin: 0;
 }
 
+.cliaints-logos-section{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .defference-sec {
   ul {
@@ -651,7 +658,7 @@ height: 16px;
     display: inline-block;
   }
   .custom-btn.active {
-    background-color: #39D000;
+    background-color: #39D000 !important;
   }
   .custom-btn:hover {
     background-color: #ecf0f1;
@@ -664,8 +671,8 @@ height: 16px;
   margin-top: 20px;
 
   .autor-details {
-    margin-top: -10px;
-    margin-left: -34px;
+    margin-top: 10px;
+    margin-left:34px;
 
     h6 {
       margin: 0;
@@ -853,6 +860,14 @@ height: 16px;
       }
     }
   }
+  .cliaints-logos-section{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
   .productcontent {
     text-align: left;
     font: normal normal normal 14px / 26px Open Sans !important;
@@ -1037,13 +1052,13 @@ height: 10px;
     h4 {
       color: white;
       font-weight: bold;
-      font-size: 8vw;
+      font-size: 6vw;
     }
   
     p {
       color: #00ccff;
       margin: 0;
-      font-size: 6vw;
+      font-size: 4vw;
     }
   }
   .contact-text {
@@ -1177,9 +1192,9 @@ height: 10px;
     padding: 0 5%;
   }
 
-  .content-section {
+  /* .content-section {
     width: 100%;
-  }
+  } */
 }
 .icon-size {
   width: 57px;

@@ -8,7 +8,8 @@ import ModalComponent from "./ModalComponent";
 import ReactPlayer from "react-player";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
+const Testimonials = ({ data, numberOfButtons = 11 }) => {
+  const [activeCarouselIndex, setActiveCarouselIndex] = useState(0);
   const [videoIndex, setVideoIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
 
@@ -40,6 +41,9 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
     setPlaying(!playing);
   };
 
+  const handleButtonClick = (index) => {
+    setActiveCarouselIndex(index);
+  };
   return (
     <>
       <div className="testimonial-section">
@@ -47,7 +51,9 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
         <h5 className="section-heading">What our customers say</h5>
         <Row className="position-relative">
           <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column img-fluid">
-            <Carousel interval={3000} controls={false} indicators={false}>
+            <Carousel interval={3000} controls={false} indicators={false}
+            activeIndex={activeCarouselIndex} // Set active index based on state
+            onSelect={(selectedIndex) => setActiveCarouselIndex(selectedIndex)}>
               {data.map((item, index) => (
                 <Carousel.Item key={index}>
                   <div className="d-flex justify-content-center">
@@ -64,16 +70,8 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
                       </div>
                       <div className="author-sec">
                         <div className="img-sec">
-                          <Image src={AuthorImg} width={80} height={92} alt="Author" />
-                           
-                            <div id="button-container" className="d-flex justify-content-center mt-2">
-                              {[...Array(numberOfButtons)].map((_, i) => (
-                                <button
-                                  key={i}
-                                  className={`custom-btn ${i === activeButtonIndex ? 'active' : ''}`}
-                                />
-                              ))}
-                            </div>                            
+                          <Image src={AuthorImg} width={80} height={92} alt="Author" /> 
+                                                     
                           </div>
                          
                         <div className="autor-details">
@@ -87,6 +85,15 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
                 </Carousel.Item>
               ))}
             </Carousel>
+            <div id="button-container" className="">
+                              {[...Array(numberOfButtons)].map((_, i) => (
+                                <button
+                                key={i}
+                                className={`custom-btn ${i === activeCarouselIndex ? 'active' : ''}`}
+                                onClick={() => handleButtonClick(i)}
+                              />
+                              ))}
+                            </div>
             <ModalComponent
               show={showModal}
               handleClose={handleCloseModal}
