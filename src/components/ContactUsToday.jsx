@@ -9,7 +9,7 @@ const ContactUsToday = () => {
     <>
       <div className="contact-us-banner">
       <Row className="align-items-center p-3">
-        <Col md={12} lg={6} className="text-white border-r">
+        <Col md={12} lg={6} className="text-white cts-sec">
           <h4>Contact Us Today</h4>
           <p>
             Unleash the power of our oxygen generators to transform your
