@@ -8,7 +8,8 @@ import ModalComponent from "./ModalComponent";
 import ReactPlayer from "react-player";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
+const Testimonials = ({ data, numberOfButtons = 11 }) => {
+  const [activeCarouselIndex, setActiveCarouselIndex] = useState(0);
   const [videoIndex, setVideoIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
 
@@ -40,6 +41,9 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
     setPlaying(!playing);
   };
 
+  const handleButtonClick = (index) => {
+    setActiveCarouselIndex(index);
+  };
   return (
     <>
       <div className="testimonial-section">
@@ -78,6 +82,15 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
                 </Carousel.Item>
               ))}
             </Carousel>
+            <div id="button-container" className="">
+                              {[...Array(numberOfButtons)].map((_, i) => (
+                                <button
+                                key={i}
+                                className={`custom-btn ${i === activeCarouselIndex ? 'active' : ''}`}
+                                onClick={() => handleButtonClick(i)}
+                              />
+                              ))}
+                            </div>
             <ModalComponent
               show={showModal}
               handleClose={handleCloseModal}
