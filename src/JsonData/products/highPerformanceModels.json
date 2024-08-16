@@ -1,0 +1,247 @@
+{
+  "highPerformanceModels1": {
+    "title": "Oxygen Generator",
+    "name": "Oxygen Generator 80 HP",
+    "model": "OA 80 HP",
+    "specifications": {
+      "flowrate": "37 LPM/8 D type Cylinders (2.2 M3/Hour)",
+      "power_consumption": "4.5 KWH | @ 10 INR Per Unit",
+      "production_cost": " 20 INR Know More",
+      "tagline": "Costeeffective, safe and convenient oxygen generator for your business"
+    },
+    "applications": [
+      {
+        "icons": "/images/Gold_Mining.png",
+        "name": "NA"
+      },
+      {
+        "icons": "/images/HealthCare.png",
+        "name": "Medical"
+      },
+      {
+        "icons": "/images/Forming.png",
+        "name": "NA"
+      }
+    ],
+    "description": "The robust build, reliability and low maintenance make our oxygen generators suitable for extreme environments, such as gold mining. While a specially designed muffler makes it one of the quietest PSA systems on the market.",
+    "advantages": "But the advantages don’t end there. When a constant, onsite source of oxygen is available not only are cyanide reactions affected but energy consumption can be reduced. And the additional oxygen removes nitrogen entrainments present in the air.",
+    "concept": "",
+    "content": "Oxair’s oxygen generator can also be engineered to integrate with any existing system, or designed from scratch.",
+    "key_benefits": [
+      "Lower air consumption",
+      "High efficiency 4-stage filtration package",
+      "PLC controller",
+      "Interactive HMI full colour touchscreen",
+      "Compact design",
+      "High performance true process valves",
+      "Oxygen pressure at 15,000 kPag (2175 psig)",
+      "Skid mounting where practical",
+      "Machine performance data collection"
+    ]
+  },
+  "highPerformanceModels2": {
+    "title": "Oxygen Generator",
+    "name": "Oxygen Generator 120 HP",
+    "model": "OA 120 HP",
+    "specifications": {
+      "flowrate": "57 LPM/8 Jumbo cylinders/3.42 M3/Hr.",
+      "power_consumption": "6 KWH | @ 10 INR Per Unit",
+      "production_cost": " 17.50 INR Know More",
+      "tagline": "Costeeffective, safe and convenient oxygen generator for your business"
+    },
+
+    "applications": [
+      {
+        "icons": "/images/Gold_Mining.png",
+        "name": "NA"
+      },
+      {
+        "icons": "/images/HealthCare.png",
+        "name": "Medical"
+      },
+      {
+        "icons": "/images/Forming.png",
+        "name": "NA"
+      }
+    ],
+    "description": "The robust build, reliability and low maintenance make our oxygen generators suitable for extreme environments, such as gold mining. While a specially designed muffler makes it one of the quietest PSA systems on the market.",
+    "advantages": "But the advantages don’t end there. When a constant, onsite source of oxygen is available not only are cyanide reactions affected but energy consumption can be reduced. And the additional oxygen removes nitrogen entrainments present in the air.",
+    "concept": "",
+    "content": "Oxair’s oxygen generator can also be engineered to integrate with any existing system, or designed from scratch.",
+    "key_benefits": [
+      "Lower air consumption",
+      "High efficiency 4-stage filtration package",
+      "PLC controller",
+      "Interactive HMI full colour touchscreen",
+      "Compact design",
+      "High performance true process valves",
+      "Oxygen pressure at 15,000 kPag (2175 psig)",
+      "Skid mounting where practical",
+      "Machine performance data collection"
+    ]
+  },
+  "highPerformanceModels3": {
+    "title": "Oxygen Generator",
+    "name": "Oxygen Generator 200 HP",
+    "model": "OA 200 HP",
+    "specifications": {
+      "flowrate": "94 LPM/19 Jumbo cylinders/5.64 M3/Hr.",
+      "power_consumption": "9 KWH | @ 10 INR Per Unit",
+      "production_cost": " 16 INR Know More",
+      "tagline": "Costeeffective, safe and convenient oxygen generator for your business"
+    },
+
+    "applications": [
+      {
+        "icons": "/images/Gold_Mining.png",
+        "name": "NA"
+      },
+      {
+        "icons": "/images/HealthCare.png",
+        "name": "Medical"
+      },
+      {
+        "icons": "/images/Forming.png",
+        "name": "NA"
+      }
+    ],
+    "description": "The robust build, reliability and low maintenance make our oxygen generators suitable for extreme environments, such as gold mining. While a specially designed muffler makes it one of the quietest PSA systems on the market.",
+    "advantages": "But the advantages don’t end there. When a constant, onsite source of oxygen is available not only are cyanide reactions affected but energy consumption can be reduced. And the additional oxygen removes nitrogen entrainments present in the air.",
+    "concept": "",
+    "content": "Oxair’s oxygen generator can also be engineered to integrate with any existing system, or designed from scratch.",
+    "key_benefits": [
+      "Lower air consumption",
+      "High efficiency 4-stage filtration package",
+      "PLC controller",
+      "Interactive HMI full colour touchscreen",
+      "Compact design",
+      "High performance true process valves",
+      "Oxygen pressure at 15,000 kPag (2175 psig)",
+      "Skid mounting where practical",
+      "Machine performance data collection"
+    ]
+  },
+  "highPerformanceModels4": {
+    "title": "Oxygen Generator",
+    "name": "Oxygen Generator OA 320 HP",
+    "model": "OA 320 HP",
+    "specifications": {
+      "flowrate": "150 LPM/ 30 Jumbo cylinders/9 M3/Hr.",
+      "power_consumption": "13 KWH | @ 10 INR Per Unit",
+      "production_cost": " 14 INR Know More",
+      "tagline": "Costeeffective, safe and convenient oxygen generator for your business"
+    },
+
+    "applications": [
+      {
+        "icons": "/images/Gold_Mining.png",
+        "name": "NA"
+      },
+      {
+        "icons": "/images/HealthCare.png",
+        "name": "Medical"
+      },
+      {
+        "icons": "/images/Forming.png",
+        "name": "NA"
+      }
+    ],
+    "description": "The robust build, reliability and low maintenance make our oxygen generators suitable for extreme environments, such as gold mining. While a specially designed muffler makes it one of the quietest PSA systems on the market.",
+    "advantages": "But the advantages don’t end there. When a constant, onsite source of oxygen is available not only are cyanide reactions affected but energy consumption can be reduced. And the additional oxygen removes nitrogen entrainments present in the air.",
+    "concept": "",
+    "content": "Oxair’s oxygen generator can also be engineered to integrate with any existing system, or designed from scratch.",
+    "key_benefits": [
+      "Lower air consumption",
+      "High efficiency 4-stage filtration package",
+      "PLC controller",
+      "Interactive HMI full colour touchscreen",
+      "Compact design",
+      "High performance true process valves",
+      "Oxygen pressure at 15,000 kPag (2175 psig)",
+      "Skid mounting where practical",
+      "Machine performance data collection"
+    ]
+  },
+  "highPerformanceModels5": {
+    "title": "Oxygen Generator",
+    "name": "Oxygen Generator 450 HP",
+    "model": "OA 450 HP",
+    "specifications": {
+      "flowrate": "200 LPM/ 44 Jumbo cylinders/12 M3/Hr.",
+      "power_consumption": "18 KWH | @ 10 INR Per Unit",
+      "production_cost": " 15 INR Know More",
+      "tagline": "Costeeffective, safe and convenient oxygen generator for your business"
+    },
+
+    "applications": [
+      {
+        "icons": "/images/Gold_Mining.png",
+        "name": "NA"
+      },
+      {
+        "icons": "/images/HealthCare.png",
+        "name": "Medical"
+      },
+      {
+        "icons": "/images/Forming.png",
+        "name": "NA"
+      }
+    ],
+    "description": "The robust build, reliability and low maintenance make our oxygen generators suitable for extreme environments, such as gold mining. While a specially designed muffler makes it one of the quietest PSA systems on the market.",
+    "advantages": "But the advantages don’t end there. When a constant, onsite source of oxygen is available not only are cyanide reactions affected but energy consumption can be reduced. And the additional oxygen removes nitrogen entrainments present in the air.",
+    "concept": "",
+    "content": "Oxair’s oxygen generator can also be engineered to integrate with any existing system, or designed from scratch.",
+    "key_benefits": [
+      "Lower air consumption",
+      "High efficiency 4-stage filtration package",
+      "PLC controller",
+      "Interactive HMI full colour touchscreen",
+      "Compact design",
+      "High performance true process valves",
+      "Oxygen pressure at 15,000 kPag (2175 psig)",
+      "Skid mounting where practical",
+      "Machine performance data collection"
+    ]
+  },
+  "highPerformanceModels6": {
+    "title": "Oxygen Generator",
+    "name": "Oxygen Generator 550 HP",
+    "model": "OA 550 HP",
+    "specifications": {
+      "flowrate": "255 LPM/ 53 Jumbo cylinders/15.3 M3/Hr.",
+      "power_consumption": "23 KWH | @ 10 INR Per Unit",
+      "production_cost": "15 INR Know More",
+      "tagline": "Costeeffective, safe and convenient oxygen generator for your business"
+    },
+
+    "applications": [
+      {
+        "icons": "/images/Gold_Mining.png",
+        "name": "NA"
+      },
+      {
+        "icons": "/images/HealthCare.png",
+        "name": "Medical"
+      },
+      {
+        "icons": "/images/Forming.png",
+        "name": "NA"
+      }
+    ],
+    "description": "The robust build, reliability and low maintenance make our oxygen generators suitable for extreme environments, such as gold mining. While a specially designed muffler makes it one of the quietest PSA systems on the market.",
+    "advantages": "But the advantages don’t end there. When a constant, onsite source of oxygen is available not only are cyanide reactions affected but energy consumption can be reduced. And the additional oxygen removes nitrogen entrainments present in the air.",
+    "concept": "",
+    "content": "Oxair’s oxygen generator can also be engineered to integrate with any existing system, or designed from scratch.",
+    "key_benefits": [
+      "Lower air consumption",
+      "High efficiency 4-stage filtration package",
+      "PLC controller",
+      "Interactive HMI full colour touchscreen",
+      "Compact design",
+      "High performance true process valves",
+      "Oxygen pressure at 15,000 kPag (2175 psig)",
+      "Skid mounting where practical",
+      "Machine performance data collection"
+    ]
+  }
+}

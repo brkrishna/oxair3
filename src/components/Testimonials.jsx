@@ -8,7 +8,8 @@ import ModalComponent from "./ModalComponent";
 import ReactPlayer from "react-player";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
+const Testimonials = ({ data, numberOfButtons = 11 }) => {
+  const [activeCarouselIndex, setActiveCarouselIndex] = useState(0);
   const [videoIndex, setVideoIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
 
@@ -40,6 +41,9 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
     setPlaying(!playing);
   };
 
+  const handleButtonClick = (index) => {
+    setActiveCarouselIndex(index);
+  };
   return (
     <>
       <div className="testimonial-section">
@@ -47,7 +51,7 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
         <h5 className="section-heading">What our customers say</h5>
         <Row className="position-relative">
           <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column img-fluid">
-            <Carousel interval={3000} controls={false} indicators={false}>
+            <Carousel interval={3000} controls={false} indicators={true}>
               {data.map((item, index) => (
                 <Carousel.Item key={index}>
                   <div className="d-flex justify-content-center">
@@ -65,15 +69,6 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
                       <div className="author-sec">
                         <div className="img-sec">
                           <Image src={AuthorImg} width={80} height={92} alt="Author" />
-                           
-                            <div id="button-container" className="d-flex justify-content-center mt-2">
-                              {[...Array(numberOfButtons)].map((_, i) => (
-                                <button
-                                  key={i}
-                                  className={`custom-btn ${i === activeButtonIndex ? 'active' : ''}`}
-                                />
-                              ))}
-                            </div>                            
                           </div>
                          
                         <div className="autor-details">
@@ -87,6 +82,15 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
                 </Carousel.Item>
               ))}
             </Carousel>
+            <div id="button-container" className="">
+                              {[...Array(numberOfButtons)].map((_, i) => (
+                                <button
+                                key={i}
+                                className={`custom-btn ${i === activeCarouselIndex ? 'active' : ''}`}
+                                onClick={() => handleButtonClick(i)}
+                              />
+                              ))}
+                            </div>
             <ModalComponent
               show={showModal}
               handleClose={handleCloseModal}
@@ -94,7 +98,6 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
             />
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column position-relative second-carousal">
-            <div className="vertical-line1"></div>
             <Carousel
               activeIndex={videoIndex}
               onSelect={handleVideoSelect}
@@ -108,14 +111,12 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
                   <div className="video-wrapper" onClick={handlePlayPause}>
                     <ReactPlayer
                       className="react-player rounded-video"
-                      url={item.doctorVideos.videoUrl}
+                      url={item.doctorVideos.videoUrl}                     
                      
-                      width="60%"
-                      height="60%"
-                      controls={false} // Disable the default ReactPlayer controls
+                      controls={true} // Disable the default ReactPlayer controls
                       playing={index === videoIndex && playing} // Only play the current video if playing is true
                     />
-                    {!playing && <div className="play-button">▶</div>}
+                    {/* {!playing && <div className="play-button">▶</div>} */}
                   </div>
                   <div className="designationcenter">
                     <h6>{item.doctorVideos.doctorName}</h6>
@@ -134,7 +135,6 @@ const Testimonials = ({ data, numberOfButtons = 5, activeButtonIndex = 1 }) => {
             </div>
           </Col>
         </Row>
-        <hr />
       </div>
     </>
   );

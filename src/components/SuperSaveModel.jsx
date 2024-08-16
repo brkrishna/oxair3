@@ -1,18 +1,24 @@
-// pages/oxygen-generator.js
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Tabs, Tab, Image } from 'react-bootstrap';
-import data from '@jsonData/products.json';
+import data from '@jsonData/products/superSaverModels.json';
 import LeftImageRightContentProduct from './LeftImageRightContentProduct';
 import ContactUsToday from './ContactUsToday';
 import classNames from 'classnames';
 
+const SsModels = () => {
+    const [key, setKey] = useState(null); // Initialize with null or undefined
+  
+    // Set the first key after the component mounts
+    useEffect(() => {
+      if (Object.keys(data).length > 0) {
+        setKey(Object.keys(data)[0]); // Set the first tab as active
+      }
+    }, []);
+  
+    if (!key) {
+      return <div>Loading...</div>; // Prevent rendering if key is not set
+    } 
 
-const OxygenGenerator = () => {
-  const [key, setKey] = useState('product1');
-
-  // useEffect(() => {
-  //   console.log('Loaded data:', data);
-  // }, []);
 
   return (
     <div className="container mt-5">
@@ -20,43 +26,24 @@ const OxygenGenerator = () => {
         id="product-tabs"
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="bordercolor"
+        className="bordercolor product-tabs"
       >
-        <Tab
-          eventKey="product1"
-          title={<span className={classNames({ activetop: key === 'product1' })} >OXAIR HIGH PERFORMANCE 60</span>}
-        >
-          {data.product1 ? <RenderProduct product={data.product1} /> : <div>Error loading product 1 data</div>}
-        </Tab>
-        <Tab
-          eventKey="product2"
-          title={<span className={classNames({ activetop: key === 'product2' })} >OXAIR HIGH PERFORMANCE 80</span>}
-        >
-          {data.product2 ? <RenderProduct product={data.product2} /> : <div>Error loading product 2 data</div>}
-        </Tab>
-        <Tab
-          eventKey="product3"
-          title={<span className={classNames({ activetop: key === 'product3' })} >OXAIR HIGH PERFORMANCE 150</span>}
-        >
-          {data.product3 ? <RenderProduct product={data.product3} /> : <div>Error loading product 3 data</div>}
-        </Tab>
-        <Tab
-          eventKey="product4"
-          title={<span className={classNames({ activetop: key === 'product4' })} >OXAIR HIGH PERFORMANCE 200</span>}
-        >
-          {data.product4 ? <RenderProduct product={data.product4} /> : <div>Error loading product 4 data</div>}
-        </Tab>
-        {/* Add more tabs for other products as needed */}
+        {Object.keys(data).map((productKey, index) => (
+          <Tab
+            eventKey={productKey}
+            title={data[productKey].name}
+            className={classNames({ activetop: key === productKey })}
+            key={index}
+          >
+            <RenderProduct product={data[productKey]} />
+          </Tab>
+        ))}
       </Tabs>
     </div>
   );
 };
 
 const RenderProduct = ({ product }) => {
-  useEffect(() => {
-    console.log('Rendering product:', product);
-  }, [product]);
-
   if (!product) {
     console.error('Product data is undefined');
     return <div>Loading...</div>;
@@ -64,11 +51,11 @@ const RenderProduct = ({ product }) => {
 
   return (
     <Row className='gap-5'>
-      <Col md={4} className=''>
+      <Col md={4}>
         <LeftImageRightContentProduct />
       </Col>
-      <Col md={7} className=''>
-        <p className="productname">{product.name}</p>
+      <Col md={7}>
+        <p className="productname">{product.title}</p>
         <h5 className='sub-headings dark-blue'>{product.model}</h5>
         <div className="row">
           <div className="col-md-4 col-sm-4">
@@ -81,14 +68,12 @@ const RenderProduct = ({ product }) => {
           </div>
           <div className="col-md-4 col-sm-4">
             <h6 className='flowratefont'>Production Cost per M3</h6>
-            <button className='knowmorebtn'>{product.specifications.production_cost_per_M3}</button>
-          </div>
+            <button className='knowmorebtn'>{product.specifications.production_cost}</button>
+          </div>          
         </div>
-
         <hr className='horizental-border' />
         <div className='row'>
           {product.applications.map((application, index) => (
-
             <div className='col-12 col-sm-4 col-md-4 border-rightproduct' key={index}>
               <Image
                 src={application.icons}
@@ -102,8 +87,7 @@ const RenderProduct = ({ product }) => {
           ))}
         </div>
         <hr className='horizental-border' />
-
-
+        <h5 className='productpagecolor'>{product.tagline}</h5>
         <h6 className='productpagecolor'>{product.description}</h6>
         <p className='productcontent'>{product.advantages}</p>
         <p className='productcontent my-3'>{product.concept}</p>
@@ -120,4 +104,4 @@ const RenderProduct = ({ product }) => {
   );
 };
 
-export default OxygenGenerator;
+export default SsModels;

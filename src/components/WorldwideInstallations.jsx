@@ -35,20 +35,14 @@ const WorldwideInstallations = ({ data }) => {
       
       <Row className='world-installation'>
         {data.map((item, index) => (
-          <Col xs={12} md={2} key={index} className="installation-count">
+          <div key={index} className="installation-count">
             <h2 ><CountUp end={item.number} duration={2} /></h2>
             <p>{item.country}</p>
-          </Col>
+          </div>
         ))}
-         {/* <Col xs={12} md={4}>
-          <Image src={worldMap} alt="World Map" layout="responsive" />
-        </Col> */}
+         
       </Row>
-      {/* <Row className="justify-content-center">
-        <Col xs={12} md={10}>
-          <Image src={worldMap} alt="World Map" layout="responsive" />
-        </Col>
-      </Row> */}
+     
       </div>
     </>
   );
