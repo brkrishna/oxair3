@@ -6,7 +6,7 @@ import Image from "next/image";
 import AuthorImg from "../assets/images/testimonial-user-img.png";
 import ModalComponent from "./ModalComponent";
 import ReactPlayer from "react-player";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Testimonials = ({ data, numberOfButtons = 11 }) => {
   const [activeCarouselIndex, setActiveCarouselIndex] = useState(0);
@@ -16,7 +16,7 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const onCLickReadMore = (text) => {
-    const fullText = text.join("\n\n")
+    const fullText = text.join("\n\n");
     setShowModal(true);
     setModalContent(fullText);
   };
@@ -50,7 +50,14 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
         <hr />
         <h5 className="section-heading">What our customers say</h5>
         <Row className="position-relative">
-          <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column img-fluid">
+          <Col
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xl={6}
+            className="d-flex flex-column img-fluid"
+          >
             <Carousel interval={3000} controls={false} indicators={true}>
               {data.map((item, index) => (
                 <Carousel.Item key={index}>
@@ -68,9 +75,14 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
                       </div>
                       <div className="author-sec">
                         <div className="img-sec">
-                          <Image src={AuthorImg} width={80} height={92} alt="Author" />
-                          </div>
-                         
+                          <Image
+                            src={AuthorImg}
+                            width={80}
+                            height={92}
+                            alt="Author"
+                          />
+                        </div>
+
                         <div className="autor-details">
                           <h6>{item.name}</h6>
                           <small>{item.designation}</small>
@@ -82,7 +94,7 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
                 </Carousel.Item>
               ))}
             </Carousel>
-            <div id="button-container" className="">
+            {/* <div id="button-container" className="">
                               {[...Array(numberOfButtons)].map((_, i) => (
                                 <button
                                 key={i}
@@ -90,14 +102,21 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
                                 onClick={() => handleButtonClick(i)}
                               />
                               ))}
-                            </div>
+                            </div> */}
             <ModalComponent
               show={showModal}
               handleClose={handleCloseModal}
               modalContent={modalContent}
             />
           </Col>
-          <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column position-relative second-carousal">
+          <Col
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xl={6}
+            className="d-flex flex-column position-relative second-carousal"
+          >
             <Carousel
               activeIndex={videoIndex}
               onSelect={handleVideoSelect}
@@ -111,8 +130,7 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
                   <div className="video-wrapper" onClick={handlePlayPause}>
                     <ReactPlayer
                       className="react-player rounded-video"
-                      url={item.doctorVideos.videoUrl}                     
-                     
+                      url={item.doctorVideos.videoUrl}
                       controls={true} // Disable the default ReactPlayer controls
                       playing={index === videoIndex && playing} // Only play the current video if playing is true
                     />
