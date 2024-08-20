@@ -5,18 +5,20 @@ import ButtonComponent from "./Buttons";
 import Image from "next/image";
 import AuthorImg from "../assets/images/testimonial-user-img.png";
 import ModalComponent from "./ModalComponent";
-import ReactPlayer from "react-player";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import TestimonialVideos from "./TestmonialVideos";
+import testivideosdata from "@jsonData/testimonialVideos.json";
 
 const Testimonials = ({ data, numberOfButtons = 11 }) => {
   const [activeCarouselIndex, setActiveCarouselIndex] = useState(0);
-  const [videoIndex, setVideoIndex] = useState(0);
-  const [playing, setPlaying] = useState(false);
+  console.log("testivideosdatatestivideosdatatestivideosdatatestivideosdata",  testivideosdata)
+  const videos = testivideosdata.doctorVideos.length > 0 ? testivideosdata.doctorVideos:[];
+  
 
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const onCLickReadMore = (text) => {
-    const fullText = text.join("\n\n");
+    const fullText = text.join("\n\n")
     setShowModal(true);
     setModalContent(fullText);
   };
@@ -37,27 +39,19 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
     setPlaying(false); // Stop playing when navigating
   };
 
-  const handlePlayPause = () => {
-    setPlaying(!playing);
-  };
+  
 
   const handleButtonClick = (index) => {
     setActiveCarouselIndex(index);
   };
+  console.log("cbzxmbckzbkb", videos)
   return (
     <>
       <div className="testimonial-section">
         <hr />
         <h5 className="section-heading">What our customers say</h5>
         <Row className="position-relative">
-          <Col
-            xs={12}
-            sm={12}
-            md={12}
-            lg={6}
-            xl={6}
-            className="d-flex flex-column img-fluid"
-          >
+          <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column img-fluid">
             <Carousel interval={3000} controls={false} indicators={true}>
               {data.map((item, index) => (
                 <Carousel.Item key={index}>
@@ -75,14 +69,9 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
                       </div>
                       <div className="author-sec">
                         <div className="img-sec">
-                          <Image
-                            src={AuthorImg}
-                            width={80}
-                            height={92}
-                            alt="Author"
-                          />
-                        </div>
-
+                          <Image src={AuthorImg} width={80} height={92} alt="Author" />
+                          </div>
+                         
                         <div className="autor-details">
                           <h6>{item.name}</h6>
                           <small>{item.designation}</small>
@@ -93,64 +82,15 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
                   </div>
                 </Carousel.Item>
               ))}
-            </Carousel>
-            {/* <div id="button-container" className="">
-                              {[...Array(numberOfButtons)].map((_, i) => (
-                                <button
-                                key={i}
-                                className={`custom-btn ${i === activeCarouselIndex ? 'active' : ''}`}
-                                onClick={() => handleButtonClick(i)}
-                              />
-                              ))}
-                            </div> */}
+            </Carousel>          
             <ModalComponent
               show={showModal}
               handleClose={handleCloseModal}
               modalContent={modalContent}
             />
           </Col>
-          <Col
-            xs={12}
-            sm={12}
-            md={12}
-            lg={6}
-            xl={6}
-            className="d-flex flex-column position-relative second-carousal"
-          >
-            <Carousel
-              activeIndex={videoIndex}
-              onSelect={handleVideoSelect}
-              controls={false}
-              indicators={false}
-              interval={null}
-              className="w-100"
-            >
-              {data.map((item, index) => (
-                <Carousel.Item key={index} className="">
-                  <div className="video-wrapper" onClick={handlePlayPause}>
-                    <ReactPlayer
-                      className="react-player rounded-video"
-                      url={item.doctorVideos.videoUrl}
-                      controls={true} // Disable the default ReactPlayer controls
-                      playing={index === videoIndex && playing} // Only play the current video if playing is true
-                    />
-                    {/* {!playing && <div className="play-button">▶</div>} */}
-                  </div>
-                  <div className="designationcenter">
-                    <h6>{item.doctorVideos.doctorName}</h6>
-                    <small>{item.doctorVideos.location}</small>
-                  </div>
-                </Carousel.Item>
-              ))}
-            </Carousel>
-            <div className="controls-container">
-              <button className="control-btn prev" onClick={handlePrev}>
-                <i className="fas fa-angle-left"></i>
-              </button>
-              <button className="control-btn next" onClick={handleNext}>
-                <i className="fas fa-angle-right"></i>
-              </button>
-            </div>
+          <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column position-relative second-carousal">
+          <TestimonialVideos videos={videos} />
           </Col>
         </Row>
       </div>

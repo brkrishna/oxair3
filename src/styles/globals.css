@@ -65,10 +65,6 @@ body {
   padding-left: 46px;
   font: normal normal bold 38px/42px Open Sans;
 }
-
-
-
-
 .banner-sub-heading {
   letter-spacing: 0.76px;
   color: #2bdafa;
@@ -129,6 +125,9 @@ body {
   .fa-angle-right:before {
     content: "\f105";
     margin-right: 42px;
+  }
+  .second-carousal{
+    margin-top: 30px;
   }
 }
 
@@ -780,7 +779,6 @@ opacity: 1;
     display: block;
   }
 }
-
 .vertical-line1 {
   position: absolute;
   top: 0;
@@ -788,24 +786,22 @@ opacity: 1;
   border-left: 1px solid #70707094;
   height: 100%;
 }
-
 .vertical-line {
   top: 0;
   bottom: 0;
   border-left: 1px solid #70707094;
   height: 100%;
 }
-
 .react-player {
   position: relative;
   margin: auto;
   display: block;
+  width: 100% !important;
+  height: 300px !important;
 }
-
 .rounded-video {
   border-radius: 20px !important;
 }
-
 .video-wrapper {
   position: relative;
   width: 100%;
@@ -1437,6 +1433,9 @@ opacity: 1;
 
 
 .product-tabs.nav-tabs{ 
+  display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   li{
     position: relative;
   }

@@ -33,7 +33,7 @@ const WorldwideInstallations = ({ data }) => {
     <h5 className='section-heading'>Our 300+ Installations</h5>
     <h4 className='section-sub-heading'>Worldwide</h4>
       
-      <Row className='world-installation'>
+      <div className='world-installation'>
         {data.map((item, index) => (
           <div key={index} className="installation-count">
             <h2 ><CountUp end={item.number} duration={2} /></h2>
@@ -41,7 +41,7 @@ const WorldwideInstallations = ({ data }) => {
           </div>
         ))}
          
-      </Row>
+      </div>
      
       </div>
     </>
