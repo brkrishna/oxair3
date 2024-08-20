@@ -82,16 +82,7 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
                   </div>
                 </Carousel.Item>
               ))}
-            </Carousel>
-            {/* <div id="button-container" className="">
-                              {[...Array(numberOfButtons)].map((_, i) => (
-                                <button
-                                key={i}
-                                className={`custom-btn ${i === activeCarouselIndex ? 'active' : ''}`}
-                                onClick={() => handleButtonClick(i)}
-                              />
-                              ))}
-                            </div> */}
+            </Carousel>          
             <ModalComponent
               show={showModal}
               handleClose={handleCloseModal}

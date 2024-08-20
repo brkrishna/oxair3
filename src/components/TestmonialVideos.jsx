@@ -1,16 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
 import ReactPlayer from "react-player";
 
 const TestimonialVideos = ({ videos }) => {
   const [videoIndex, setVideoIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
-  //const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    // Ensure this code runs only on the client side
-    //setIsClient(true);
-  }, []);
+
 
   const handleVideoSelect = (selectedIndex) => {
     setVideoIndex(selectedIndex);
