@@ -1,0 +1,20 @@
+ {
+    "doctorVideos":[
+        {          
+            "videoUrl":"https://youtu.be/T4XbPvBy8Bw?si=xg90y2KM0ZLLqxvk",     
+            "doctorName":"",    
+            "location":"" 
+        },
+        {
+            "videoUrl":"https://www.youtube.com/watch?v=0gMOnUJwxP8",   
+            "doctorName":"Dr Ishwar Singh",    
+            "location": "Indira Gandhi Hospital - Delhi" 
+           },
+           {
+            "videoUrl":"https://youtu.be/Lvx884Vkc9c?si=CI9Wa8ALWlhfxUoB",        
+            "doctorName":"Dr S M Byadigi",   
+            "location":"Sukshema Hospital Davangere"     
+           }
+        ]    
+    
+    }

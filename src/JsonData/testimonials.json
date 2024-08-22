@@ -18,13 +18,11 @@
       ]
     },
     "readMoreLink": "",
-     "doctorVideos":{
-      "videoUrl": 
-      "https://youtu.be/T4XbPvBy8Bw?si=xg90y2KM0ZLLqxvk",     
-      "doctorName":"Dr Ishwar Singh",    
-     "location":
-      "Indira Gandhi Hospital - Delhi"     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtu.be/0gMOnUJwxP8",
+      "doctorName": "Dr Ishwar Singh",
+      "location": "Indira Gandhi Hospital - Delhi"
+    }
   },
 
   {
@@ -47,13 +45,11 @@
       ]
     },
     "readMoreLink": "",
-      "doctorVideos":{
-      "videoUrl": 
-      "https://www.youtube.com/watch?v=0gMOnUJwxP8",   
-      "doctorName":"",   
-     "location":
-      ""     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtube.com/shorts/F_Uhh6pozYw",
+      "doctorName": "",
+      "location": ""
+    }
   },
   {
     "id": 3,
@@ -76,13 +72,11 @@
       ]
     },
     "readMoreLink": "",
-     "doctorVideos":{
-      "videoUrl": 
-      "/video/DrIshwarSinghIGHDelhi.mp4",      
-      "doctorName":"",   
-     "location":
-      ""     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtu.be/SSE_9BTkBU0",
+      "doctorName": "",
+      "location": ""
+    }
   },
   {
     "id": 4,
@@ -99,13 +93,11 @@
       ]
     },
     "readMoreLink": "",
-     "doctorVideos":{
-      "videoUrl": 
-      "/video/DrIshwarSinghIGHDelhi.mp4",        
-      "doctorName":"",   
-     "location":
-      ""     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtu.be/Lvx884Vkc9c",
+      "doctorName": "",
+      "location": ""
+    }
   },
   {
     "id": 5,
@@ -127,13 +119,11 @@
       ]
     },
     "readMoreLink": "",
-     "doctorVideos":{
-      "videoUrl": 
-      "/video/DrIshwarSinghIGHDelhi.mp4",        
-      "doctorName":"",   
-     "location":
-      ""     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtu.be/T4XbPvBy8Bw",
+      "doctorName": "",
+      "location": ""
+    }
   },
   {
     "id": 6,
@@ -152,13 +142,11 @@
       ]
     },
     "readMoreLink": "",
-     "doctorVideos":{
-      "videoUrl": 
-      "/video/DrIshwarSinghIGHDelhi.mp4",        
-      "doctorName":"",   
-     "location":
-      ""     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtu.be/0gMOnUJwxP8",
+      "doctorName": "",
+      "location": ""
+    }
   },
   {
     "id": 7,
@@ -179,13 +167,11 @@
       ]
     },
     "readMoreLink": "",
-     "doctorVideos":{
-      "videoUrl": 
-      "/video/DrIshwarSinghIGHDelhi.mp4",        
-      "doctorName":"",   
-     "location":
-      ""     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtube.com/shorts/F_Uhh6pozYw",
+      "doctorName": "",
+      "location": ""
+    }
   },
   {
     "id": 8,
@@ -204,13 +190,11 @@
       ]
     },
     "readMoreLink": "",
-     "doctorVideos":{
-      "videoUrl": 
-      "/video/DrIshwarSinghIGHDelhi.mp4",        
-      "doctorName":"",   
-     "location":
-      ""     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtu.be/SSE_9BTkBU0",
+      "doctorName": "",
+      "location": ""
+    }
   },
   {
     "id": 9,
@@ -229,13 +213,11 @@
       ]
     },
     "readMoreLink": "",
-     "doctorVideos":{
-      "videoUrl": 
-      "/video/DrIshwarSinghIGHDelhi.mp4",        
-      "doctorName":"",   
-     "location":
-      ""     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtu.be/Lvx884Vkc9c",
+      "doctorName": "",
+      "location": ""
+    }
   },
   {
     "id": 10,
@@ -251,14 +233,11 @@
       ]
     },
     "readMoreLink": "",
-	 "doctorVideos":{
-      "videoUrl": 
-      "https://youtu.be/Lvx884Vkc9c?si=CI9Wa8ALWlhfxUoB",        
-      "doctorName":"",   
-     "location":
-      ""     
-     }
-    
+    "doctorVideos": {
+      "videoUrl": "https://youtu.be/T4XbPvBy8Bw",
+      "doctorName": "",
+      "location": ""
+    }
   },
   {
     "id": 11,
@@ -280,12 +259,10 @@
       ]
     },
     "readMoreLink": "",
-    "doctorVideos":{
-      "videoUrl": 
-      "/video/DrIshwarSinghIGHDelhi.mp4",        
-      "doctorName":"",   
-     "location":
-      ""     
-     }
+    "doctorVideos": {
+      "videoUrl": "https://youtu.be/SSE_9BTkBU0",
+      "doctorName": "",
+      "location": ""
+    }
   }
 ]
