@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import PhoneIcon from "../assets/icons/PhoneIcon.png";
 import EmailIcon from "../assets/icons/EmailIcon.png";
 

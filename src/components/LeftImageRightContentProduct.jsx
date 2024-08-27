@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import initialMainImageSrc from "@/assets/images/oxygen_150.png"; // Renamed to avoid conflict
 import oxygen_small1 from "@/assets/images/oxygen_small1.png";
 import oxygen_small2 from "@/assets/images/oxygen_small2.png";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import BannerImage1 from "../assets/images/banner_img1.png";
 import BannerImage2 from "../assets/images/banner_img2.png";
 import ButtonComponent from "./Buttons";

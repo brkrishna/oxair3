@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import VijayaHospital from "../assets/images/vijaya_group_of_hospitals.png"
 import Medipluse from "../assets/images/medipulse.png"
 import HeritageHospital from "../assets/images/heritage_hospital.png"
@@ -19,15 +19,15 @@ const ClientLogs = () => {
   return (
     <>
     <div className='cliaints-logos-section'>
-       
 {clientLogos.map((log, i)=>(
+ 
     <Image 
     key={i}
     src={log.src}
     alt={log.alt}
     width={log.width}
-    height={clientLogos.height}
-    style={{ margin: '10px' }}
+    height={log.height}
+    className="custom-image"
     />
 ))
 

@@ -1,6 +1,6 @@
 import InnerPageBanner from "@/components/InnerPageBanners";
 import UnderConstructionImage from "../assets/images/construction.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 
 const resourcePage = () => {

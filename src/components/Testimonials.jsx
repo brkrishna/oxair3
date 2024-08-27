@@ -2,17 +2,17 @@ import React from "react";
 import { useState } from "react";
 import { Carousel, Row, Col, Button } from "react-bootstrap";
 import ButtonComponent from "./Buttons";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import AuthorImg from "../assets/images/testimonial-user-img.png";
 import ModalComponent from "./ModalComponent";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import TestimonialVideos from "./TestmonialVideos";
-import testivideosdata from "@jsonData/testimonialVideos.json";
+//import testivideosdata from "@jsonData/testimonialVideos.json";
+
 
 const Testimonials = ({ data, numberOfButtons = 11 }) => {
   const [activeCarouselIndex, setActiveCarouselIndex] = useState(0);
-  console.log("testivideosdatatestivideosdatatestivideosdatatestivideosdata",  testivideosdata)
-  const videos = testivideosdata.doctorVideos.length > 0 ? testivideosdata.doctorVideos:[];
+  //const videos = testivideosdata.doctorVideos.length > 0 ? testivideosdata.doctorVideos:[];
   
 
   const [showModal, setShowModal] = useState(false);
@@ -44,7 +44,6 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
   const handleButtonClick = (index) => {
     setActiveCarouselIndex(index);
   };
-  console.log("cbzxmbckzbkb", videos)
   return (
     <>
       <div className="testimonial-section">
@@ -90,7 +89,7 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
             />
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column position-relative second-carousal">
-          <TestimonialVideos videos={videos} />
+          <TestimonialVideos />
           </Col>
         </Row>
       </div>

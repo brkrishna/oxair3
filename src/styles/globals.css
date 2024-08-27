@@ -408,13 +408,20 @@ ul.our-market-tabs {
   color: white;
 
   .icon {
-    margin: 0 auto 20px;
+    margin: 0 auto 20px;    
+    min-width: 75px !important;
+   
   }
 }
 
 .footer {
   padding-top: 40px;
   padding-bottom: 0;
+
+  .footer-log{
+    min-width: 135px !important;
+    min-height: auto !important;
+  }
 }
 
 .footer-content {
@@ -428,7 +435,6 @@ ul.our-market-tabs {
     color: #888888;
   }
 }
-
 .navbar-expand-lg .navbar-nav {
   flex-direction: row;
   align-items: center;
@@ -525,13 +531,18 @@ text-dark {
   margin: 0;
 }
 
-.social-icons {
+.social-icons{
   display: inline-block;
   margin-top: 15px;
 
   a {
     margin: 0 5px;
     display: inline-block;
+
+    img{
+      min-height: 30px !important;
+      min-width: 30px !important;
+    }
   }
 }
 
@@ -796,8 +807,20 @@ opacity: 1;
   position: relative;
   margin: auto;
   display: block;
-  width: 100% !important;
-  height: 300px !important;
+  width: 85% !important;
+  height: 400px !important;
+}
+
+.player-arrows{
+ .carousel-control-prev{
+  left: -43px;
+ }
+ .carousel-control-next{
+  right: -43px;
+ }
+ .carousel-control-next, .carousel-control-prev{
+  top: 40% !important;
+ }
 }
 .rounded-video {
   border-radius: 20px !important;
@@ -828,32 +851,6 @@ opacity: 1;
     display: block;
   }
 }
-
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 22px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Dark background color */
-  border-radius: 50%;
-  /* Make the background round */
-  width: 40px;
-  /* Fixed width for the button */
-  height: 40px;
-  /* Fixed height for the button */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.7;
-  pointer-events: none;
-  /* Allows click-through to the video wrapper */
-}
-
-
-
 .controls-container {
   position: absolute;
   top: 65px;
@@ -901,6 +898,10 @@ opacity: 1;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+}
+
+.custom-image {
+  margin: 10px;
 }
 
 @media (max-width: 767px) {

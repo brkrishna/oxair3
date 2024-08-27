@@ -2,7 +2,7 @@ import { Col, Row, Tabs, Tab } from "react-bootstrap";
 import TechnologyIcon from "../assets/icons/technology-icon.png"
 import QualityIcon from "../assets/icons/quality-icon.png"
 import UptimeIcon from "../assets/icons/uptime-icon.png"
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useState } from "react";
 
 const TheOxairIndiaDefference = ({subHeading = "THE OXAIR INDIA DIFFERENCE"}) =>{

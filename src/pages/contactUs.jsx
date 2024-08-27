@@ -4,7 +4,7 @@ import InnerPageBanner from "@/components/InnerPageBanners";
 import { Container, Row, Col, Form, InputGroup, Button } from "react-bootstrap";
 import phoneIcon from "@/assets/icons/PhoneIcon.png";
 import emailIcon from "@/assets/icons/EmailIcon.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ButtonComponent from "@/components/Buttons";
 import "../styles/globals.css";
 
@@ -87,7 +87,7 @@ const ContactUs = () => {
                   <Form.Group controlId="validationCustom04" className="text-field">
                     <Form.Label>Select Product</Form.Label>
                     <InputGroup>
-                      <select class="form-select" required>
+                      <select className="form-select" required>
                         <option value=""></option>
                         <option value="">Product1</option>
                         <option value="">Product2</option>

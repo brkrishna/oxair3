@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import FooterLog from "../assets/images/Oxair-Logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 //import Image from 'react-bootstrap';
@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <Container>
         <Link href="/">
-          <Image src={FooterLog} alt="Axair" width={135} className="footer-log" />
+          <Image src={FooterLog} alt="Axair" width={135}  className="footer-log" />
         </Link>
         <Row className="py-4">
           <Col md={4}>

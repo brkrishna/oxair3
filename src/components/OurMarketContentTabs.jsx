@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import AquaImage from '../assets/images/water.png';
 import MedicalImage from '../assets/images/medical.png';
 import GlassImage from '../assets/images/glass.png';
@@ -110,13 +110,13 @@ const OurMarketsContentTabs = () => {
         "Oxair India provides professional oxygen generator manufacturing solutions for sewage and wastewater treatment plants in India.",
       button: <ButtonComponent label={'View Product'} />
     },
-    {
-      eventKey: "",
-      icon: <Image alt=""/>,
-      title: "",
-      content:
-        "",
-    },
+    // {
+    //   eventKey: "",
+    //   icon: <Image src="" alt="" width={60} height={60}/>,
+    //   title: "",
+    //   content:
+    //     "",
+    // },
   ];
 
   const [activeKey, setActiveKey] = useState(OurMarketTabs[0].eventKey);
