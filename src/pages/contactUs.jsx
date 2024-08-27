@@ -35,14 +35,14 @@ const ContactUs = () => {
                 Oxair Gas Systems India Pvt Ltd
               </h1>
               <div className="d-flex align-items-center gap-3 my-4">
-                <Image src={phoneIcon} alt="Layer 1" className="icon-size" />
+                <Image fetchpriority="high" src={phoneIcon} alt="Layer 1" className="icon-size" />
                 <p className="mt-3 contact-text2">
                   +91-44-29560328
                 </p>
               </div>
 
               <div className="d-flex align-items-center gap-3 mt-3">
-                <Image src={emailIcon} alt="Layer 2" className="icon-size" />
+                <Image fetchpriority="high" src={emailIcon} alt="Layer 2" className="icon-size" />
                 <p className="mt-3 contact-text2">
                   inquiries@oxair.in
                 </p>

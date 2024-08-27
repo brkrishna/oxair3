@@ -21,7 +21,7 @@ const ButtonComponent = ({
           disabled={disabled}
           {...props}
         >
-            {icon && <Image src={icon} alt="icon" className="icon1" />}
+            {icon && <Image src={icon} alt="icon" className="icon1" fetchpriority="high" />}
             {label}
         </button>
         </>

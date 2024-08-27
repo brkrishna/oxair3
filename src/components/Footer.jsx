@@ -88,13 +88,13 @@ const Footer = () => {
           <Col md={4} className="text-right">
             <div className="social-icons">
               <a href="#">
-                <Image src={FacebookIcon} width={30} alt="Facebook" />
+                <Image fetchpriority="high" src={FacebookIcon} width={30} alt="Facebook" />
               </a>
               <a href="#">
-                <Image src={XLogo} width={30} alt="X" />
+                <Image fetchpriority="high" src={XLogo} width={30} alt="X" />
               </a>
               <a href="#">
-                <Image src={YoutubeIcon} width={30} alt="Youtube" />
+                <Image fetchpriority="high" src={YoutubeIcon} width={30} alt="Youtube" />
               </a>
             </div>
           </Col>

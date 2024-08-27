@@ -35,8 +35,8 @@ const TestimonialVideos = () => {
                 <ReactPlayer
                   url={video.videoUrl}
                   className="react-player rounded-video"
-                  width="100%"
-                  height="400px"
+                  width="90%"
+                  height=""
                   controls={true}
                   config={{
                     youtube: {

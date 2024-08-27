@@ -77,7 +77,7 @@ const GetQuote = () => {
 
             <Row className="cylinders">
               <Col md={2}>
-                <Image src={Sewage} alt="Glass" width={60} height={60} />
+                <Image fetchpriority="high" src={Sewage} alt="Glass" width={60} height={60} />
               </Col>
               <Col md={10}>
                 <p className="oxairPlantoa">Oxair Plant OA SS 120 (120 LPM Plant) Equivalent 24 Cylinders Per Day <br /> Production Capacity</p>
@@ -147,7 +147,7 @@ const GetQuote = () => {
           </section>
           <Row className="savingcylinder">
             <Col md={2}>
-              <Image src={Sewage} alt="Glass" width={60} height={60} />
+              <Image fetchpriority="high" src={Sewage} alt="Glass" width={60} height={60} />
             </Col>
             <Col md={10}>
               <div>
@@ -193,7 +193,7 @@ const GetQuote = () => {
 
           <Row className="savingcylinder2">
             <Col md={2}>
-              <Image src={Sewage} alt="Glass" width={60} height={60} />
+              <Image fetchpriority="high" src={Sewage} alt="Glass" width={60} height={60} />
             </Col>
             <Col md={10}>
               <div>

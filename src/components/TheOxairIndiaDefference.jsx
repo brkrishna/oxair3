@@ -10,20 +10,20 @@ const TheOxairIndiaDefference = ({subHeading = "THE OXAIR INDIA DIFFERENCE"}) =>
     const TechnologyTabs=[
         {
             eventKey: "technology",
-            icon: <Image src={TechnologyIcon} alt="Technology" width={60} height={60} />,
+            icon: <Image fetchpriority="high" src={TechnologyIcon} alt="Technology" width={60} height={60} />,
             title: "Latest Technology Development at Oxair in Australia",
             content:            
            "Oxair in Australia integrates cutting-edge air separation technology into our services, enhancing efficiency and sustainability. This underscores our commitment to innovation and environmental responsibility. Leveraging Oxair’s expertise, we deliver advanced solutions that set new industry benchmarks."
           },
           {
             eventKey: "quality",
-            icon: <Image src={QualityIcon} alt="Quality" width={60} height={60} />,
+            icon: <Image fetchpriority="high" src={QualityIcon} alt="Quality" width={60} height={60} />,
             title: "Affordable Without Compromise in Quality",
             content:"Affordable Without Compromise in Quality"
           },
           {
             eventKey: "uptime",
-            icon: <Image src={UptimeIcon} alt="System Uptime" width={60} height={60} />,
+            icon: <Image fetchpriority="high" src={UptimeIcon} alt="System Uptime" width={60} height={60} />,
             title: "97% System Uptime & Quick Local Response",
             content: "97% System Uptime & Quick Local Response"
           },

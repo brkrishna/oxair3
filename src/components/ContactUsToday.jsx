@@ -25,11 +25,13 @@ const ContactUsToday = () => {
               alt="Contact"
               width={75}
               height={75}
+              fetchpriority="high"
             />
             <span className="contact-text">+91-44-29560328</span>
           </div>
           <div className="contact-info">
             <Image
+            fetchpriority="high"
               className="icon"
               src={EmailIcon}
               alt="Email"

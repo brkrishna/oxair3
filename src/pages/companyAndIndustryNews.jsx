@@ -12,6 +12,7 @@ const resourcePage = () => {
         />
         <div className="container">
         <Image
+        fetchpriority="high"
   src={UnderConstructionImage}
   alt=""
   objectFit="cover" // Adjust object-fit as needed

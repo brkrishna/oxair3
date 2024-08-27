@@ -116,7 +116,7 @@ const HomePageBanner = () => {
   return (
     <Carousel controls={false} className="mb-5">
       <Carousel.Item>
-        <Image src={BannerImage1} alt="" className="w-100 h-auto mt-3" />
+        <Image fetchpriority="high" src={BannerImage1} alt="" className="w-100 h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
@@ -150,7 +150,7 @@ const HomePageBanner = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image src={BannerImage2} alt="" className="w-100 h-auto mt-3" />
+        <Image fetchpriority="high" src={BannerImage2} alt="" className="w-100 h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">

@@ -7,6 +7,7 @@ const LeftImageRightContent = ({ imageSrc, children }) => {
       <Row className="mt-50">
         <Col md={4}>
           <Image
+          fetchpriority="high"
             src={imageSrc}
             alt=""
             objectFit="fill"

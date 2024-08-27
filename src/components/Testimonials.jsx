@@ -24,20 +24,20 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
   };
   const handleCloseModal = () => setShowModal(false);
 
-  const handleVideoSelect = (selectedIndex) => {
-    setVideoIndex(selectedIndex);
-    setPlaying(false); // Stop playing when a new video is selected
-  };
+  // const handleVideoSelect = (selectedIndex) => {
+  //   setVideoIndex(selectedIndex);
+  //   setPlaying(false); // Stop playing when a new video is selected
+  // };
 
-  const handleNext = () => {
-    setVideoIndex((prevIndex) => (prevIndex + 1) % data.length);
-    setPlaying(false); // Stop playing when navigating
-  };
+  // const handleNext = () => {
+  //   setVideoIndex((prevIndex) => (prevIndex + 1) % data.length);
+  //   setPlaying(false); // Stop playing when navigating
+  // };
 
-  const handlePrev = () => {
-    setVideoIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
-    setPlaying(false); // Stop playing when navigating
-  };
+  // const handlePrev = () => {
+  //   setVideoIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+  //   setPlaying(false); // Stop playing when navigating
+  // };
 
   
 
@@ -68,7 +68,7 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
                       </div>
                       <div className="author-sec">
                         <div className="img-sec">
-                          <Image src={AuthorImg} width={80} height={92} alt="Author" />
+                          <Image fetchpriority="high" src={item.image} width={80} height={80} alt="Author" />
                           </div>
                          
                         <div className="autor-details">

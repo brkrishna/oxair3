@@ -12,7 +12,7 @@ const Header = () => {
     <Navbar className="py-3" collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="/">
-          <Image className="homebannerlogo" src={Logo} alt="Oxair Logo" width={221} height={56} />
+          <Image fetchpriority="high" className="homebannerlogo" src={Logo} alt="Oxair Logo" width={221} height={56} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
