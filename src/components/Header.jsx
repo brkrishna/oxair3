@@ -29,6 +29,7 @@ const Header = () => {
               <NavDropdown.Item className="products" href="/understandingOurProducts">Understanding Our Products</NavDropdown.Item>
               <NavDropdown.Item className="products" href="/faqs">FAQs</NavDropdown.Item>
               <NavDropdown.Item className="products" href="/companyAndIndustryNews">Company and Industry News</NavDropdown.Item>
+              <NavDropdown.Item className="products" href="/gallery">Gallery</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link className="mx-2" href="/contactUs">ContactUs</Nav.Link>
             <Nav.Link className="mx-2" href="/getQuote">

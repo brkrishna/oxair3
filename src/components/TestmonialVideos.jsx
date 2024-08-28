@@ -10,8 +10,6 @@ const TestimonialVideos = () => {
   const handleVideoSelect = (selectedIndex) => {
     setVideoIndex(selectedIndex);
   };
-
-
   useEffect(() => {
     setIsMounted(true);
   }, []);

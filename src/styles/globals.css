@@ -413,7 +413,6 @@ ul.our-market-tabs {
    
   }
 }
-
 .footer {
   padding-top: 40px;
   padding-bottom: 0;
@@ -421,6 +420,7 @@ ul.our-market-tabs {
   .footer-log{
     min-width: 135px !important;
     min-height: auto !important;
+    height: auto !important;
   }
 }
 
@@ -760,16 +760,13 @@ opacity: 1;
     }
   }
 }
-
 .testimonial {
   position: relative;
-
   p {
     font: italic normal normal 14px/24px Open Sans;
     color: #888888;
   }
 }
-
 .carousel-control-next,
 .carousel-control-prev {
   width: 40px;
@@ -910,6 +907,16 @@ opacity: 1;
 
 .custom-image {
   margin: 10px;
+}
+
+/*Gallery*/
+.oxairGallery img {
+ width: 100%;
+}
+.oxairGallery > .react-photo-gallery--gallery > div {
+ display: grid !important;
+ grid-template-columns: 1fr 1fr 1fr !important;
+ gap: 10px;
 }
 
 @media (max-width: 767px) {

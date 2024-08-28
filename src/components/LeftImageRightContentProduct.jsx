@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import Image from "next/legacy/image";
-import initialMainImageSrc from "@/assets/images/oxygen_150.png"; // Renamed to avoid conflict
+import initialMainImageSrc from "../../public/images/ss_modal_img.jpg"; // Renamed to avoid conflict
 import oxygen_small1 from "@/assets/images/oxygen_small1.png";
 import oxygen_small2 from "@/assets/images/oxygen_small2.png";
 import oxygen_small3 from "@/assets/images/oxygen_small3.png";
