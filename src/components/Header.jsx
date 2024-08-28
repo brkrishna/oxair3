@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Logo from "/public/images/Oxair-Logo.png";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -12,7 +12,7 @@ const Header = () => {
     <Navbar className="py-3" collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="/">
-          <Image className="homebannerlogo" src={Logo} alt="Oxair Logo" width={221} height={56} />
+          <Image fetchpriority="high" className="homebannerlogo" src={Logo} alt="Oxair Logo" width={221} height={56} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -29,6 +29,7 @@ const Header = () => {
               <NavDropdown.Item className="products" href="/understandingOurProducts">Understanding Our Products</NavDropdown.Item>
               <NavDropdown.Item className="products" href="/faqs">FAQs</NavDropdown.Item>
               <NavDropdown.Item className="products" href="/companyAndIndustryNews">Company and Industry News</NavDropdown.Item>
+              <NavDropdown.Item className="products" href="/gallery">Gallery</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link className="mx-2" href="/contactUs">ContactUs</Nav.Link>
             <Nav.Link className="mx-2" href="/getQuote">

@@ -4,7 +4,7 @@ import InnerPageBanner from "@/components/InnerPageBanners";
 import { Container, Row, Col, Form, InputGroup, Button } from "react-bootstrap";
 import phoneIcon from "@/assets/icons/PhoneIcon.png";
 import emailIcon from "@/assets/icons/EmailIcon.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ButtonComponent from "@/components/Buttons";
 import "../styles/globals.css";
 
@@ -35,14 +35,14 @@ const ContactUs = () => {
                 Oxair Gas Systems India Pvt Ltd
               </h1>
               <div className="d-flex align-items-center gap-3 my-4">
-                <Image src={phoneIcon} alt="Layer 1" className="icon-size" />
+                <Image fetchpriority="high" src={phoneIcon} alt="Layer 1" className="icon-size" />
                 <p className="mt-3 contact-text2">
                   +91-44-29560328
                 </p>
               </div>
 
               <div className="d-flex align-items-center gap-3 mt-3">
-                <Image src={emailIcon} alt="Layer 2" className="icon-size" />
+                <Image fetchpriority="high" src={emailIcon} alt="Layer 2" className="icon-size" />
                 <p className="mt-3 contact-text2">
                   inquiries@oxair.in
                 </p>
@@ -87,7 +87,7 @@ const ContactUs = () => {
                   <Form.Group controlId="validationCustom04" className="text-field">
                     <Form.Label>Select Product</Form.Label>
                     <InputGroup>
-                      <select class="form-select" required>
+                      <select className="form-select" required>
                         <option value=""></option>
                         <option value="">Product1</option>
                         <option value="">Product2</option>

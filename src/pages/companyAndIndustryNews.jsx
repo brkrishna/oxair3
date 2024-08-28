@@ -1,6 +1,8 @@
 import InnerPageBanner from "@/components/InnerPageBanners";
-import UnderConstructionImage from "../assets/images/construction.png";
+//import UnderConstructionImage from "../assets/images/construction.png";
+import IndustryNews from "../../public/images/industry_news.jpg"
 import Image from "next/image";
+
 
 
 const resourcePage = () => {
@@ -12,7 +14,8 @@ const resourcePage = () => {
         />
         <div className="container">
         <Image
-  src={UnderConstructionImage}
+        fetchpriority="high"
+  src={IndustryNews}
   alt=""
   objectFit="cover" // Adjust object-fit as needed
   layout="responsive"

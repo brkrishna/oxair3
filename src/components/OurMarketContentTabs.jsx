@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import AquaImage from '../assets/images/water.png';
 import MedicalImage from '../assets/images/medical.png';
 import GlassImage from '../assets/images/glass.png';
@@ -22,7 +22,7 @@ const OurMarketsContentTabs = () => {
   const OurMarketTabs = [
     {
       eventKey: "medical",
-      icon: <Image src={MedicalImage} alt="Medical" width={60} height={60} />,
+      icon: <Image fetchpriority="high" src={MedicalImage} alt="Medical" width={60} height={60} />,
       title: "MEDICAL",
       name: "Medical",
       content:
@@ -31,7 +31,7 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "glass",
-      icon: <Image src={GlassImage} alt="Glass" width={60} height={60} />,
+      icon: <Image fetchpriority="high" src={GlassImage} alt="Glass" width={60} height={60} />,
       title: "GLASS",
       content:
         "Oxair offers Oxygen plant for glass industry with an assured ROI of 2 years. Considering the harsh environment, Oxair designed Oxygen plant that works 24/7 for the glass industry.",
@@ -39,7 +39,7 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "cutting",
-      icon: <Image src={CuttingImage} alt="Medical" width={60} height={60} />,
+      icon: <Image fetchpriority="high" src={CuttingImage} alt="Medical" width={60} height={60} />,
       title: "CUTTING",
       content:
         "Oxair India offers advanced oxygen generators for the metal-cutting industry, ensuring efficiency and precision in high-qualit operations.",
@@ -48,7 +48,7 @@ const OurMarketsContentTabs = () => {
 
     {
       eventKey: "Oil",
-      icon: <Image src={OilandGasImage} alt="Oil" width={60} height={60} />,
+      icon: <Image fetchpriority="high" src={OilandGasImage} alt="Oil" width={60} height={60} />,
       title: "OIL",
       content:
         "Oxair supplies nitrogen generating systems for oil and gas companies seeking a cost-effective,continuous source of nitrogen for flare control, compressor operation and black start processes or for purging pipe lines or gas plants.",
@@ -56,7 +56,7 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "mining",
-      icon: <Image src={MiningImage} alt="Mining" width={60} height={60} />,
+      icon: <Image fetchpriority="high"  src={MiningImage} alt="Mining" width={60} height={60} />,
       title: "MINING",
       content:
         "Oxair manufactures oxygen generator equipment ideal for gold mining and related industries as it is a cost-effective,alternative solution to bulk liquid oxygen storage vessels for the process of grinding rock into slurry which then leaves the gold behind for extraction.",
@@ -64,7 +64,7 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "petro",
-      icon: <Image src={PetroChemicalImage} alt="Petro" width={60} height={60} />,
+      icon: <Image fetchpriority="high"  src={PetroChemicalImage} alt="Petro" width={60} height={60} />,
       title: "PETRO",
       content:
         "Oxair supplies oxygen and nitrogen generating systems and related equipment to the chemical and biotech industries for companies that require a reliable and continuous source of gas for their operations.",
@@ -72,7 +72,7 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "pharma",
-      icon: <Image src={PharmaCgemicalImage} alt="Pharma" width={60} height={60} />,
+      icon: <Image fetchpriority="high"  src={PharmaCgemicalImage} alt="Pharma" width={60} height={60} />,
       title: "PHARMA",
       content:
         "Oxair supplies oxygen and nitrogen generating systems and related equipment to the chemical and biotech industries for companies that require a reliable and continuous source of gas for their operations.",
@@ -80,7 +80,7 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "aqua",
-      icon: <Image src={AquaImage} alt="Aqua" width={60} height={60} />,
+      icon: <Image fetchpriority="high"  src={AquaImage} alt="Aqua" width={60} height={60} />,
       title: "AQUA",
       content:
         "Oxair India offers specialized oxygen generators for the aquaculture industry's unique needs.",
@@ -88,7 +88,7 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "ozone",
-      icon: <Image src={OzoneImage} alt="Aqua" width={60} height={60} />,
+      icon: <Image fetchpriority="high"  src={OzoneImage} alt="Aqua" width={60} height={60} />,
       title: "OZONE",
       content:
         "Oxair India introduces advanced ozone generators as part of our environmental technology solutions.",
@@ -96,7 +96,7 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "paper",
-      icon: <Image src={PaperImage} alt="Paper" width={60} height={60} />,
+      icon: <Image fetchpriority="high"  src={PaperImage} alt="Paper" width={60} height={60} />,
       title: "PAPER",
       content:
         "Oxair India revolutionizes the paper and pulp industry with reliable, on-site oxygen production solutions.",
@@ -104,19 +104,19 @@ const OurMarketsContentTabs = () => {
     },
     {
       eventKey: "sewage",
-      icon: <Image src={SewageImage} alt="Glass" width={60} height={60} />,
+      icon: <Image fetchpriority="high"  src={SewageImage} alt="Glass" width={60} height={60} />,
       title: "SEWAGE",
       content:
         "Oxair India provides professional oxygen generator manufacturing solutions for sewage and wastewater treatment plants in India.",
       button: <ButtonComponent label={'View Product'} />
     },
-    {
-      eventKey: "",
-      icon: <Image alt=""/>,
-      title: "",
-      content:
-        "",
-    },
+    // {
+    //   eventKey: "",
+    //   icon: <Image src="" alt="" width={60} height={60}/>,
+    //   title: "",
+    //   content:
+    //     "",
+    // },
   ];
 
   const [activeKey, setActiveKey] = useState(OurMarketTabs[0].eventKey);

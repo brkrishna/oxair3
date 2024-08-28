@@ -1,0 +1,29 @@
+ {
+    "ladakhGallery":[
+        {          
+            "image": "/images/gallery/image1.jpg",     
+            "team ":"Ladakh",    
+            "location":"Ladakh" 
+        },
+        {          
+            "image": "/images/gallery/image2.jpg",     
+            "team ":"Ladakh",    
+            "location":"Ladakh" 
+        },
+        {          
+            "image": "/images/gallery/image3.jpg",     
+            "team ":"Ladakh",    
+            "location":"Ladakh" 
+        },
+        {          
+            "image": "/images/gallery/image4.jpg",     
+            "team ":"Ladakh",    
+            "location":"Ladakh" 
+        }, {          
+            "image": "/images/gallery/image5.jpg",     
+            "team ":"Ladakh",    
+            "location":"Ladakh" 
+        }
+        ]    
+    
+    }

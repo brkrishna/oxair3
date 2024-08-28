@@ -2,17 +2,17 @@ import React from "react";
 import { useState } from "react";
 import { Carousel, Row, Col, Button } from "react-bootstrap";
 import ButtonComponent from "./Buttons";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import AuthorImg from "../assets/images/testimonial-user-img.png";
 import ModalComponent from "./ModalComponent";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import TestimonialVideos from "./TestmonialVideos";
-import testivideosdata from "@jsonData/testimonialVideos.json";
+//import testivideosdata from "@jsonData/testimonialVideos.json";
+
 
 const Testimonials = ({ data, numberOfButtons = 11 }) => {
   const [activeCarouselIndex, setActiveCarouselIndex] = useState(0);
-  console.log("testivideosdatatestivideosdatatestivideosdatatestivideosdata",  testivideosdata)
-  const videos = testivideosdata.doctorVideos.length > 0 ? testivideosdata.doctorVideos:[];
+  //const videos = testivideosdata.doctorVideos.length > 0 ? testivideosdata.doctorVideos:[];
   
 
   const [showModal, setShowModal] = useState(false);
@@ -24,27 +24,26 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
   };
   const handleCloseModal = () => setShowModal(false);
 
-  const handleVideoSelect = (selectedIndex) => {
-    setVideoIndex(selectedIndex);
-    setPlaying(false); // Stop playing when a new video is selected
-  };
+  // const handleVideoSelect = (selectedIndex) => {
+  //   setVideoIndex(selectedIndex);
+  //   setPlaying(false); // Stop playing when a new video is selected
+  // };
 
-  const handleNext = () => {
-    setVideoIndex((prevIndex) => (prevIndex + 1) % data.length);
-    setPlaying(false); // Stop playing when navigating
-  };
+  // const handleNext = () => {
+  //   setVideoIndex((prevIndex) => (prevIndex + 1) % data.length);
+  //   setPlaying(false); // Stop playing when navigating
+  // };
 
-  const handlePrev = () => {
-    setVideoIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
-    setPlaying(false); // Stop playing when navigating
-  };
+  // const handlePrev = () => {
+  //   setVideoIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+  //   setPlaying(false); // Stop playing when navigating
+  // };
 
   
 
   const handleButtonClick = (index) => {
     setActiveCarouselIndex(index);
   };
-  console.log("cbzxmbckzbkb", videos)
   return (
     <>
       <div className="testimonial-section">
@@ -69,7 +68,7 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
                       </div>
                       <div className="author-sec">
                         <div className="img-sec">
-                          <Image src={AuthorImg} width={80} height={92} alt="Author" />
+                          <Image fetchpriority="high" src={item.image} width={80} height={80} alt="Author" />
                           </div>
                          
                         <div className="autor-details">
@@ -90,7 +89,7 @@ const Testimonials = ({ data, numberOfButtons = 11 }) => {
             />
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6} className="d-flex flex-column position-relative second-carousal">
-          <TestimonialVideos videos={videos} />
+          <TestimonialVideos />
           </Col>
         </Row>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import FooterLog from "../assets/images/Oxair-Logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 //import Image from 'react-bootstrap';
@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <Container>
         <Link href="/">
-          <Image src={FooterLog} alt="Axair" width={135} className="footer-log" />
+          <Image src={FooterLog} alt="Axair" width={135}  className="footer-log" />
         </Link>
         <Row className="py-4">
           <Col md={4}>
@@ -88,13 +88,13 @@ const Footer = () => {
           <Col md={4} className="text-right">
             <div className="social-icons">
               <a href="#">
-                <Image src={FacebookIcon} width={30} alt="Facebook" />
+                <Image fetchpriority="high" src={FacebookIcon} width={30} alt="Facebook" />
               </a>
               <a href="#">
-                <Image src={XLogo} width={30} alt="X" />
+                <Image fetchpriority="high" src={XLogo} width={30} alt="X" />
               </a>
               <a href="#">
-                <Image src={YoutubeIcon} width={30} alt="Youtube" />
+                <Image fetchpriority="high" src={YoutubeIcon} width={30} alt="Youtube" />
               </a>
             </div>
           </Col>

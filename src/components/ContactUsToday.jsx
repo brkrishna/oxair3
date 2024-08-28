@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import PhoneIcon from "../assets/icons/PhoneIcon.png";
 import EmailIcon from "../assets/icons/EmailIcon.png";
 
@@ -25,11 +25,13 @@ const ContactUsToday = () => {
               alt="Contact"
               width={75}
               height={75}
+              fetchpriority="high"
             />
             <span className="contact-text">+91-44-29560328</span>
           </div>
           <div className="contact-info">
             <Image
+            fetchpriority="high"
               className="icon"
               src={EmailIcon}
               alt="Email"

@@ -18,10 +18,10 @@ import WorldwideInstallations from "@/components/WorldwideInstallations";
 
 export default function Home() {
   const [testimon, setTestimon] = useState([]);
-const [testimonVideos, setTestimonVideos] = useState([]);
+//const [testimonVideos, setTestimonVideos] = useState([]);
   useEffect(() => {
     setTestimon(testiData)  
-    setTestimonVideos(testimonVideos)
+   // setTestimonVideos(testimonVideos)
   }, []);
   const installationData = [
     { country: "India", number: 250 },
@@ -68,10 +68,9 @@ const [testimonVideos, setTestimonVideos] = useState([]);
         <div className="market-place-section">
           <TryRoiCalculater />
         </div>
-        <OurMarketsContentTabs />
-        <WorldwideInstallations data={installationData} className='worldfont'/>
+         <OurMarketsContentTabs />
+       <WorldwideInstallations data={installationData} className='worldfont'/>
         <Testimonials data={testimon} />  
-        {/* <TestimonialVideos data={testivideosdata} />       */}
         <ClientLogs />
         <ContactUsToday />
       </main>

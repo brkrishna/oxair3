@@ -1,5 +1,5 @@
 import { Row, Col } from "react-bootstrap";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const LeftImageRightContent = ({ imageSrc, children }) => {
   return (
@@ -7,6 +7,7 @@ const LeftImageRightContent = ({ imageSrc, children }) => {
       <Row className="mt-50">
         <Col md={4}>
           <Image
+          fetchpriority="high"
             src={imageSrc}
             alt=""
             objectFit="fill"

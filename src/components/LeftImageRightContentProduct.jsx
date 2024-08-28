@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
-import Image from "next/image";
-import initialMainImageSrc from "@/assets/images/oxygen_150.png"; // Renamed to avoid conflict
+import Image from "next/legacy/image";
+import initialMainImageSrc from "../../public/images/ss_modal_img.jpg"; // Renamed to avoid conflict
 import oxygen_small1 from "@/assets/images/oxygen_small1.png";
 import oxygen_small2 from "@/assets/images/oxygen_small2.png";
 import oxygen_small3 from "@/assets/images/oxygen_small3.png";
@@ -20,6 +20,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
     <Row className="mt-50">
       <Col>
         <Image
+        fetchpriority="high"
           src={mainImage}
           alt="Main Product"
           objectFit="cover"
@@ -30,6 +31,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
           <div className="row">
             <div className="col-3 mt-4">
               <Image
+              fetchpriority="high"
                 src={oxygen_small1}
                 alt="Small Product 1"
                 className="img-fluid"
@@ -52,6 +54,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
             </div>
             <div className="col-3 mt-4 mb-3">
               <Image
+              fetchpriority="high"
                 src={oxygen_small3}
                 alt="Small Product 3"
                 className="img-fluid"
@@ -63,6 +66,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
             </div>
             <div className="col-3 mb-3 mt-4">
               <Image
+              fetchpriority="high"
                 src={emptyImage}
                 alt="Empty"
                 className="img-fluid bgColor"

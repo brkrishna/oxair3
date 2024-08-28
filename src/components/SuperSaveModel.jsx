@@ -81,6 +81,7 @@ const RenderProduct = ({ product }) => {
                 className='application-icon m-3'
                 width={41}
                 height={41}
+                fetchpriority="high" 
               />
               <span className='goldmining'>{application.name}</span>
             </div>

@@ -4,6 +4,7 @@
     "name": "Dir. Prof (Dr) Ishwar Singh",
     "company": "Indira Gandhi Hospital, New Delhi",
     "designation": "MD",
+    "image": "/images/prof_(Dr)_ishwar_singh.png",
     "text": {
       "readText": [
         "The sustained efforts of your Team reflect a lot on the way you conduct business as a whole. I observed that we had real-time support of the original manufacturer and this gives us immense confidence. Gives our hospital a more robust, reliable and economical means of providing life-saving systems to our patients.",
@@ -16,20 +17,14 @@
         "The vision of Indira Gandhi Hospital is to provide medical services to our patients with care and compassion and we look forward to continuing our relationship with AGASTYA to realize our future growth plans.",
         "We have recommended Oxair as a reliable partner to other Hospitals and within our medical fraternity."
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtu.be/0gMOnUJwxP8",
-      "doctorName": "Dr Ishwar Singh",
-      "location": "Indira Gandhi Hospital - Delhi"
     }
   },
-
   {
     "id": 2,
     "name": "Vijaya Health",
     "company": "Vijaya Health Centre",
     "designation": "Chief Administrative Officer",
+    "image": "/images/vijay_hospital.png",
     "text": {
       "readText": [
         "We sincerely appreciate your professional approach, efficient use of resources and the overall level of detail and accountability you demonstrated in this project. Commissioning of this Oxygen Plant is a significant milestone as it gives Vijaya Health Centre a more robust, reliable and economical means of providing life-saving system to our patients."
@@ -43,12 +38,6 @@
         "Chief Administrative Officer",
         "Vijaya Health Centre"
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtube.com/shorts/F_Uhh6pozYw",
-      "doctorName": "",
-      "location": ""
     }
   },
   {
@@ -56,6 +45,7 @@
     "name": "Dr. G.S. Sridhar",
     "company": "Kumar Hospital, Tiptur, Karnataka",
     "designation": "Medical Director",
+    "image": "/images/kumar_hospital.png",
     "text": {
       "readText": [
         "The PSA oxygen generation plant has not only proven to be cost-effective solution but has also eliminated our dependency on external oxygen suppliers. This self-sufficiency has been invaluable, allowing us to focus our resources on patient care and other critical areas.",
@@ -70,12 +60,6 @@
         "Thank you for your commitment to excellence and for being an invaluable asset to our hospital.",
         "Dr. G.S. Sridhar, Medical Director, Kumar Hospital, Tiptur, Karnataka"
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtu.be/SSE_9BTkBU0",
-      "doctorName": "",
-      "location": ""
     }
   },
   {
@@ -83,6 +67,7 @@
     "name": "Alok Sharma",
     "company": "Kshetrapal Hospital, Ajmer, Rajasthan",
     "designation": "Admin Manager",
+    "image": "/images/placeholder_img.png",
     "text": {
       "readText": [
         "Congratulations to Oxair India for successfully installing and commissioning our hospital's OA-550(53 cylinders per day capacity) Oxygen Plant in June 2019. The plant's excellent performance has significantly improved our ability to provide life-saving systems to patients. We highly recommend Oxair India as a reliable partner in the medical fraternity"
@@ -91,12 +76,6 @@
         "Congratulations to Oxair India for successfully installing and commissioning our hospital's OA-550(53 cylinders per day capacity) Oxygen Plant in June 2019. The plant's excellent performance has significantly improved our ability to provide life-saving systems to patients. We highly recommend Oxair India as a reliable partner in the medical fraternity",
         "Alok Sharma, Admin Manager, Kshetrapal Hospital, Ajmer, Rajasthan"
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtu.be/Lvx884Vkc9c",
-      "doctorName": "",
-      "location": ""
     }
   },
   {
@@ -105,6 +84,7 @@
     "company": "Mahatma Gandhi District Hospital",
     "address": "Banswara, Rajasthan",
     "designation": "Principal Medical Officer",
+    "image": "/images/placeholder_img.png",
     "text": {
       "readText": [
         "Working continuously for the past three years without any major problems. The maintenance/periodic servicing work carried out by field engineers is commendable and the support given from Oxair Gas Sytems is noteworthy."
@@ -117,12 +97,6 @@
         "Place - Rajsamand",
         "Date: 12th January 2024"
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtu.be/T4XbPvBy8Bw",
-      "doctorName": "",
-      "location": ""
     }
   },
   {
@@ -130,6 +104,7 @@
     "name": "Dr Sukhinder Singh",
     "company": "FHQ BSF Hospital-II Tigri, New Delhi",
     "designation": "Commandant",
+    "image": "/images/placeholder_img.png",
     "text": {
       "readText": [
         "We commend them for the uninterrupted operation of the plant and the periodic servicing and other support provided since the date of installation till date.",
@@ -140,12 +115,6 @@
         "We further commend them for the uninterrupted operation of the plant and the periodic servicing and other support provided since the date of installation till date.",
         "We are happy to recommend Oxair PSA Oxygen Generation Plant and M/S Oxair Gas Systems India Pvt Ltdfor supply installation, Commissioning and periodic maintenance of the plant."
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtu.be/0gMOnUJwxP8",
-      "doctorName": "",
-      "location": ""
     }
   },
   {
@@ -153,6 +122,7 @@
     "name": "Dir. Prof (Dr) Ishwar Singh",
     "company": "Indira Gandhi Hospital, New Delhi",
     "designation": "MD",
+    "image": "/images/prof_(Dr)_ishwar_singh.png",
     "text": {
       "readText": [
         "The sustained efforts of your Team reflect a lot on the way you conduct business as a whole. I observed that we had real-time support of the original manufacturer and this gives us immense confidence. Gives our hospital a more robust, reliable and economical means of providing life-saving systems to our patients.",
@@ -165,12 +135,6 @@
         "The vision of Indira Gandhi Hospital is to provide medical services to our patients with care and compassion and we look forward to continuing our relationship with AGASTYA to realize our future growth plans.",
         "We have recommended Oxair as a reliable partner to other Hospitals and within our medical fraternity."
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtube.com/shorts/F_Uhh6pozYw",
-      "doctorName": "",
-      "location": ""
     }
   },
   {
@@ -178,6 +142,7 @@
     "name": "Nyoma",
     "company": "Leh-Ladakh",
     "designation": "Block Medical Officer",
+    "image": "/images/placeholder_img.png",
     "text": {
       "readText": [
         "Under adverse weather conditions and with limited resources installation of Oxygen Plant as well as Oxygen Gas Pipeline, work was done very professionally.",
@@ -188,12 +153,6 @@
         "I on behalf of staff of Primary Health Center and people of Nyoma village would like to thank M/S Oxair Gas Systems I P Ltd. and wish them all the success for their future installations. ",
         "Special thanks to Naveen and Shubam for their tireless efforts."
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtu.be/SSE_9BTkBU0",
-      "doctorName": "",
-      "location": ""
     }
   },
   {
@@ -201,6 +160,7 @@
     "name": "Dr Ravi Chandra Mouli",
     "company": "Raju Neuro & Multi Speciality Hospitals, Rajahmundry, A.P.",
     "designation": "CEO",
+    "image": "/images/placeholder_img.png",
     "text": {
       "readText": [
         "We have installed a PSA Oxygen Generating Plant OA550 of Oxair Gas Systems India Pvt Ltd. weighing approximately 2.75 tons in Sept 2021 on our 5th floor terrace.",
@@ -211,12 +171,6 @@
         "Since commissioning of the plant we never faced any issues with regards to plant performance, vibration and service from M/S Oxair Gas Systems Pvt Ltd.",
         "Dr Ravi Chandra Mouli, Kommireddi, CEO, Raju Neuro & Multi Speciality Hospitals, Rajahmundry, A.P."
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtu.be/Lvx884Vkc9c",
-      "doctorName": "",
-      "location": ""
     }
   },
   {
@@ -224,6 +178,7 @@
     "name": "Dr.S.M. Byadgi, General Surgeon,",
     "company": "Sukshema Hospital, Karnataka",
     "designation": "",
+    "image": "/images/testimonial-user-img.png",
     "text": {
       "readText": [
         "It gives us immense pleasure to inform you that the Oxygen Generation Plant, installed by your company was commissioned in January 2018. It is the first PSA Oxygen Generation Plant in Davangere, and the oxygen being produced is in line with the requirements."
@@ -231,12 +186,6 @@
       "full": [
         "It gives us immense pleasure to inform you that the Oxygen Generation Plant, installed by your company was commissioned in January 2018. It is the first PSA Oxygen Generation Plant in Davangere, and the oxygen being produced is in line with the requirements."
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtu.be/T4XbPvBy8Bw",
-      "doctorName": "",
-      "location": ""
     }
   },
   {
@@ -244,6 +193,7 @@
     "name": "K Gopal",
     "company": "Linde India Limited",
     "designation": "General Manager – Procurement",
+    "image": "/images/placeholder_img.png",
     "text": {
       "readText": [
         "We are grateful for your immense service and maintenance of our Oxygen Generation Plant at B.R. Singh Hospital, Sealdah, West Bengal. Your expertise in this area was invaluable, and your willingness and proactive in proving customer satisfaction with us was greatly appreciated."
@@ -257,12 +207,6 @@
         "K Gopal General Manager – Procurement",
         "Linde India Limited"
       ]
-    },
-    "readMoreLink": "",
-    "doctorVideos": {
-      "videoUrl": "https://youtu.be/SSE_9BTkBU0",
-      "doctorName": "",
-      "location": ""
     }
   }
 ]

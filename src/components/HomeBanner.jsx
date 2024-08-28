@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import BannerImage1 from "../assets/images/banner_img1.png";
 import BannerImage2 from "../assets/images/banner_img2.png";
 import ButtonComponent from "./Buttons";
@@ -116,7 +116,7 @@ const HomePageBanner = () => {
   return (
     <Carousel controls={false} className="mb-5">
       <Carousel.Item>
-        <Image src={BannerImage1} alt="" className="w-100 h-auto mt-3" />
+        <Image fetchpriority="high" src={BannerImage1} alt="" className="w-100 h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
@@ -150,7 +150,7 @@ const HomePageBanner = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image src={BannerImage2} alt="" className="w-100 h-auto mt-3" />
+        <Image fetchpriority="high" src={BannerImage2} alt="" className="w-100 h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
