@@ -51,10 +51,11 @@ const RenderProduct = ({ product }) => {
 
   return (
     <Row className='gap-5'>
-      <Col md={4}>
+      <Col md={5}>
         <LeftImageRightContentProduct />
       </Col>
-      <Col md={7}>
+      <Col md={6}>
+      <div className='leftauto'>
         <p className="productname">{product.title}</p>
         <h5 className='sub-headings dark-blue'>{product.model}</h5>
         <div className="row">
@@ -100,6 +101,7 @@ const RenderProduct = ({ product }) => {
             <li key={index}>{benefit}</li>
           ))}
         </ul>
+        </div>
       </Col>
       <ContactUsToday />
     </Row>

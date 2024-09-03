@@ -14,7 +14,7 @@ const Footer = () => {
         <Link href="/">
           <Image src={FooterLog} alt="Axair" width={135}  className="footer-log" />
         </Link>
-        <Row className="py-4">
+        <Row className="">
           <Col md={4}>
             <div className="footer-content">
               <h6>Our Factory</h6>

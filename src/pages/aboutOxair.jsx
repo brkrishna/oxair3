@@ -7,11 +7,16 @@ import AboutOxairImg from "../assets/images/about-oxair-img.png"
 import TryRoiCalculater from "@/components/TryRoiCalculater";
 import TheOxairIndiaDefference from "@/components/TheOxairIndiaDefference";
 import PlayIcon from "../assets/icons/play-icon.png"
-
+import Head from 'next/head';
 const AboutOxair = () => {
-
   return (
     <>
+    <Head>
+  <title>About Oxair | Experts in Oxygen Generation Systems</title>
+  <meta name="description" content="We are leaders in oxygen generating systems across India and globally, including Australia, Africa, Indonesia, and the Philippines. Choose Oxair India for reliable self-sufficiency in medical oxygen" />
+  <link rel="icon" href="/icons/favicon-16x16.png" type="image/x-icon" />
+</Head>
+    
       <InnerPageBanner
         heading="About Us"
         subHeading="The Oxair India Difference"
@@ -20,7 +25,7 @@ const AboutOxair = () => {
         <LeftImageRightContent imageSrc={AboutOxairImg}>
           <h5 className="headings lawn-green">ABOUT OXAIR</h5>
           <h1 className="sub-headings dark-blue">
-            The Leading Oxygen Generating Systems in India
+            The Leading <br/> Oxygen Generating Systems in India
           </h1>
           <p className="text-about">
             With a guiding principle of <span className="text-about1">“Embrace every challenge, deliver your
@@ -35,7 +40,7 @@ const AboutOxair = () => {
             <p className="text-about">By choosing Oxair India, you choose self-sufficiency in meeting your
             needs for medical oxygen.
           </p>
-          <ButtonComponent label={"Watch Video"} icon={PlayIcon} />
+          <ButtonComponent className='buttonwatch' label={"Watch Video"} icon={PlayIcon} />
         </LeftImageRightContent>
         <TheOxairIndiaDefference />
         <TryRoiCalculater />

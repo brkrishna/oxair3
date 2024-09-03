@@ -1,5 +1,5 @@
 import InnerPageBanner from "@/components/InnerPageBanners";
-import UnderConstructionImage from "../assets/images/construction.png";
+import UnderConstructionImage from "../assets/images/construction.jpg";
 import Image from "next/legacy/image";
 
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import Image from "next/legacy/image";
-import initialMainImageSrc from "../assets/images/oxygen_150.png"; // Renamed to avoid conflict
+import initialMainImageSrc from "../../public/images/ss_modal_img.jpg"; // Renamed to avoid conflict
 import oxygen_small1 from "@/assets/images/oxygen_small1.png";
 import oxygen_small2 from "@/assets/images/oxygen_small2.png";
 import oxygen_small3 from "@/assets/images/oxygen_small3.png";
@@ -9,7 +9,7 @@ import emptyImage from "/public/icons/placeholder.png";
 
 import Link from "next/link";
 
-const LeftImageRightContentProduct = ({ imageSrc }) => {
+const SpersaveModelProduct = ({ imageSrc }) => {
   const [mainImage, setMainImage] = useState(imageSrc || initialMainImageSrc);
 
   const handleImageClick = (newSrc) => {
@@ -77,7 +77,7 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
               />
             </div>
           </div> */}
-          <div className="img-width img-fluid">
+          <div className="img-width">
           <Link
             href="https://oxair-assets.s3.ap-south-1.amazonaws.com/Oxair+Broucher.pdf"
             className="btn btn-outline-none"
@@ -103,10 +103,9 @@ const LeftImageRightContentProduct = ({ imageSrc }) => {
           </Link>
         </div>
         </div>
-        
       </Col>
     </Row>
   );
 };
 
-export default LeftImageRightContentProduct;
+export default SpersaveModelProduct;
