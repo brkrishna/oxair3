@@ -23,20 +23,17 @@ const ContactUsToday = () => {
               className="icon"
               src={PhoneIcon}
               alt="Contact"
-              width={75}
-              height={75}
-              fetchpriority="high"
+              
             />
             <span className="contact-text">+91-44-29560328</span>
           </div>
           <div className="contact-info">
             <Image
-            fetchpriority="high"
+            
               className="icon"
               src={EmailIcon}
               alt="Email"
-              width={75}
-              height={75}
+              
             />
             <span className="contact-text1">inquiries@oxair.in</span>
           </div>

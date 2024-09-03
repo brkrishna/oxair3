@@ -27,15 +27,16 @@ const ContactUs = () => {
         heading="How can we assist you ?"
         subHeading="Contact us today"
       />
-      <Container className="mt-5">
+      <Container className="mt-5 position-relative">
+      <div className="vertical-line"></div>
         <Row>
-          <Col>
-            <div md={6}>
+          <Col md={6}>
+            <div >
               <h1 className="dark-blue font-gas">
                 Oxair Gas Systems India Pvt Ltd
               </h1>
               <div className="d-flex align-items-center gap-3 my-4">
-                <Image fetchpriority="high" src={phoneIcon} alt="Layer 1" className="icon-size" />
+                <Image className="icon-size" fetchpriority="high" src={phoneIcon} alt="Layer 1"  />
                 <p className="mt-3 contact-text2">
                   +91-44-29560328
                 </p>
@@ -111,11 +112,9 @@ const ContactUs = () => {
               </Form>
             </div>
           </Col>
-          <Col xs="auto" className="d-flex justify-content-center">
-            <div className="vertical-line"></div>
-          </Col>
-          <Col className="gap-4">
-            <div md={6} className="space-y-4">
+          
+          <Col md={6} className="gap-4 ">
+            <div  className="space-y-4 mx-2">
               <div className="mb-5">
                 <h2 className="font-gas2 dark-blue">Oxair Gas Systems</h2>
                 <p className="my-3 address1">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Tabs, Tab, Image } from 'react-bootstrap';
 import data from '@jsonData/products/superSaverModels.json';
-import LeftImageRightContentProduct from './LeftImageRightContentProduct';
+import SpersaveModelProduct from '../components/SpersaveModelProduct';
 import ContactUsToday from './ContactUsToday';
 import classNames from 'classnames';
 
@@ -22,24 +22,25 @@ const SsModels = () => {
 
   return (
     <div className="container mt-5">
-      <Tabs
-        id="product-tabs"
-        activeKey={key}
-        onSelect={(k) => setKey(k)}
-        className="bordercolor product-tabs"
+  <Tabs
+    id="product-tabs"
+    activeKey={key}
+    onSelect={(k) => setKey(k)}
+    className="bordercolor product-tabs"
+  >
+    {Object.keys(data).map((productKey, index) => (
+      <Tab
+        eventKey={productKey}
+        title={data[productKey].name}
+        className={classNames({ activetop: key === productKey })}
+        key={index}
       >
-        {Object.keys(data).map((productKey, index) => (
-          <Tab
-            eventKey={productKey}
-            title={data[productKey].name}
-            className={classNames({ activetop: key === productKey })}
-            key={index}
-          >
-            <RenderProduct product={data[productKey]} />
-          </Tab>
-        ))}
-      </Tabs>
-    </div>
+        <RenderProduct product={data[productKey]} />
+      </Tab>
+    ))}
+  </Tabs>
+</div>
+
   );
 };
 
@@ -51,10 +52,11 @@ const RenderProduct = ({ product }) => {
 
   return (
     <Row className='gap-5'>
-      <Col md={4}>
-        <LeftImageRightContentProduct />
+      <Col md={5}>
+        <SpersaveModelProduct />
       </Col>
-      <Col md={7}>
+      <Col md={6}>
+        <div className='leftauto'>
         <p className="productname">{product.title}</p>
         <h5 className='sub-headings dark-blue'>{product.model}</h5>
         <div className="row">
@@ -99,7 +101,9 @@ const RenderProduct = ({ product }) => {
             <li key={index}>{benefit}</li>
           ))}
         </ul>
-      </Col>
+
+        </div>
+              </Col>
       <ContactUsToday />
     </Row>
   );
