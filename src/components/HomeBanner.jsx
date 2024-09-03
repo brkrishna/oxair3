@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Image from "next/legacy/image";
 import BannerImage1 from "../assets/images/banner_img1.png";
 import BannerImage2 from "../assets/images/banner_img2.png";
+import BannerImage3 from "../../public/images/banner_img3.png"
 import ButtonComponent from "./Buttons";
 import ModalComponent from "./ModalComponent";
 
@@ -151,6 +152,33 @@ const HomePageBanner = () => {
       </Carousel.Item>
       <Carousel.Item>
         <Image fetchpriority="high" src={BannerImage2} alt="" className="w-100 h-auto mt-3" />
+        <Carousel.Caption>
+          <div className="row">
+            <div className="col-8">
+              <div className="banner-headings">
+                <h1 className="">
+                  Customized, Highest Purity, Cost Saving, Safe & Ease Of
+                  Maintenance
+                </h1>
+                <h5 className="">
+                  Nitrogen Generators for a range of sectors
+                </h5>
+                <div className="">
+                  <ButtonComponent
+                    key={2}
+                    label="Learn More"
+                    onClick={() => handleOpenModal(2)}
+                    className="get-quote mt-3"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-6"></div>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Image fetchpriority="high" src={BannerImage3} alt="" className="w-100 h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
