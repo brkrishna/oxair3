@@ -52,6 +52,7 @@ const GetQuote = () => {
         </div>
     </div>
           </Col>
+          </Row>
           <section>
 
             <p className="roi-subtitle mt-5">
@@ -181,7 +182,7 @@ const GetQuote = () => {
             <p className="costoflox">Cost of LOX @ INR 30 Per M3 for 172 M3 Per Day (Equivalent to 24 Jumbo Cylinders)</p>
             <div class="row">
         <div class="col-md-4 col-sm-6 col-12 mb-3 d-flex">
-        <div className="get-box">
+        <div className="get-box w-100">
                   <p className="loxconsumed">
                     Total LOX consumed<br />
                     <small className="oneyear">for one year</small>
@@ -190,7 +191,7 @@ const GetQuote = () => {
                 </div>
         </div>
         <div class="col-md-4 col-sm-6 col-12 mb-3 d-flex">
-        <div className="get-box">
+        <div className="get-box w-100">
                   <p className="loxconsumed">
                     Cost of LOX for one year<br />
                     <small className="oneyear">@ INR 30 Per M3</small>
@@ -199,7 +200,7 @@ const GetQuote = () => {
                 </div>
         </div>
         <div class="col-md-4 col-sm-6 col-12 mb-3 d-flex">
-        <div className="get-box">
+        <div className="get-box w-100">
                   <p className="loxconsumed">
                     Grand total expenses<br />
                     <small className="oneyear">@ 172 m3 per day for equivalent<br />
@@ -223,7 +224,7 @@ const GetQuote = () => {
             </Col>
           </div>
 
-        </Row>
+       
         <hr className="mt-4" />
       </Container>
     </>
