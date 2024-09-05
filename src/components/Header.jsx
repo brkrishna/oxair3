@@ -26,8 +26,8 @@ const Header = () => {
               <NavDropdown.Item className="products" href="/">Other Products</NavDropdown.Item> */}
             </NavDropdown>
             <NavDropdown className="mx-2 custom-dropdown" title="Resources" id="collapsible-nav-dropdown-resources">
-              <NavDropdown.Item className="products" href="/understandingOurProducts">Understanding Our Products</NavDropdown.Item>
-              <NavDropdown.Item className="products" href="/faqs">FAQs</NavDropdown.Item>
+              {/* <NavDropdown.Item className="products" href="/understandingOurProducts">Understanding Our Products</NavDropdown.Item>
+              <NavDropdown.Item className="products" href="/faqs">FAQs</NavDropdown.Item> */}
               <NavDropdown.Item className="products" href="/companyAndIndustryNews">Company and Industry News</NavDropdown.Item>
               <NavDropdown.Item className="products" href="/gallery">Gallery</NavDropdown.Item>
             </NavDropdown>

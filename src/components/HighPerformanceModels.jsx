@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Tabs, Tab, Image } from 'react-bootstrap';
+import { Row, Col, Tabs, Tab, Container } from 'react-bootstrap';
 import data from '@jsonData/products/highPerformanceModels.json';
 import LeftImageRightContentProduct from './LeftImageRightContentProduct';
 import ContactUsToday from './ContactUsToday';
 import classNames from 'classnames';
+import oxairEventBanner from "../../public/images/Oxair-event-image.jpg";
+import Image from 'next/image';
 
 const OxygenGenerator = () => {
     const [key, setKey] = useState(null); // Initialize with null or undefined
@@ -103,6 +105,15 @@ const RenderProduct = ({ product }) => {
         </ul>
         </div>
       </Col>
+      <div>
+      <Image
+  src={oxairEventBanner}
+  alt="Oxair Event Banner"
+  layout="responsive"
+  objectFit="cover"
+/>
+      </div>
+    
       <ContactUsToday />
     </Row>
   );

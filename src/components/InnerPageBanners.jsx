@@ -6,14 +6,14 @@ const InnerPageBanner = ({
     backgroundImage
 }) =>{
 
-    const bannerImage = {
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        padding: '100px 0',
-        color: '#fff',
-        textAlign: 'left',
-      };
+    // const bannerImage = {
+    //     backgroundImage: `url(${backgroundImage})`,
+    //     backgroundSize: 'cover',
+    //     backgroundPosition: 'center',
+    //     padding: '100px 0',
+    //     color: '#fff',
+    //     textAlign: 'left',
+    //   };
 
     return(
         <>

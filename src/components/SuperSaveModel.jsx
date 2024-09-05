@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Col, Tabs, Tab, Image } from 'react-bootstrap';
+import { Row, Col, Tabs, Tab} from 'react-bootstrap';
 import data from '@jsonData/products/superSaverModels.json';
 import SpersaveModelProduct from '../components/SpersaveModelProduct';
 import ContactUsToday from './ContactUsToday';
 import classNames from 'classnames';
+import Image from 'next/image';
+import Oxaireventimage from '../../public/images/Oxair-event-image.jpg'
 
 const SsModels = () => {
     const [key, setKey] = useState(null); // Initialize with null or undefined
@@ -104,6 +106,12 @@ const RenderProduct = ({ product }) => {
 
         </div>
               </Col>
+              <div>
+                <Image src={Oxaireventimage} alt='Oxairplant'
+                Object="cover"
+                layout='responsive'
+                />
+              </div>
       <ContactUsToday />
     </Row>
   );

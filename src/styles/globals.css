@@ -557,6 +557,7 @@ text-dark {
   background-size: 100%;
   margin: 25px 0px;
   background-repeat: no-repeat;
+  background-position: center;
 
   h1.banner-heading {
     color: #fff;
@@ -606,6 +607,21 @@ li.no-bullets {
   border-radius: 20px;
 }
 
+@media (min-width: 1640px) {
+  .inner-banner {
+    background-size: contain; /* Make sure the entire image fits within the container */
+    background-position: center; /* Center the image vertically and horizontally */
+  }
+  .banner-heading {
+    letter-spacing: 0.84px;
+    padding-left: 96px;
+}
+.banner-sub-heading {
+  letter-spacing: 0.76px;
+  color: #2bdafa;
+  margin-left: 96px;
+}
+}
 .our-technology-tabs {
   margin: 30px;
   display: flex;
@@ -772,22 +788,22 @@ opacity: 1;
 }
 .carousel-control-next,
 .carousel-control-prev {
-  width: 40px;
-  background: #20205e;
-  height: 40px;
-  transform: translateY(-50%);
-  top: 45%;
-  border-radius: 100%;
+  width: 40px !important;
+  background: #20205e !important;
+  height: 40px !important;
+  transform: translateY(-50%) !important;
+  top: 45% !important;
+  border-radius: 100% !important;
 
   span {
     background-size: 60%;
   }
 }
 .carousel-control-next{
- right: -20px;
+ right: -20px !important;
 }
 .carousel-control-prev{
- left: -20px;
+ left: -20px !important;
 }
 .btn-read-more {
   button {
@@ -939,7 +955,7 @@ opacity: 1;
         text-align: left;
         color: #39d000;
         border: none;
-        height: 146px;
+        height: 106px;
         line-height: 20px;
         font: normal normal 600 11px / 18px Open Sans !important;
 
