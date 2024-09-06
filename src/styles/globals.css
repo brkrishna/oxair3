@@ -78,13 +78,22 @@ body {
   margin: auto;
 }
 
-.navbar-expand-lg .navbar-nav {
-  flex-direction: row;
-  align-items: flex-end;
-  border: 1px solid #888888;
-  width: fit-content;
-  border-radius: 12px;
-}
+/* .navbar-collapse.collapse.show > div > a, .navbar-collapse.collapse.show > div > div {
+  border-bottom: 1px solid #dcdcdc;
+  width: 100%;
+  background: #d3d3d3;
+  padding: 5px 20px;
+  align-items: start;
+} */
+
+/* .navbar-collapse.collapse.show > div {
+  width: 100%;
+  align-items: start;
+} */
+/* .navbar-expand-lg .navbar-nav {
+  align-items: center;
+  justify-content: center;
+} */
 
 .cliaints-logos-section {
   display: flex;
@@ -96,6 +105,7 @@ body {
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {       
     border: none;
+    
   }
   .contact-text {
     color: #39D000;
@@ -109,6 +119,38 @@ body {
   .vertical-line1 {
     display: none;
   }
+  .navbar-collapse.collapse.show > div > a, .navbar-collapse.collapse.show > div > div {
+    border-bottom: 1px solid #dcdcdc;
+  width: 100%;
+  background: #d3d3d3;
+  padding: 5px 20px;
+  align-items: start;
+  }
+  .dropdown-menu.show {
+    display: block;
+    background-color: #d3d3d3;
+}
+  .navbar-collapse.collapse.show {
+    position: relative;
+}
+  
+  .navbar-collapse.collapse.show > div {
+    width: 100%;
+        align-items: start;
+        background: #e9e5e5;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 11;
+  }
+  /* .navbar-expand-lg .navbar-nav{
+    align-items: start;
+  border: 1px solid #888;
+  border-radius: 12px;
+  width: 100%;
+  text-align: left;
+  z-index: 11;
+  background-color: #fff;
+  } */
   .cts-sec{
     border-right: none;
     border-bottom: 1px solid #2bdafa;
@@ -440,10 +482,7 @@ ul.our-market-tabs {
     color: #888888;
   }
 }
-.navbar-expand-lg .navbar-nav {
-  flex-direction: row;
-  align-items: center;
-}
+
 
 .footer-bottom {
   display: flex;
@@ -1018,7 +1057,7 @@ opacity: 1;
 
   .nav-link {
     display: flex !important;
-    justify-content: center;
+    justify-content: start;
     color: #20205e;
     font: normal normal 600 1.5vw Open Sans !important;
   }
