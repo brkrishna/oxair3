@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Image from "next/legacy/image";
 import BannerImage1 from "../assets/images/banner_img1.png";
 import BannerImage2 from "../assets/images/banner_img2.png";
-import BannerImage3 from "../../public/images/banner_img3.png"
+import BannerImage3 from "../../public/images/banner_img3.0.png"
 import ButtonComponent from "./Buttons";
 import ModalComponent from "./ModalComponent";
 
