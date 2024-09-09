@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
         <Head>
-  <title>Oxair – Leading Oxygen Generating System</title>
+  <title>Oxair – Leaders in Oxygen Generation Technology Systems in India</title>
   <meta name="description" content="Oxair delivers affordable, safe, and bespoke oxygen and nitrogen generators with exceptional purity and low maintenance, serving a broad spectrum of industries." />
   <link rel="icon" href="/icons/favicon-16x16.png" type="image/x-icon" />
 </Head>
