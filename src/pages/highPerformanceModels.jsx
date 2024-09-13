@@ -9,7 +9,7 @@ const productPage = () => {
   return (
     <>
     <Head>
-    <title>Oxair - High Performance(HP) Oxygen Generator Models </title>
+    <title>Oxair - High Performance Medical Oxygen Generators </title>
   <meta name="description" content="We provide high-performance oxygen generators, including the OA 80 HP, OA 120 HP, OA 200 HP, OA 320 HP, OA 450 HP, and OA 550 HP models" />
   <link rel="icon" href="/icons/favicon-16x16.png" type="image/x-icon" />
     </Head>

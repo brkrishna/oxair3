@@ -19,8 +19,8 @@ const OxairGallery = () => {
   return (
     <>
     <Head>
-    <title>Oxair – Leading Oxygen Generating System</title>
-  <meta name="description" content="Gallery Page" />
+    <title>Oxair – Company Gallery - Event Pictures</title>
+  <meta name="description" content="Visit this page to explore all our event photos, especially the Ladakh group pictures and much more. Learn More" />
   <link rel="icon" href="/icons/favicon-16x16.png" type="image/x-icon" />
     </Head>
     <InnerPageBanner
