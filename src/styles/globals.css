@@ -1057,7 +1057,7 @@ opacity: 1;
 
   .nav-link {
     display: flex !important;
-    justify-content: start;
+    justify-content: flex-start;
     color: #20205e;
     font: normal normal 600 1.5vw Open Sans !important;
   }

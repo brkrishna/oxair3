@@ -93,7 +93,7 @@ const Footer = () => {
               <a href="#">
                 <Image fetchpriority="high" src={XLogo} width={30} alt="X" />
               </a>
-              <a href="#">
+              <a target="_blank" href="https://www.youtube.com/@OxairGasSystems">
                 <Image fetchpriority="high" src={YoutubeIcon} width={30} alt="Youtube" />
               </a>
             </div>

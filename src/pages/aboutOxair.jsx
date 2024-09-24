@@ -8,6 +8,7 @@ import TryRoiCalculater from "@/components/TryRoiCalculater";
 import TheOxairIndiaDefference from "@/components/TheOxairIndiaDefference";
 import PlayIcon from "../assets/icons/play-icon.png"
 import Head from 'next/head';
+import GoogleAnalytics from "@components/GoogleAnalytics";
 const AboutOxair = () => {
   return (
     <>
@@ -16,17 +17,17 @@ const AboutOxair = () => {
   <meta name="description" content="We are leaders in oxygen generating systems across India and globally, including Australia, Africa, Indonesia, and the Philippines. Choose Oxair India for reliable self-sufficiency in medical oxygen" />
   <link rel="icon" href="/icons/favicon-16x16.png" type="image/x-icon" />
 </Head>
-    
+    <GoogleAnalytics />
       <InnerPageBanner
         heading="About Us"
         subHeading="The Oxair India Difference"
       />
       <Container>
         <LeftImageRightContent imageSrc={AboutOxairImg}>
-          <h5 className="headings lawn-green">ABOUT OXAIR</h5>
-          <h1 className="sub-headings dark-blue">
+          <h1 className="headings lawn-green">ABOUT OXAIR</h1>
+          <h5 className="sub-headings dark-blue">
             The Leading <br/> Oxygen Generating Systems in India
-          </h1>
+          </h5>
           <p className="text-about">
             With a guiding principle of <span className="text-about1">“Embrace every challenge, deliver your
             finest.”</span>, Oxair India, has leveraged the technological expertise of

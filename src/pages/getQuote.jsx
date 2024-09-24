@@ -4,11 +4,13 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import Sewage from '../assets/images/oxygen_small1.png';
 
 import "../styles/globals.css";
+import GoogleAnalytics from "@components/GoogleAnalytics";
 
 const GetQuote = () => {
 
   return (
     <>
+    <GoogleAnalytics />
       <InnerPageBanner
         heading="Get Quote"
         subHeading="ROI"

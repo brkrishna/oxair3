@@ -4,6 +4,7 @@ import oxairGalleryData from "@jsonData/oxairGallery.json";
 import InnerPageBanner from "@components/InnerPageBanners";
 //import Image from "next/image";
 import Head from "next/head";
+import GoogleAnalytics from "@components/GoogleAnalytics";
 
 const OxairGallery = () => {
   const photos = oxairGalleryData.ladakhGallery.map((photo) => ({
@@ -18,6 +19,7 @@ const OxairGallery = () => {
 
   return (
     <>
+    <GoogleAnalytics />
     <Head>
     <title>Oxair – Company Gallery - Event Pictures</title>
   <meta name="description" content="Visit this page to explore all our event photos, especially the Ladakh group pictures and much more. Learn More" />
