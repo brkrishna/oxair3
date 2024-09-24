@@ -1,5 +1,6 @@
  
 import InnerPageBanner from "@/components/InnerPageBanners";
+import GoogleAnalytics from "@components/GoogleAnalytics";
 import SsModels from "@components/SuperSaveModel"
 import Head from "next/head";
 
@@ -12,6 +13,7 @@ const productPage = () => {
       <link rel="icon" href="/icons/favicon-16x16.png" type="image/x-icon" />
       <link rel="canonical" href="https://example.com/blog/original-post" key="canonical" />
     </Head>
+    <GoogleAnalytics />
       <InnerPageBanner
         heading="Our Products"
         subHeading="Super Saver Models"

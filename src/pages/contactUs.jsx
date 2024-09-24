@@ -8,6 +8,7 @@ import Image from "next/legacy/image";
 import ButtonComponent from "@/components/Buttons";
 import "../styles/globals.css";
 import Head from "next/head";
+import GoogleAnalytics from "@components/GoogleAnalytics";
 
 const ContactUs = () => {
   const [validated, setValidated] = useState(false);
@@ -29,6 +30,7 @@ const ContactUs = () => {
       <meta name="description" content="Visit the contact page of Oxair Gas Systems India Pvt Ltd to find our location, contact number, and email. Fill out the form to request a quote." />
       <link rel="icon" href="/icons/favicon-16x16.png" type="image/x-icon" />
     </Head>
+    <GoogleAnalytics />
       <InnerPageBanner
         heading="How can we assist you ?"
         subHeading="Contact us today"

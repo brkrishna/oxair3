@@ -177,7 +177,7 @@ const HomePageBanner = () => {
           </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      {/* <Carousel.Item>
         <Image fetchpriority="high" src={BannerImage3} alt="" className="w-100 h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
@@ -203,7 +203,7 @@ const HomePageBanner = () => {
             <div className="col-6"></div>
           </div>
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item> */}
     </Carousel>
   )
 }

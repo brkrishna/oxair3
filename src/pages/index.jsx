@@ -10,18 +10,12 @@ import ContactUsToday from "@/components/ContactUsToday";
 import whyOxairLeftImg from "../assets/images/why-oxair-left-img.png";
 import testiData from "@jsonData/testimonials.json"
 import Testimonials from "@components/Testimonials";
-// import TestimonialVideos from "@components/TestmonialVideos";
-//import testivideosdata from "@jsonData/testimonialVideos.json"
 import WorldwideInstallations from "@/components/WorldwideInstallations";
-//import favIcon from '../assets/icons/favicon-16x16.png';
-//import favIconBase64 from '../assets/icons/favicon-16x16.png';
-
+import GoogleAnalytics from '@components/GoogleAnalytics';
 export default function Home() {
   const [testimon, setTestimon] = useState([]);
-//const [testimonVideos, setTestimonVideos] = useState([]);
   useEffect(() => {
     setTestimon(testiData)  
-   // setTestimonVideos(testimonVideos)
   }, []);
   const installationData = [
     { country: "India", number: 250 },
@@ -32,10 +26,11 @@ export default function Home() {
   return (
     <>
         <Head>
-  <title>Oxair – Leaders in Oxygen Generation Technology Systems in India</title>
+  <title>Oxair – Premier Oxygen and Nitrogen Generation Systems</title>
   <meta name="description" content="Oxair delivers affordable, safe, and bespoke oxygen and nitrogen generators with exceptional purity and low maintenance, serving a broad spectrum of industries." />
   <link rel="icon" href="/icons/favicon-16x16.png" type="image/x-icon" />
 </Head>
+<GoogleAnalytics />
 
       <main className="container">
         <div className="row">

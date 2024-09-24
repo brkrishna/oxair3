@@ -1,11 +1,13 @@
 import InnerPageBanner from "@/components/InnerPageBanners";
 import UnderConstructionImage from "../assets/images/construction.jpg";
 import Image from "next/legacy/image";
+import GoogleAnalytics from "@components/GoogleAnalytics";
 
 
 const productPage = () => {
     return (
       <>
+      <GoogleAnalytics />
         <InnerPageBanner
           heading="Our Products"
           subHeading="Oxair Pressure Vessels"
