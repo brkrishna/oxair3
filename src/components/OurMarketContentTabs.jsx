@@ -129,13 +129,10 @@ const OurMarketsContentTabs = () => {
           <h1 className="sub-headings dark-blue">
             We are a global manufacturer of advanced gas separation systems for shipboard and land-based use.
           </h1>
-          <p className="text-about">
-            We specialise in the supply of on-site gas generation equipment
-            within India as well as international markets. Oxair designs and
-            manufactures packaged oxygen Pressure Swing Adsorption (PSA) Systems
-            including small to medium PSA systems for all types of industry
-            including Medical Hospitals as well as large industrial Tonnage
-            plants.
+          <p className="text-about">Oxair Gas Systems has always been at the forefront of technological advancement in the manufacturing of PSA oxygen generation plants,
+            By implementing "State-Of-The-Art" "Innovative Absorber Configuration" PSA Oxygen Generation Plants, we aim to transform healthcare infrastructure and pave the way for the future of healthcare with our three-vessel PSA Oxygen Generation Super Saver Plant.
+          </p>
+          <p className="text-about">Our goal is to give hospitals, clinics, and emergency services around the world with a reliable and affordable source of medical-grade oxygen. We are dedicated to improving healthcare resilience and accessibility in order to save lives, empower medical professionals, and promote healthier communities while reducing our negative effects on the environment and optimizing our positive effects on society.
           </p>
           <p className="text-about">Oxair also design and build small to large Nitrogen systems
             using Air Products Membranes as well using PSA technology for

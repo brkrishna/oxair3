@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "next/legacy/image";
-import BannerImage1 from "../assets/images/banner_img1.png";
-import BannerImage2 from "../assets/images/banner_img2.png";
+// import BannerImage1 from "../assets/images/banner_img1.png";
+// import BannerImage2 from "../assets/images/banner_img2.png";
 import BannerImage3 from "../../public/images/banner_img3.0.png"
 import ButtonComponent from "./Buttons";
 import ModalComponent from "./ModalComponent";
+import NEwbannerimage1 from "../assets/images/New_Banner-1.png"
+import NEwbannerimage2 from "../assets/images/New_Banner-2.png"
+import { withRouter } from "next/router";
 
 const modalData = {
   modals: [
@@ -117,7 +120,7 @@ const HomePageBanner = () => {
   return (
     <Carousel controls={false} className="mb-5">
       <Carousel.Item>
-        <Image fetchpriority="high" src={BannerImage1} alt="" className="w-100 h-auto mt-3" />
+        <Image fetchpriority="high" src={NEwbannerimage1} alt="" className="w-100 h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
@@ -125,7 +128,7 @@ const HomePageBanner = () => {
                 <h1 className="">
                   Cost-effective, safe, convenient & very low maintenance
                 </h1>
-                <h5 className="">
+                <h5 className="" >
                   Oxygen Generators for your business
                 </h5>
                 <div className=' '>
@@ -151,7 +154,7 @@ const HomePageBanner = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image fetchpriority="high" src={BannerImage2} alt="" className="w-100 h-auto mt-3" />
+        <Image fetchpriority="high" src={NEwbannerimage2} alt="" className="h-auto mt-3" />
         <Carousel.Caption>
           <div className="row">
             <div className="col-8">
