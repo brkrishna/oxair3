@@ -2,7 +2,6 @@ import React from "react";
 import Gallery from "react-photo-gallery";
 import oxairGalleryData from "@jsonData/oxairGallery.json";
 import InnerPageBanner from "@components/InnerPageBanners";
-//import Image from "next/image";
 import Head from "next/head";
 import GoogleAnalytics from "@components/GoogleAnalytics";
 
